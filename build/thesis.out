@@ -15,11 +15,20 @@
 \BOOKMARK [2][-]{subsection.4.2}{UC0: Scenario Principale}{section.4}% 15
 \BOOKMARK [2][-]{subsection.4.3}{UC1: Calibrazione telecamere}{section.4}% 16
 \BOOKMARK [3][-]{subsubsection.4.3.1}{UC1.1: Calibra}{subsection.4.3}% 17
-\BOOKMARK [2][-]{subsection.4.4}{UC2: Configurazione telecamere}{section.4}% 18
-\BOOKMARK [3][-]{subsubsection.4.4.1}{UC2.1: Inserisci nuova}{subsection.4.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.4.2}{UC2.2: Rimuovi telecamera}{subsection.4.4}% 20
-\BOOKMARK [3][-]{subsubsection.4.4.3}{UC2.3: Modifica configurazione}{subsection.4.4}% 21
-\BOOKMARK [2][-]{subsection.4.5}{UC3: Generazione statistiche}{section.4}% 22
-\BOOKMARK [3][-]{subsubsection.4.5.1}{UC3.1: Trasforma i dati di tracking}{subsection.4.5}% 23
-\BOOKMARK [3][-]{subsubsection.4.5.2}{UC3.2: Genera heatmap}{subsection.4.5}% 24
-\BOOKMARK [2][-]{subsection.4.6}{Requisiti}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.4}{UC1.2: Mostra video calibrato}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.5}{UC2: Configurazione telecamere}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.5.1}{UC2.1: Inserisci nuova}{subsection.4.5}% 20
+\BOOKMARK [3][-]{subsubsection.4.5.2}{UC2.2: Rimuovi telecamera}{subsection.4.5}% 21
+\BOOKMARK [3][-]{subsubsection.4.5.3}{UC2.3: Modifica configurazione}{subsection.4.5}% 22
+\BOOKMARK [3][-]{subsubsection.4.5.4}{UC2.4: Cattura e salva un frame della telecamera}{subsection.4.5}% 23
+\BOOKMARK [3][-]{subsubsection.4.5.5}{UC2.5: Converti .DXF file in .PNG}{subsection.4.5}% 24
+\BOOKMARK [3][-]{subsubsection.4.5.6}{UC2.6: Converti .DXF file in .PNG}{subsection.4.5}% 25
+\BOOKMARK [3][-]{subsubsection.4.5.7}{UC2.7: Seleziona telecamera}{subsection.4.5}% 26
+\BOOKMARK [2][-]{subsection.4.6}{UC3: Generazione statistiche}{section.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.6.1}{UC3.1: Trasforma i dati di tracking}{subsection.4.6}% 28
+\BOOKMARK [3][-]{subsubsection.4.6.2}{UC3.2: Genera heatmap}{subsection.4.6}% 29
+\BOOKMARK [3][-]{subsubsection.4.6.3}{UC3.3: Genera statistiche}{subsection.4.6}% 30
+\BOOKMARK [2][-]{subsection.4.7}{Requisiti}{section.4}% 31
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Requisiti funzionali}{subsection.4.7}% 32
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Requisiti di vincolo}{subsection.4.7}% 33
+\BOOKMARK [3][-]{subsubsection.4.7.3}{Requisiti di qualit\340}{subsection.4.7}% 34

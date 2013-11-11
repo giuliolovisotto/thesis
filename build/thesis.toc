@@ -13,22 +13,31 @@
 \contentsline {section}{\numberline {4}Analisi dei Requisiti}{7}{section.4}
 \contentsline {subsection}{\numberline {4.1}Casi d'uso}{7}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}UC0: Scenario Principale}{7}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}UC1: Calibrazione telecamere}{8}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}UC1.1: Calibra}{8}{subsubsection.4.3.1}
-\contentsline {paragraph}{UC1.1.1: Seleziona il numero di span spot}{8}{section*.1}
-\contentsline {paragraph}{UC1.1.2: Seleziona il numero di frame da scartare}{9}{section*.2}
-\contentsline {paragraph}{UC1.1.3: Inserisce l'indirizzo della telecamera da calibrare}{9}{section*.3}
-\contentsline {paragraph}{UC1.1.4: Inizia calibrazione}{9}{section*.4}
-\contentsline {subsection}{\numberline {4.4}UC2: Configurazione telecamere}{10}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}UC2.1: Inserisci nuova}{10}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}UC2.2: Rimuovi telecamera}{10}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}UC2.3: Modifica configurazione}{10}{subsubsection.4.4.3}
-\contentsline {paragraph}{UC2.3.1: Modifica il percorso del file di extrinsics}{11}{section*.5}
-\contentsline {paragraph}{UC2.3.2: Modifica il percorso del file di intrinsics}{11}{section*.6}
-\contentsline {paragraph}{UC2.3.3: Modifica il valore dell'altezza del frame}{11}{section*.7}
-\contentsline {paragraph}{UC2.3.4: Modifica il valore della larghezza del frame}{12}{section*.8}
-\contentsline {paragraph}{UC2.3.5: Modifica il percorso del file di homography matrix}{12}{section*.9}
-\contentsline {subsection}{\numberline {4.5}UC3: Generazione statistiche}{12}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}UC3.1: Trasforma i dati di tracking}{12}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}UC3.2: Genera heatmap}{13}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Requisiti}{13}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.3}UC1: Calibrazione telecamere}{7}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}UC1.1: Calibra}{9}{subsubsection.4.3.1}
+\contentsline {paragraph}{UC1.1.1: Seleziona il numero di span spot}{9}{section*.1}
+\contentsline {paragraph}{UC1.1.2: Seleziona il numero di frame da scartare}{10}{section*.2}
+\contentsline {paragraph}{UC1.1.3: Inserisce l'indirizzo della telecamera da calibrare}{10}{section*.3}
+\contentsline {paragraph}{UC1.1.4: Inizia calibrazione}{10}{section*.4}
+\contentsline {subsection}{\numberline {4.4}UC1.2: Mostra video calibrato}{10}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}UC2: Configurazione telecamere}{11}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}UC2.1: Inserisci nuova}{11}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}UC2.2: Rimuovi telecamera}{12}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}UC2.3: Modifica configurazione}{12}{subsubsection.4.5.3}
+\contentsline {paragraph}{UC2.3.1: Modifica il percorso del file di extrinsics}{13}{section*.5}
+\contentsline {paragraph}{UC2.3.2: Modifica il percorso del file di intrinsics}{13}{section*.6}
+\contentsline {paragraph}{UC2.3.3: Modifica il valore dell'altezza del frame}{13}{section*.7}
+\contentsline {paragraph}{UC2.3.4: Modifica il valore della larghezza del frame}{13}{section*.8}
+\contentsline {paragraph}{UC2.3.5: Modifica il percorso del file di homography matrix}{13}{section*.9}
+\contentsline {subsubsection}{\numberline {4.5.4}UC2.4: Cattura e salva un frame della telecamera}{14}{subsubsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.5}UC2.5: Converti .DXF file in .PNG}{14}{subsubsection.4.5.5}
+\contentsline {subsubsection}{\numberline {4.5.6}UC2.6: Converti .DXF file in .PNG}{14}{subsubsection.4.5.6}
+\contentsline {subsubsection}{\numberline {4.5.7}UC2.7: Seleziona telecamera}{14}{subsubsection.4.5.7}
+\contentsline {subsection}{\numberline {4.6}UC3: Generazione statistiche}{14}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}UC3.1: Trasforma i dati di tracking}{15}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}UC3.2: Genera heatmap}{15}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}UC3.3: Genera statistiche}{15}{subsubsection.4.6.3}
+\contentsline {subsection}{\numberline {4.7}Requisiti}{16}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Requisiti funzionali}{16}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Requisiti di vincolo}{18}{subsubsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.3}Requisiti di qualit\IeC {\`a}}{19}{subsubsection.4.7.3}
