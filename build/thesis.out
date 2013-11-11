@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Scopo del documento}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Pathflow}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Progetto}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Pianificazione}{}% 5
+\BOOKMARK [1][-]{section.3}{Tecnologie Utilizzate}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{OpenCV}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Qt}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{MySQL}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{MySQL wrapped}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{dxflib}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.6}{CMake}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Analisi dei Requisiti}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Casi d'uso}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{UC0: Scenario Principale}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{UC1: Calibrazione telecamere}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.3.1}{UC1.1: Calibra}{subsection.4.3}% 17
+\BOOKMARK [2][-]{subsection.4.4}{UC2: Configurazione telecamere}{section.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.4.1}{UC2.1: Inserisci nuova}{subsection.4.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.4.2}{UC2.2: Rimuovi telecamera}{subsection.4.4}% 20
+\BOOKMARK [3][-]{subsubsection.4.4.3}{UC2.3: Modifica configurazione}{subsection.4.4}% 21
+\BOOKMARK [2][-]{subsection.4.5}{UC3: Generazione statistiche}{section.4}% 22
+\BOOKMARK [3][-]{subsubsection.4.5.1}{UC3.1: Trasforma i dati di tracking}{subsection.4.5}% 23
+\BOOKMARK [3][-]{subsubsection.4.5.2}{UC3.2: Genera heatmap}{subsection.4.5}% 24
+\BOOKMARK [2][-]{subsection.4.6}{Requisiti}{section.4}% 25

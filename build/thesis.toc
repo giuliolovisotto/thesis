@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduzione}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Pathflow}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Progetto}{1}{subsection.1.3}
+\contentsline {section}{\numberline {2}Pianificazione}{3}{section.2}
+\contentsline {section}{\numberline {3}Tecnologie Utilizzate}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}OpenCV}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Qt}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}MySQL}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}MySQL wrapped}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}dxflib}{6}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}CMake}{6}{subsection.3.6}
+\contentsline {section}{\numberline {4}Analisi dei Requisiti}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Casi d'uso}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}UC0: Scenario Principale}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}UC1: Calibrazione telecamere}{8}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}UC1.1: Calibra}{8}{subsubsection.4.3.1}
+\contentsline {paragraph}{UC1.1.1: Seleziona il numero di span spot}{8}{section*.1}
+\contentsline {paragraph}{UC1.1.2: Seleziona il numero di frame da scartare}{9}{section*.2}
+\contentsline {paragraph}{UC1.1.3: Inserisce l'indirizzo della telecamera da calibrare}{9}{section*.3}
+\contentsline {paragraph}{UC1.1.4: Inizia calibrazione}{9}{section*.4}
+\contentsline {subsection}{\numberline {4.4}UC2: Configurazione telecamere}{10}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}UC2.1: Inserisci nuova}{10}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}UC2.2: Rimuovi telecamera}{10}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}UC2.3: Modifica configurazione}{10}{subsubsection.4.4.3}
+\contentsline {paragraph}{UC2.3.1: Modifica il percorso del file di extrinsics}{11}{section*.5}
+\contentsline {paragraph}{UC2.3.2: Modifica il percorso del file di intrinsics}{11}{section*.6}
+\contentsline {paragraph}{UC2.3.3: Modifica il valore dell'altezza del frame}{11}{section*.7}
+\contentsline {paragraph}{UC2.3.4: Modifica il valore della larghezza del frame}{12}{section*.8}
+\contentsline {paragraph}{UC2.3.5: Modifica il percorso del file di homography matrix}{12}{section*.9}
+\contentsline {subsection}{\numberline {4.5}UC3: Generazione statistiche}{12}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}UC3.1: Trasforma i dati di tracking}{12}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}UC3.2: Genera heatmap}{13}{subsubsection.4.5.2}
+\contentsline {subsection}{\numberline {4.6}Requisiti}{13}{subsection.4.6}

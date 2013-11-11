@@ -1,0 +1,50 @@
+{\section{Tecnologie Utilizzate} \label{sec:tecnologie}
+In questa sezione vengono brevemente introdotte le tecnologie utilizzate nello sviluppo dell'applicazione, e vengono esposte le motivazioni che hanno portato alla scelta di tali tecnologie.
+\subsection{OpenCV}
+OpenCV è una libreria open source il cui obiettivo è quello di fornire un'API per il supporto al real-time computer vision. Essa è sviluppata da Intel ed attualmente manutenuta da \textit{itseez} (\url{http://itseez.com/}). OpenCV è rilasciata con licenza BSD open source, ed è libera per quanto riguarda l'utilizzo accademico e commercial. E' scritta in C/C++ e fornisce le interfacce per diversi linguaggi: C++, C, Python, MATLAB e Java. \\ \\
+E' cross platform e supporta i più comuni sistemi: Windows, Linux, Mac OS, iOS e Android. \\ 
+OpenCV viene ufficialmente rilasciata nel 1999, attualmente l'ultima versione stabile ufficiale è la 2.4.6. \\
+OpenCV è una libreria molto ampia e completa, è attualmente utilizzata in diverse applicazioni complesse (molte che riguardano la \textit{video surveillance}), inoltre ha alle spalle anni di sviluppo e una comunità di utenti molto vasta. \\
+L'intero sistema che l'azienda Pathflow vuole realizzare è basato su tale libreria, nelle specifiche del progetto di stage è stato specificato che essa verrà utilizzata per quanto riguarda le funzioni relative alla \textit{computer vision}. 
+
+\subsection{Qt}
+Dato che il progetto prevede la realizzazione di una minimale interfaccia grafica si è scelto di utilizzare il framework Qt. \\
+Le valutazioni che hanno portato a tale scelta, sono le seguenti:
+\begin{itemize}
+\item \textbf{Portabilità:} Qt è una libreria cross platform. Nelle specifiche del progetto è emerso che sarebbe stato fondamentale che il software fosse portabile. Altra caratteristica che ha influito è che Qt offre un buon supporto per effettuare manipolazioni grafiche e disegno, e dopo una ricerca si è rivelata la migliore alternativa tra le librerie disponibili (sono state valutate altre librerie alternative per il solo disegno, ma esse si sono rivelate meno complete e spesso scarsamente documentate).
+\item \textbf{Licenza: } Qt è infatti disponibile con licenza  GNU LGPL v2.1 ed è quindi possibile utilizzarlo senza che sia necessario rilasciare il sorgente del prodotto.
+\end{itemize}
+
+
+\subsection{MySQL}
+Il database scelto per il salvataggio dei dati è MySQL. Le motivazioni di tale scelta sono nuovamente la necessità di avere un \textit{DBMS} cross platforme e open source. In fase di studio sono state valutate anche altre alternative, che vengono qui brevemente elencate con i relativi difetti che hanno comportato la preferenza per MySQL:
+\begin{itemize}
+
+	\item \textbf{memsql} è un database che nasce per fornire supporto al real-time analytics. Viene preso in esame per le sue caratteristiche di velocità che renderebbero l'elaborazione del grande carico di dati molto veloce. Tali caratteristiche sono dovute al fatto che memsql è un database che risiede in memoria (RAM), e che non esegue direttamente le query, ma le converte in codice C++ (con GCC) e poi esegue il codice oggetto. Sebbene tali caratteristiche sono molto favorevoli si è preferito non utilizzare memsql in quanto essendo un progetto relativamente nuovo non ha ancora un supporto completo delle caratteristiche di un database relazionale e in quanto c'era la necessità di appoggiarsi su una soluzione solida che avrebbe dato certezze nel tempo.
+	
+	\item \textbf{mongoDB} è un database di tipo non relazionale (\textit{document-oriented}). Esso si basa su documenti stile JSON con schemi dinamici. Anche mongoDB è stato preso in considerazione per le sue caratteristiche di velocità che avrebbero fatto comodo per l'elaborazione dei moltissimi dati di tracciamento. Si è però preferito basarsi su un database di tipo relazionale in quanto la tipologia di dati che andava memorizzata era strettamente di tale tipo.
+\end{itemize}
+
+\subsection{MySQL wrapped}
+Per facilitare il \textit{system management} è stato scelto di usare una semplice libreria che fornisce le funzionalità di \textit{Object Relational Mapping} per un database di tipo MySQL. Tra le varie opzioni si è scelto di usare MySQL Wrapped, molto semplice e leggera. Essa inoltre fornisce un tool di generazione codice C++ a partire dall'output del comando \textit{mysqldump}. In tale modo si è potuto progettare prima lo schema del database e in seguito creare le rispettive classi con lo script \textit{sql2class}. MySQL Wrapped crea un ulteriore livello di astrazione a partire dall'API di connessione in C fornita da MySQL.
+
+\subsection{dxflib}
+Il file .DXF è un file di output di programmi di grafica vettoriali quali AutoCAD. Esso contiene al suo interno delle entità che definiscono gli elementi che descrivono un immagine (generalmente 2D). \\
+Il formato dei file .DXF è noto e ben documentato nei manuali forniti da AutoCAD.
+Per le funzionalità di parsing del file .DXF si è scelto di utilizzare dxflib: una libreria in C++ open source. Essa si occupa della lettura del file e definisce delle interfacce che possono essere ridefinite per ottenere il comportamento desiderato. I dettagli verranno trattati meglio in seguito.
+
+\subsection{CMake}
+CMake è un sistema di build cross platform e open source. Nasce per fornire un sistema di management del processo di build del software. Per ottenere ciò CMake utilizza dei metodi che non dipendono dal tipo di compilatore presente nel sistema operativo, ma da alcuni file di configurazione autonomi. CMake genera dei makefiles che possono in seguito essere eseguiti con il comando di make relativo all'ambiente utilizzato (\textit{make} per Linux, \textit{nmake} per Visual Studio etc). CMake supporta sia build di tipo \em{in-place} che \em{out-of-place}, supporta inoltre linking di tipo statico e dinamico. \\ \\
+Per il suo utilizzo è sufficiente creare dei file denominati CMakeLists.txt che contengono le direttive per la creazione del makefile. \\
+Cmake è stato rilasciato sotto licenza di tipo \textit{New BSD License}.\\
+L'utilizzo di CMake come sistema di build è stato imposto nelle prime fasi dello sviluppo, per mantenere la coerenza con quanto era già stato fatto e per rispettare le caratteristiche di cross platforming dell'applicativo da realizzare.
+
+
+
+
+
+
+
+
+
+
