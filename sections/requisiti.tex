@@ -1,135 +1,48 @@
+\subsubsection{Requisiti funzionali} \label{sec:reqfun} \begin{center} \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |} \caption{Tabella requisiti funzionali} \\ \hline \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline \endfirsthead \multicolumn{4}{c}% 
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\ \hline \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline \endhead \hline \multicolumn{4}{r}{\textit{Continued on next page}} \\ \endfoot \hline \endlastfoot 
+RF1 & Il sistema deve permettere all'utente di eseguire la calibrazione delle telecamere & Obbligatorio & UC1 \\ \hline 
+RF1.1 & Il sistema deve permettere all'utente di impostare le opzioni di calibrazione & Obbligatorio & UC1 UC1.1 \\ \hline 
+RF1.1.1 & Il sistema deve permettere all'utente di selezionare il numero di span spot per la calibrazione & Obbligatorio & UC1 UC1.1 UC1.1.1 \\ \hline 
+RF1.1.2 & Il sistema deve permettere all'utente di selezionare il numero di span spot per la calibrazione & Obbligatorio & UC1 UC1.1 UC1.1.2 \\ \hline 
+RF1.1.3 & Il sistema deve permettere all'utente di selezionare l'indirizzo identificativo della telecamera & Obbligatorio & UC1.1 UC1.1.3 \\ \hline 
+RF1.1.4 & Il sistema deve eseguire la calibrazione delle telecamere con le opzioni impostate & Obbligatorio & UC1.1 UC1.1.4 \\ \hline 
+RF1.2 & Il sistema deve permettere all'utente di visualizzare un video che utilizza i parametri di calibrazione per correggere i frame & Desiderabile & UC1 UC1.2 \\ \hline 
+RF2 & Il sistema deve permettere all'utente di configurare le telecamere & Obbligatorio & UC2 \\ \hline 
+RF2.1 & Il sistema deve permettere all'utente di inserire una nuova telecamera & Obbligatorio & UC2 UC2.1 \\ \hline 
+RF2.2 & Il sistema deve permettere all'utente di rimuovere una telecamera & Obbligatorio & UC2 UC2.2 \\ \hline 
+RF2.3 & Il sistema deve permettere all'utente di modificare e salvare in maniera persistente la configurazione di una telecamera esistente & Obbligatorio & UC2 UC2.3 \\ \hline 
+RF2.3.1 & Il sistema deve permettere all'utente di modificare il file di extrinsics di calibrazione di una telecamera & Desiderabile & UC2 UC2.3 UC2.3.1 \\ \hline 
+RF2.3.2 & Il sistema deve permettere all'utente di modificare il file di intrinsics di calibrazione di una telecamera & Desiderabile & UC2 UC2.3 UC2.3.2 \\ \hline 
+RF2.3.3 & Il sistema deve permettere all'utente di modificare il valore dell'altezza del frame utilizzato per una telecamera & Obbligatorio & UC2 UC2.3 UC2.3.3 \\ \hline 
+RF2.3.4 & Il sistema deve permettere all'utente di modificare il valore della larghezza del frame utilizzato per una telecamera & Obbligatorio & UC2 UC2.3 UC2.3.4 \\ \hline 
+RF2.3.5 & Il sistema deve permettere all'utente di modificare il file contenente la homography matrix utilizzata per la traduzione delle coordinate di tracking relative ad una telecamera & Obbligatorio & UC2 UC2.3 UC2.3.5 \\ \hline 
+RF2.4 & Il sistema deve permettere di salvare un frame preso dal video stream della telecamera & Obbligatorio & UC2 UC2.4 \\ \hline 
+RF2.5 & Il sistema deve permettere di convertire un file .DXF in un file .PNG che riproduce graficamente l'immagine contenuta nel file originale & Obbligatorio & Interno \\ \hline 
+RF2.6 & Il sistema deve permettere di calcolare la homography matrix utilizzata per la traduzione delle coordinate di tracking relative ad una telecamera & Obbligatorio & UC2 UC2.6 \\ \hline 
+RF2.7 & Il sistema deve permettere di selezionare una telecamera per la modifica & Obbligatorio & UC2 UC2.7 \\ \hline 
+RF3 & Il sistema deve permettere all'utente di generare delle statistiche a partire dai dati di tracking attualmente presenti & Obbligatorio & UC3 \\ \hline 
+RF3.1 & Il sistema deve permettere di trasformare i dati di tracking in coordinate di posizione all'interno di un immagine .PNG che descrive la planimetria del locale, e di salvare tali informazioni in maniera persistente & Obbligatorio & Interno \\ \hline 
+RF3.2 & Il sistema deve permettere di generare un heatmap grafica che fornisca una rappresentazione grafica dei dati di tracking & Obbligatorio & UC3 UC3.2 \\ \hline 
+RF3.3 & Il sistema deve permettere di generare delle statistiche numeriche a partire dai dati di tracking e di salvarle in maniera persistente & Facoltativo & UC3 UC3.3 \\ \hline 
+RF3.3.1 & Il sistema deve permettere di generare la statistica di \textit{Dwell Time} & Facoltativo & UC3 UC3.3 \\ \hline 
+RF3.3.2 & Il sistema deve permettere di generare la statistica di \textit{Counting} & Facoltativo & UC3 UC3.3 \\ \hline 
+RF3.3.3 & Il sistema deve permettere di generare la statistica di \textit{Waiting Line} & Facoltativo & UC3 UC3.3 \\ \hline 
+\end{longtable} 
+\end{center} 
 
-\subsubsection{Requisiti funzionali} \label{sec:reqfun}
-\begin{center}
-    \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |}
-    \caption{Tabella requisiti funzionali} \\
-    \hline 
-    \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline
-\endfirsthead
-\multicolumn{4}{c}%
-{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
-\hline
-\textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\
-\hline
-\endhead
-\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
-\endfoot
-\hline
-\endlastfoot
-    RF1 & Il sistema deve permettere all'utente di eseguire la calibrazione delle telecamere & Obbligatorio & UC1
-    \\ \hline
-    RF1.1 & Il sistema deve permettere all'utente di impostare le opzioni di calibrazione & Obbligatorio & UC1  UC1.1
-    \\ \hline
-    RF1.1.1 & Il sistema deve permettere all'utente di selezionare il numero di span spot per la calibrazione & Obbligatorio & UC1  UC1.1 UC1.1.1
-    \\ \hline
-    RF1.1.2 & Il sistema deve permettere all'utente di selezionare il numero di span spot per la calibrazione & Obbligatorio & UC1  UC1.1 UC1.1.2
-    \\ \hline
-    RF1.1.3 & Il sistema deve permettere all'utente di selezionare l'indirizzo identificativo della telecamera & Obbligatorio & UC1.1 UC1.1.3
-    \\ \hline
-    RF1.1.4 & Il sistema deve eseguire la calibrazione delle telecamere con le opzioni impostate & Obbligatorio & UC1.1 UC1.1.4
-    \\ \hline
-    RF1.2 & Il sistema deve permettere all'utente di visualizzare un video che utilizza i parametri di calibrazione per correggere i frame & Desiderabile & UC1  UC1.2
-    \\ \hline
-    RF2 & Il sistema deve permettere all'utente di configurare le telecamere & Obbligatorio & UC2
-    \\ \hline
-    RF2.1 & Il sistema deve permettere all'utente di inserire una nuova telecamera & Obbligatorio & UC2 UC2.1
-    \\ \hline
-    RF2.2 & Il sistema deve permettere all'utente di rimuovere una telecamera & Obbligatorio & UC2 UC2.2
-    \\ \hline
-    RF2.3 & Il sistema deve permettere all'utente di modificare e salvare in maniera persistente la configurazione di una telecamera esistente & Obbligatorio & UC2 UC2.3
-    \\ \hline
-    RF2.3.1 & Il sistema deve permettere all'utente di modificare il file di extrinsics di calibrazione di una telecamera & Desiderabile & UC2 UC2.3 UC2.3.1
-    \\ \hline
-    RF2.3.2 & Il sistema deve permettere all'utente di modificare il file di intrinsics di calibrazione di una telecamera & Desiderabile & UC2 UC2.3 UC2.3.2
-    \\ \hline
-    RF2.3.3 & Il sistema deve permettere all'utente di modificare il valore dell'altezza del frame utilizzato per una telecamera & Obbligatorio & UC2 UC2.3 UC2.3.3
-    \\ \hline
-    RF2.3.4 & Il sistema deve permettere all'utente di modificare il valore della larghezza del frame utilizzato per una telecamera & Obbligatorio & UC2 UC2.3 UC2.3.4
-    \\ \hline
-    RF2.3.5 & Il sistema deve permettere all'utente di modificare il file contenente la homography matrix utilizzata per la traduzione delle coordinate di tracking relative ad una telecamera & Obbligatorio & UC2 UC2.3 UC2.3.5
-    \\ \hline
-    RF2.4 & Il sistema deve permettere di salvare un frame preso dal video stream della telecamera & Obbligatorio & UC2 UC2.4
-    \\ \hline
-    RF2.5 & Il sistema deve permettere di convertire un file .DXF in un file .PNG che riproduce graficamente l'immagine contenuta nel file originale & Obbligatorio & UC2 UC2.5
-    \\ \hline
-    RF2.6 & Il sistema deve permettere di calcolare la homography matrix utilizzata per la traduzione delle coordinate di tracking relative ad una telecamera & Obbligatorio & UC2 UC2.6
-    \\ \hline
-    RF2.7 & Il sistema deve permettere di selezionare una telecamera per la modifica & Obbligatorio & UC2 UC2.7
-    \\ \hline
-    RF3 & Il sistema deve permettere all'utente di generare delle statistiche a partire dai dati di tracking attualmente presenti & Obbligatorio & UC3
-    \\ \hline
-    RF3.1 & Il sistema deve permettere di trasformare i dati di tracking in coordinate di posizione all'interno di un immagine .PNG che descrive la planimetria del locale, e di salvare tali informazioni in maniera persistente & Obbligatorio & UC3 UC3.1
-    \\ \hline
-    RF3.2 & Il sistema deve permettere di generare un heatmap grafica che fornisca una rappresentazione grafica dei dati di tracking & Obbligatorio & UC3 UC3.2
-   \\ \hline
-    RF3.3 & Il sistema deve permettere di generare delle statistiche numeriche a partire dai dati di tracking e di salvarle in maniera persistente & Facoltativo & UC3 UC3.1
-    
-    \\ \hline
-    RF3.3.1 & Il sistema deve permettere di generare la statistica di \textit{Dwell Time} & Facoltativo & UC3 UC3.3
-    
-    \\ \hline
-    RF3.3.2 & Il sistema deve permettere di generare la statistica di \textit{Counting} & Facoltativo & UC3 UC3.3
-    
-    \\ \hline
-    RF3.3.3 & Il sistema deve permettere di generare la statistica di \textit{Waiting Line} & Facoltativo & UC3 UC3.3
+\subsubsection{Requisiti di vincolo} \label{sec:reqvin} \begin{center} \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |} \caption{Tabella requisiti di vincolo} \\ \hline \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline \endfirsthead \multicolumn{4}{c}% 
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\ \hline \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline \endhead \hline \multicolumn{4}{r}{\textit{Continued on next page}} \\ \endfoot \hline \endlastfoot 
+RV1 & Il sistema dev'essere strutturato secondo un'architettura 3-tier & Obbligatorio & Capitolato \\ \hline 
+RV2 & Il sistema deve funzionare in ambiente Linux & Obbligatorio & Capitolato \\ \hline 
+RV3 & Il sistema deve funzionare in ambiente Windows & Facoltativo & Capitolato \\ \hline 
+RV4 & Il sistema deve funzionare in ambiente Mac OS X & Desiderabile & Capitolato \\ \hline 
+RV5 & Il sistema utilizzerà come strumento di build CMake, verranno quindi forniti i relativi file & Obbligatorio & Capitolato \\ \hline 
+\end{longtable} 
+\end{center} 
 
-    \end{longtable}
-\end{center}
-
-
-\subsubsection{Requisiti di vincolo}\label{sec:reqvin}
-\begin{center}
-    \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |}
-    \caption{Tabella requisiti di vincolo} \\
-    \hline 
-    \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline
-\endfirsthead
-\multicolumn{4}{c}%
-{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
-\hline
-\textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\
-\hline
-\endhead
-\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
-\endfoot
-\hline
-\endlastfoot
-    RV1 & Il sistema dev'essere strutturato secondo un'architettura 3-tier & Obbligatorio & Capitolato
-    \\ \hline
-    RV2 & Il sistema deve funzionare in ambiente Linux & Obbligatorio & Capitolato
-    \\ \hline
-    RV3 & Il sistema deve funzionare in ambiente Windows & Facoltativo & Capitolato
-    \\ \hline
-    RV4 & Il sistema deve funzionare in ambiente Mac OS X & Desiderabile & Capitolato
-    \\ \hline
-    RV5 & Il sistema utilizzerà come strumento di build CMake, verranno quindi forniti i relativi file & Obbligatorio & Capitolato
-    \\ \hline
-\end{longtable}
-\end{center}
-
-    
-\subsubsection{Requisiti di qualità}\label{sec:reqqua}
-\begin{center}
-    \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |}
-    \caption{Tabella requisiti di qualità} \\
-    \hline 
-    \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline
-\endfirsthead
-\multicolumn{4}{c}%
-{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
-\hline
-\textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\
-\hline
-\endhead
-\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
-\endfoot
-\hline
-\endlastfoot
-    RQ1 & Deve essere prodotta documentazione del codice sorgente del software & Obbligatorio & Interno
-    \\ \hline
-    RQ2 & Il sistema deve garantire la massima indipendenza tra le funzionalità & Desiderabile & Capitolato
-    \\ \hline
-\end{longtable}
-\end{center}
-
-
+\subsubsection{Requisiti di qualita} \label{sec:reqqua} \begin{center} \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |} \caption{Tabella requisiti di qualita} \\ \hline \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline \endfirsthead \multicolumn{4}{c}% 
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\ \hline \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline \endhead \hline \multicolumn{4}{r}{\textit{Continued on next page}} \\ \endfoot \hline \endlastfoot 
+RQ1 & Deve essere prodotta documentazione del codice sorgente del software & Obbligatorio & Interno \\ \hline 
+RQ2 & Il sistema deve garantire la massima indipendenza tra le funzionalità & Desiderabile & Capitolato \\ \hline 
+\end{longtable} 
+\end{center} 
