@@ -39,8 +39,27 @@ Anno Accademico 2012/2013 \\}
 \newpage
 \input{sections/tecnologie}
 \newpage
-\input{sections/analisi}
+\section{Analisi dei Requisiti} \label{sec:analisi}
 
+\subsection{Casi d'uso} \label{sec:casiduso}
+In questa sezione verranno elencati i casi d'uso del sistema che è oggetto dello stage. Dato che il sistema è stato pensato per rispondere solo all'intervento di un utente che si occupa di amministrazione e installazione l'unico attore che prenderemo in considerazione è \textbf{utente}. Per ogni caso d'uso verranno riportate:
+\begin{enumerate}
+\item DESCRIZIONE: contenuto del caso d'uso
+\item FLUSSO PRINCIPALE DEGLI EVENTI
+\item PRECONDIZIONI: asserzioni che sono valide prima dell'effettiva esecuzione del caso d'uso
+\item POSTCONDIZIONI: asserzioni che sono valide dopo l'esecuzione del caso d'uso
+\item SCENARI ALTERNATIVI: eventuali scenari alternativi che differiscono dal normale flusso del caso d'uso
+\end{enumerate}
+Ogni caso d'uso ha un identificativo stile UC\textit{n} dove n indica una posizione gerarchica.
+Ogni caso d'uso è posizionato all'interno della gerarchia che parte dal caso d'uso più generale UC0 (radice dell'albero). Per ogni caso d'uso figlio valgono le precondizioni del padre.
+\input{sections/casiduso}
+\newpage
+\subsection{Requisiti} \label{sec:req}
+In questa sezione verranno elencati i requisiti software che sono emersi dai casi d'uso individuati e dalle riunioni informative con i leader dello sviluppo. Per chiarezza si è cercato di tenere un rapporto 1:1 tra casi d'uso e requisiti.
+ \\ \\Nell'esposizione si userà la seguente convenzione: se un requisito padre ha figli con tipologia diversa tra di loro, il requisito padre assumerà la tipologia più vincolante tra quelle dei figli (esempio: se ci sono 2 figli, uno obbligatorio ed uno desiderabile il padre sarà qualificato come obbligatorio).
+\input{sections/requisiti}
+\input{sections/tr_req_uc}
+\newpage
 \input{sections/progettazione}
 \input{sections/specifica}
 \input{sections/verifica}
