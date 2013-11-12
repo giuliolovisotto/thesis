@@ -22,7 +22,7 @@
 \BOOKMARK [3][-]{subsubsection.4.5.3}{UC2.3: Modifica configurazione}{subsection.4.5}% 22
 \BOOKMARK [3][-]{subsubsection.4.5.4}{UC2.4: Cattura e salva un frame della telecamera}{subsection.4.5}% 23
 \BOOKMARK [3][-]{subsubsection.4.5.5}{UC2.5: Converti .DXF file in .PNG}{subsection.4.5}% 24
-\BOOKMARK [3][-]{subsubsection.4.5.6}{UC2.6: Converti .DXF file in .PNG}{subsection.4.5}% 25
+\BOOKMARK [3][-]{subsubsection.4.5.6}{UC2.6: Calcola homography matrix}{subsection.4.5}% 25
 \BOOKMARK [3][-]{subsubsection.4.5.7}{UC2.7: Seleziona telecamera}{subsection.4.5}% 26
 \BOOKMARK [2][-]{subsection.4.6}{UC3: Generazione statistiche}{section.4}% 27
 \BOOKMARK [3][-]{subsubsection.4.6.1}{UC3.1: Trasforma i dati di tracking}{subsection.4.6}% 28
@@ -32,3 +32,4 @@
 \BOOKMARK [3][-]{subsubsection.4.7.1}{Requisiti funzionali}{subsection.4.7}% 32
 \BOOKMARK [3][-]{subsubsection.4.7.2}{Requisiti di vincolo}{subsection.4.7}% 33
 \BOOKMARK [3][-]{subsubsection.4.7.3}{Requisiti di qualit\340}{subsection.4.7}% 34
+\BOOKMARK [3][-]{subsubsection.4.7.4}{Tracciamento requisiti}{subsection.4.7}% 35

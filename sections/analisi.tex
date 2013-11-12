@@ -139,7 +139,7 @@ Ogni caso d'uso è posizionato all'interno della gerarchia che parte dal caso d'
 		\item L'utente converte un file .DXF in .PNG (\hyperref[sec:uc2.5]{UC2.5})
 			\item L'utente calcola la matrice omografica relativa ad una telecamera (\hyperref[sec:uc2.6]{UC2.6})
 		\item L'utente seleziona una telecamera (\hyperref[sec:uc2.7]{UC2.7})
-\end{enumerate}   
+\end{enumerate}
  \item[\em{precondizione}] Il sistema è avviato e funzionante. \end{description}
 \begin{figure}[htpb]
 \centering
@@ -257,7 +257,7 @@ Ogni caso d'uso è posizionato all'interno della gerarchia che parte dal caso d'
   
  \end{description}
  
- \subsubsection{UC2.6: Converti .DXF file in .PNG} \label{sec:uc2.6}
+ \subsubsection{UC2.6: Calcola homography matrix} \label{sec:uc2.6}
  \begin{description}
  \item[\em{descrizione}] L'utente calcola la homography matrix per una particolare telecamera configurata.
   \item[\em{postcondizione}] Il file che contiene la \textit{homography matrix} è stato calcolato e salvato nel file system
@@ -297,6 +297,12 @@ Ogni caso d'uso è posizionato all'interno della gerarchia che parte dal caso d'
 \begin{description}
  \item[\em{descrizione}] L'utente indica al sistema di eseguire la trasformazione dei dati \textit{raw} di tracking
   \item[\em{postcondizione}] Il sistema ha trasformato i dati presenti nel database ed ha salvato i dati trasformati.
+  
+  \item[\em{scenari alternativi}]  \mbox{}
+    \begin{enumerate} 
+  \item La trasformazione fallisce, il sistema segnala l'errore e torna in attesa di eventi
+  \end{enumerate}  
+  
   \end{description}
   
 \subsubsection{UC3.2: Genera heatmap} \label{sec:uc3.2}
@@ -439,7 +445,7 @@ In questa sezione verranno elencati i requisiti software che sono emersi dai cas
 \subsubsection{Requisiti di qualità}\label{sec:reqqua}
 \begin{center}
     \begin{longtable}{ | l | p{5cm} | c | p{1.5cm} |}
-    \caption{Tabella requisiti di qualitù} \\
+    \caption{Tabella requisiti di qualità} \\
     \hline 
     \textbf{Codice} & \textbf{Descrizione} & \textbf{Tipologia} & \textbf{Fonte} \\ \hline
 \endfirsthead
@@ -460,4 +466,25 @@ In questa sezione verranno elencati i requisiti software che sono emersi dai cas
 \end{longtable}
 \end{center}
 
-    
+
+
+\subsubsection{Tracciamento requisiti}\label{sec:tracciamento}
+\begin{center}
+    \begin{longtable}{ | c | p{1.5cm} |}
+    \caption{Tabella tracciamento requisiti - casi d'uso} \\
+    \hline 
+    \textbf{Fonte} & \textbf{Requisiti}  \\ \hline
+\endfirsthead
+\multicolumn{2}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+ \textbf{Fonte} & \textbf{Requisiti} \\
+\hline
+\endhead
+\hline \multicolumn{2}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+
+\end{longtable}
+\end{center}

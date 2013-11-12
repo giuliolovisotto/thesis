@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.28)  11 NOV 2013 18:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.28)  12 NOV 2013 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,7 +492,7 @@ e
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<./images/logo_unipd.png, id=140, 943.525pt x 949.5475pt>
+<./images/logo_unipd.png, id=144, 943.525pt x 949.5475pt>
 File: ./images/logo_unipd.png Graphic file (type png)
 
 <use ./images/logo_unipd.png>
@@ -536,28 +536,33 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ]
 (./sections/introduzione.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--28
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--28
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
@@ -576,7 +581,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-<./images/pianificazione.png, id=247, 853.1875pt x 547.04375pt>
+<./images/pianificazione.png, id=254, 853.1875pt x 547.04375pt>
 File: ./images/pianificazione.png Graphic file (type png)
 
 <use ./images/pianificazione.png>
@@ -617,13 +622,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
                    \relax 
 l.41 \newpage
               [6] (./sections/analisi.tex
-<./images/uc0.png, id=269, 809.0225pt x 519.9425pt>
+<./images/uc0.png, id=275, 809.0225pt x 519.9425pt>
 File: ./images/uc0.png Graphic file (type png)
  <use ./images/uc0.png>
 Package pdftex.def Info: ./images/uc0.png used on input line 28.
 (pdftex.def)             Requested size: 323.60327pt x 207.97331pt.
 
-<./images/uc1.png, id=273, 666.49pt x 506.89375pt>
+<./images/uc1.png, id=279, 666.49pt x 506.89375pt>
 File: ./images/uc1.png Graphic file (type png)
  <use ./images/uc1.png>
 Package pdftex.def Info: ./images/uc1.png used on input line 48.
@@ -639,7 +644,7 @@ l.56
                    \relax 
 l.56 
       [8 <./images/uc0.png> <./images/uc1.png>]
-<./images/uc11.png, id=298, 574.145pt x 476.78125pt>
+<./images/uc11.png, id=304, 574.145pt x 476.78125pt>
 File: ./images/uc11.png Graphic file (type png)
  <use ./images/uc11.png>
 Package pdftex.def Info: ./images/uc11.png used on input line 74.
@@ -651,123 +656,73 @@ Overfull \hbox (8.49174pt too wide) in paragraph at lines 113--114
  (UC1.1.1 - UC1.1.2
  []
 
-[10] <./images/uc2.png, id=331, 572.1375pt x 562.1pt>
+[10] <./images/uc2.png, id=337, 572.1375pt x 562.1pt>
 File: ./images/uc2.png Graphic file (type png)
  <use ./images/uc2.png>
 Package pdftex.def Info: ./images/uc2.png used on input line 146.
 (pdftex.def)             Requested size: 228.85094pt x 224.83601pt.
 
-[11 <./images/uc2.png>] <./images/uc23.png, id=352, 621.32124pt x 474.77374pt>
+[11 <./images/uc2.png>] <./images/uc23.png, id=358, 621.32124pt x 474.77374pt>
 File: ./images/uc23.png Graphic file (type png)
 
 <use ./images/uc23.png>
 Package pdftex.def Info: ./images/uc23.png used on input line 190.
 (pdftex.def)             Requested size: 248.5241pt x 189.90613pt.
  [12 <./images/uc23.png>] [13]
-<./images/uc3.png, id=380, 593.21625pt x 411.5375pt>
+<./images/uc3.png, id=386, 593.21625pt x 411.5375pt>
 File: ./images/uc3.png Graphic file (type png)
  <use ./images/uc3.png>
 Package pdftex.def Info: ./images/uc3.png used on input line 291.
 (pdftex.def)             Requested size: 237.28229pt x 164.61208pt.
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
 
  []
 
 [15 <./images/uc3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 347--347
+Underfull \hbox (badness 2359) in paragraph at lines 353--353
 \OT1/cmr/m/n/10 all'utente di es-eguire la cal-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
-[]|\OT1/cmr/m/n/10 UC1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
-\OT1/cmr/m/n/10 all'utente di se-lezionare il
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 351--351
-\OT1/cmr/m/n/10 nu-mero di span spot per la
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-[]|\OT1/cmr/m/n/10 UC1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-\OT1/cmr/m/n/10 UC1.1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
-\OT1/cmr/m/n/10 all'utente di se-lezionare il
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 353--353
-\OT1/cmr/m/n/10 nu-mero di span spot per la
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
-[]|\OT1/cmr/m/n/10 UC1
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
-\OT1/cmr/m/n/10 UC1.1
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 355--355
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-
- []
-
-
-Underfull \hbox (badness 6063) in paragraph at lines 355--355
-\OT1/cmr/m/n/10 tere all'utente di se-lezionare
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--355
-\OT1/cmr/m/n/10 l'indirizzo iden-ti-fica-tivo della
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 355--356
-[]|\OT1/cmr/m/n/10 UC1.1
+[]|\OT1/cmr/m/n/10 UC1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\OT1/cmr/m/n/10 all'utente di se-lezionare il
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 357--357
+\OT1/cmr/m/n/10 nu-mero di span spot per la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 357--358
-[]|\OT1/cmr/m/n/10 UC1.1
+[]|\OT1/cmr/m/n/10 UC1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+\OT1/cmr/m/n/10 UC1.1
  []
 
 
@@ -776,13 +731,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--359
  []
 
 
-Underfull \hbox (badness 8075) in paragraph at lines 359--359
-\OT1/cmr/m/n/10 all'utente di vi-su-al-iz-zare un
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
+\OT1/cmr/m/n/10 all'utente di se-lezionare il
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 359--359
-\OT1/cmr/m/n/10 video che uti-lizza i parametri
+Underfull \hbox (badness 2393) in paragraph at lines 359--359
+\OT1/cmr/m/n/10 nu-mero di span spot per la
  []
 
 
@@ -791,23 +746,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--360
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+\OT1/cmr/m/n/10 UC1.1
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 361--361
-\OT1/cmr/m/n/10 all'utente di con-fig-u-rare le
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
+Underfull \hbox (badness 6063) in paragraph at lines 361--361
+\OT1/cmr/m/n/10 tere all'utente di se-lezionare
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\OT1/cmr/m/n/10 l'indirizzo iden-ti-fica-tivo della
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+[]|\OT1/cmr/m/n/10 UC1.1
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 363--364
-[]|\OT1/cmr/m/n/10 UC2
+[]|\OT1/cmr/m/n/10 UC1.1
  []
 
 
@@ -816,13 +781,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--365
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--365
-\OT1/cmr/m/n/10 all'utente di rimuo-vere una
+Underfull \hbox (badness 8075) in paragraph at lines 365--365
+\OT1/cmr/m/n/10 all'utente di vi-su-al-iz-zare un
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 365--365
+\OT1/cmr/m/n/10 video che uti-lizza i parametri
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 365--366
-[]|\OT1/cmr/m/n/10 UC2
+[]|\OT1/cmr/m/n/10 UC1
  []
 
 
@@ -831,13 +801,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--367
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 367--367
-\OT1/cmr/m/n/10 fig-u-razione di una tele-cam-era
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-[]|\OT1/cmr/m/n/10 UC2
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
+\OT1/cmr/m/n/10 all'utente di con-fig-u-rare le
  []
 
 
@@ -851,23 +816,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--370
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
-\OT1/cmr/m/n/10 UC2.3
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 371--371
 []|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-[]|\OT1/cmr/m/n/10 UC2
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+\OT1/cmr/m/n/10 all'utente di rimuo-vere una
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\OT1/cmr/m/n/10 UC2.3
+[]|\OT1/cmr/m/n/10 UC2
  []
 
 
@@ -876,13 +836,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--373
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-[]|\OT1/cmr/m/n/10 UC2
+Underfull \hbox (badness 2134) in paragraph at lines 373--373
+\OT1/cmr/m/n/10 fig-u-razione di una tele-cam-era
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 373--374
-\OT1/cmr/m/n/10 UC2.3
+[]|\OT1/cmr/m/n/10 UC2
  []
 
 
@@ -891,11 +851,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--375
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 375--375
-\OT1/cmr/m/n/10 ore della larghezza del frame
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 375--376
 []|\OT1/cmr/m/n/10 UC2
  []
@@ -911,16 +866,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--377
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 377--377
-\OT1/cmr/m/n/10 all'utente di mod-i-fi-care il file
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--377
-\OT1/cmr/m/n/10 delle co-or-di-nate di track-ing
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 377--378
 []|\OT1/cmr/m/n/10 UC2
  []
@@ -928,6 +873,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
 Underfull \hbox (badness 10000) in paragraph at lines 377--378
 \OT1/cmr/m/n/10 UC2.3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -936,8 +886,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--380
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 381--381
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+\OT1/cmr/m/n/10 UC2.3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 381--381
+\OT1/cmr/m/n/10 ore della larghezza del frame
  []
 
 
@@ -946,8 +906,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--382
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+\OT1/cmr/m/n/10 UC2.3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 383--383
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care il file
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
+\OT1/cmr/m/n/10 delle co-or-di-nate di track-ing
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 383--384
 []|\OT1/cmr/m/n/10 UC2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+\OT1/cmr/m/n/10 UC2.3
  []
 
 
@@ -956,78 +941,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--386
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-\OT1/cmr/m/n/10 all'utente di gener-are delle
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 389--389
+Underfull \hbox (badness 1107) in paragraph at lines 387--387
 []|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 389--389
-\OT1/cmr/m/n/10 trasfor-mare i dati di track-
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+[]|\OT1/cmr/m/n/10 UC2
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
-[]|\OT1/cmr/m/n/10 UC3
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 391--391
-[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
- []
-
-
-Underfull \hbox (badness 5417) in paragraph at lines 391--391
-\OT1/cmr/m/n/10 for-nisca una rap-p-re-sen-tazione
+[]|\OT1/cmr/m/n/10 UC2
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 391--392
-[]|\OT1/cmr/m/n/10 UC3
+[]|\OT1/cmr/m/n/10 UC2
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 393--393
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\OT1/cmr/m/n/10 all'utente di gener-are delle
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 395--395
 []|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
-Underfull \hbox (badness 3989) in paragraph at lines 393--393
-\OT1/cmr/m/n/10 gener-are delle statis-tiche nu-
+Underfull \hbox (badness 5008) in paragraph at lines 395--395
+\OT1/cmr/m/n/10 trasfor-mare i dati di track-
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 393--393
-\OT1/cmr/m/n/10 meriche a par-tire dai dati di
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 []|\OT1/cmr/m/n/10 UC3
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 396--396
+Underfull \hbox (badness 1107) in paragraph at lines 397--397
 []|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 5417) in paragraph at lines 397--397
+\OT1/cmr/m/n/10 for-nisca una rap-p-re-sen-tazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 []|\OT1/cmr/m/n/10 UC3
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 399--399
 []|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 399--399
+\OT1/cmr/m/n/10 gener-are delle statis-tiche nu-
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 399--399
+\OT1/cmr/m/n/10 meriche a par-tire dai dati di
  []
 
 
@@ -1045,22 +1030,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--403
 []|\OT1/cmr/m/n/10 UC3
  []
 
+
+Underfull \hbox (badness 1107) in paragraph at lines 405--405
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+[]|\OT1/cmr/m/n/10 UC3
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 408--408
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+[]|\OT1/cmr/m/n/10 UC3
+ []
+
 [16] [17]
-Overfull \hbox (3.43211pt too wide) in paragraph at lines 425--426
-[]|\OT1/cmr/m/n/10 Capitolato| 
- []
-
-
-Overfull \hbox (3.43211pt too wide) in paragraph at lines 427--428
-[]|\OT1/cmr/m/n/10 Capitolato| 
- []
-
-
-Overfull \hbox (3.43211pt too wide) in paragraph at lines 429--430
-[]|\OT1/cmr/m/n/10 Capitolato| 
- []
-
-
 Overfull \hbox (3.43211pt too wide) in paragraph at lines 431--432
 []|\OT1/cmr/m/n/10 Capitolato| 
  []
@@ -1071,15 +1061,63 @@ Overfull \hbox (3.43211pt too wide) in paragraph at lines 433--434
  []
 
 
-Overfull \hbox (3.43211pt too wide) in paragraph at lines 458--459
+Overfull \hbox (3.43211pt too wide) in paragraph at lines 435--436
+[]|\OT1/cmr/m/n/10 Capitolato| 
+ []
+
+
+Overfull \hbox (3.43211pt too wide) in paragraph at lines 437--438
+[]|\OT1/cmr/m/n/10 Capitolato| 
+ []
+
+
+Overfull \hbox (3.43211pt too wide) in paragraph at lines 439--440
+[]|\OT1/cmr/m/n/10 Capitolato| 
+ []
+
+
+Overfull \hbox (3.43211pt too wide) in paragraph at lines 464--465
 []|\OT1/cmr/m/n/10 Capitolato| 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
-(./sections/progettazione.tex) (./sections/specifica.tex)
+ [18]
+Overfull \hbox (2.26646pt too wide) in paragraph at lines 476--476
+[]|\OT1/cmr/bx/n/10 Requisiti| 
+ []
+
+
+Overfull \hbox (2.54373pt too wide) in alignment at lines 473--477
+ [] [] 
+ []
+
+
+Overfull \hbox (2.26646pt too wide) in paragraph at lines 481--482
+[]|\OT1/cmr/bx/n/10 Requisiti| 
+ []
+
+
+Overfull \hbox (2.54373pt too wide) in alignment at lines 477--483
+ [] [] 
+ []
+
+
+Overfull \hbox (2.54373pt too wide) in alignment at lines 483--485
+ [] [] 
+ []
+
+
+Overfull \hbox (2.54373pt too wide) in alignment at lines 485--487
+ [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4 on input line 489.
+
+) (./sections/progettazione.tex) (./sections/specifica.tex)
 (./sections/verifica.tex) (./sections/conclusioni.tex) [19]
 (./bibliography/bibliography.tex
 Underfull \hbox (badness 1189) in paragraph at lines 16--17
@@ -1088,8 +1126,11 @@ http : / / images . autodesk . com / adsk / files / acad _
  []
 
 )
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
- [20]
+[20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (build/thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
@@ -1103,10 +1144,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8186 strings out of 493485
- 117766 string characters out of 3143525
- 246424 words of memory out of 3000000
- 11223 multiletter control sequences out of 15000+200000
+ 8192 strings out of 493485
+ 117842 string characters out of 3143525
+ 246519 words of memory out of 3000000
+ 11226 multiletter control sequences out of 15000+200000
  7762 words of font info for 30 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,10n,45p,1143b,658s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1119,10 +1160,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on build/thesis.pdf (28 pages, 505185 bytes).
+Output written on build/thesis.pdf (28 pages, 506187 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 432 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

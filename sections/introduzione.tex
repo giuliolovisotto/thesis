@@ -1,13 +1,16 @@
 
 \section{Introduzione} \label{sec:greetings}
 \subsection{Scopo del documento} %\label{sec:greetings}
-Il seguente documento intende descrivere in maniera dettagliata il contenuto formativo del progetto di stage svolto da Giulio Lovisotto presso la ditta Pathflow s.r.l. L'esposizione verrà strutturata e ordinata seguendo gli standard dello sviluppo software. 
+Il seguente documento intende descrivere in maniera dettagliata il contenuto formativo del progetto di stage svolto da Giulio Lovisotto presso la ditta Pathflow s.r.l. L'esposizione verrà strutturata e ordinata seguendo le classiche fasi dello sviluppo software: verrà prima esposta l'analisi, poi i dettagli della progettazione ed infine le informazioni riguardanti i test.
 
-\subsection{Pathflow} \label{ssec:pathflow}
+\subsection{Pathflow} \label{sec:pathflow}
+
+*************DA SISTEMARE*************** \\
 Pathflow è una start up attualmente incubata in H-Farm e WCap. L'idea originale, proposta da Alberto Gangarossa era di creare qTracker. Con il tempo l'idea si è evoluta fino allo stato attuale. 
 *manca qalcosa sui premi*
 Il team di Pathflow si costruisce in giugno 2013 quando vengono coinvolti nel progetto Marco Baratto, Matteo Noris, Riccardo Greguol e in seguito Alon Muroch. Pathflow riceve un grant da parte di WCap, e in seguito da altri finanziatori (tra i quali H-Farm). L'azienda chiude la fase di seed ad agosto 2013 dopo aver raccolto 130k. Il prodotto entra in fase di beta testing ad ottobre 2013 in 2 store di Telecom Italia situati a Roma.
-Qua c'è il sito di Pathflow \cite{pathflow.co}
+Qua c'è il sito di Pathflow \url{http://pathflow.co} \\
+************************************************
 
 \subsection{Progetto} \label{ssec:progetto}
 Il progetto riguarda la realizzazione di un sistema basato su telecamere per la raccolta di dati di tracciamento all'interno dei retail store. Il sistema ha come fine quello di elaborare statistiche a partire dai dati raccolti. Le statistiche in questione serviranno a fornire alle figure professionali che si occupano del marketing (quali visual merchandiser e marketing manager) la possibilità di migliorare l'esperienza di acquisto del cliente e di ottimizzare i flussi di vendita.\\ \\
@@ -20,9 +23,9 @@ Dato che il sistema è complesso e vasto nel suo insieme esso è stato diviso in
 \end{itemize}
 Il progetto proposto per lo stagista consiste nella realizzazione del modulo di back-end core.\\
 Le funzionalità di tale sottosistema comprendono una parte di configurazione del sistema e una parte di generazione statistiche e dati grafici. \\ \\
-Nello specifico esso deve permettere l'impostazione dei valori di configurazione delle telecamere, e salvare tali dati in maniera persistente, evitando che vengano perse le opzioni salvate. Tale funzionalità si può suddividere ulteriormente tra vera e propria calibrazione delle telecamere e impostazione di criteri di mappatura dei dati di tracking (il significato verrà approndito in seguito). \\
-La parte di statistiche comprende la generazione di un \textit{heatmap} della planimetria del locale. Essa a partire dai dati di tracciamento dev'essere in grado di produrre una visualizzazione grafica delle diverse concentrazioni di movimento all'interno dell'area del locale.\\
-La planimetria del locale verrà fornita dal cliente in formato vettoriale .DXF. \\ \\
+Nello specifico esso deve permettere l'impostazione dei valori di configurazione delle telecamere, e salvare tali dati in maniera persistente, evitando che vengano perse le opzioni salvate. Tale funzionalità si può suddividere ulteriormente tra vera e propria calibrazione delle telecamere e impostazione di criteri di trasformazione dei dati di tracking (il significato verrà approndito in seguito). \\
+La parte di statistiche comprende la generazione di un \textit{heatmap} della planimetria del locale. Essa a partire dai dati di tracciamento dev'essere in grado di produrre una visualizzazione grafica delle diverse concentrazioni di movimento all'interno dell'area del locale. La planimetria del locale verrà fornita dal cliente in formato vettoriale .DXF. \\ \\Deve essere inoltre in grado di generare alcune statistiche che riguardano: il conteggio delle persone presenti (\textit{counting}), il tempo di attesa davanti alla cassa (\textit{waiting line}), il tempo di ritorno nel locale (\textit{dwell time}), e il tempo trascorso all'interno di alcune aree preimpostate (\textit{bounce rate}).\\
+
 Tale software è inteso per l'utilizzo solo da parte di un utente amministratore (interfaccia grafica molto semplice), che al momento dell'installazione si preoccupa di configurare i dati necessari per il corretto funzionamento del sistema nel suo insieme. Il sistema verrà poi impostato per eseguire periodicamente il trasferimento dei dati generati nel server locale (quello che risiede nello store) verso il server cloud.
 Il software dovrà funzionare sulle principali piattaforme (Mac OS/Linux/Windows).
 
