@@ -10,3 +10,6 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Espressione matematica di una relazione projective transform}}{22}{figure.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces Radial distortion effect}}{23}{figure.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Tangential distortion effect}}{23}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{24}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{25}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{26}{figure.15}

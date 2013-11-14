@@ -68,9 +68,42 @@ Si potrà vedere come OpenCV offre un API di alto livello per la soluzione del p
 
 \subsection{Tracking data transformation}
 
+Il sistema di \textit{video analytics} utilizza le funzionalità offerte da OpenCV per tracciare i movimenti delle persone. Non scenderemo nei dettagli di come ciò viene effettivamente implementato, basti sapere che il sistema è in grado di tracciare diversi oggetti contemporaneamente. Si riporta uno screenshot che mostra il risultato di tale operazione in ~\ref{fig:track1}.
+\begin{figure}[htpb] 
+\centering 
+\includegraphics[scale=0.4]{./images/track1.png} 
+\caption{Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati} 
+\label{fig:track1}
+\end{figure} 
+ L'output di tale processo consiste di un timestamp e delle coordinate (\textit{x} e \textit{y}) che esprimono la posizione dell'oggetto all'interno del frame della telecamera. Il sistema di coordinate che OpenCV utilizza per esprimere tali posizioni considera la posizione dell'origine in basso a sinistra del frame, ed ovviamente si basa su interi in quanto considera come unità sugli assi il pixel (ogni pixel nel frame indica una posizione).
+Tali dati contengono le informazioni di tracciamento ma non sono direttamente utilizzabili in quanto il tipo di elaborazione che il progetto si propone di fare si basa su delle coordinate che non sono relative ad un particolare frame ma che sono relative ad una piantina (planimetria) del locale dove sono presenti le telecamere. Per questo è necessario che tali dati (che chiameremo \textit{raw}) vengano trattati per essere trasformati in dati che contengono l'informazione pulita e utilizzabile. Per ottenere tutto ciò è necessario avvalersi di una matrice di trasformazione (\textit{homography matrix}).
 \subsubsection{Homography matrix}
 
-\subsubsection{Qt coordinate system}
+Nella \textit{computer vision} viene definita come \textit{planar homography} una relazione che esprime una mappatura da un piano ad un altro. Tale relazione può essere espressa da una matrice (solitamente indicata con \textit{H}), la quale applicata ad un vettore che esprime una posizione nel piano di partenza dà come risultato una posizione nel piano di arrivo. Per calcolare tale matrice è sufficiente avere 4 punti sul piano di partenza e le loro corrispettive coordinate sul piano di arrivo. In figura ~\ref{fig:track2} si riporta una rappresentazione grafica di tale situazione.
+\begin{figure}[htpb] 
+\centering 
+\includegraphics[scale=1.0]{./images/track2.png} 
+\caption{I 4 punti necessari per il calcolo della homography matrix} 
+\label{fig:track2}
+\end{figure} 
+
+Una volta che si hanno a disposizione i punti sui due piani ci sono degli algoritmi noti per calcolare la soluzione del sistema (la matrice). Una volta ottenuta la \textit{homography matrix} è facile anche effettuare l'operazione inversa: la conversione di un punto sul piano di arrivo nel suo corrispettivo nel piano di partenza.  \\ \\
+All'interno del progetto verrà definito come piano di partenza il "pavimento" del locale dal punto di vista della telecamera, e come piano di arrivo la planimetria del locale. Una volta calcolata la relazione tra i due piani essa verrà utilizzata per trasformare i dati \textit{raw} che escono in output dal processo di tracking in dati puliti (relativi alla planimetria del locale).
+Vedremo che OpenCV offre delle funzioni di alto livello per effettuare tale operazione.
+
+\subsection{Qt drawings}
+Qt offre molte facilitazioni per eseguire manipolazioni grafiche. All'interno del progetto è stato necessario prima di tutto convertire un immagine contenuta in un file .DXF in un immagine .PNG. Per fare ciò si sono importate alcuni degli elementi presenti nell'immagine vettoriale (i più importanti) e si sono convertiti in elementi \textbf{disegnabili} (per i quali era presente una funzione che permettesse la loro fedele rappresentazione) dalle classi di Qt. Per fare ciò lo stagista ha dovuto tenere conto delle differenze tra il sistema di coordinate utilizzato in un file .DXF e la loro rappresentazione in un sistema Qt-style. Infatti all'interno delle librerie Qt (in particolare ci riferiamo alla classe QPainter che è stata effettivamente utilizzata per disegnare) il sistema di coordinate non è standard (con origine in basso a sinistra) ma è rovesciato specularmente rispetto all'asse x. Ciò ha comportato un ulteriore passaggio. Si riporta in figura ~\ref {fig:qtgrad1} un'immagine chiarificatrice di tale situazione.
 
 
-\subsection{Qt gradients}
+\begin{figure}[htpb] 
+\centering 
+\includegraphics[scale=0.5]{./images/qtgrad1.png} 
+\caption{Sistema di coordinate utilizzato per il disegno su Qt} 
+\label{fig:qtgrad1}
+\end{figure} 
+
+Tale complicazione è sorta anche nell'interpretazione dei dati in output dal sistema di \textit{video analytics} utilizzati per il disegno dell'\textit{heatmap}. Tali dati (come per gli elementi nel file .DXF) utilizzano un sistema di coordinate standard (origine in basso a sinistra). E' quindi stato necessario tenere conto di tale diversità per produrre un risultato coerente.  \\ \\
+Per il disegno dell'\textit{heatmap} è stato necessario l'utilizzo di \textbf{gradienti di colore}. Nella computer graphics un gradiente è una struttura che definisce una regione la cui colorazione dipende dalla posizione relativa alla "zona" coperta dal gradiente. 
+Per il disegno di una mappa di calore i gradienti utilizzati sono di tipo \textit{radial}: essi sono definiti come delle zone circolari che hanno un determinato colore nel loro centro e un diverso colore ai bordi. Il colore effettivo dei punti interni è calcolato in base alla distanza dal centro del cerchio. \\
+Fortunatamente Qt mette a disposizione la classe QGradient (e  derivate) che implementano il \textit{fillings} di particolari zone con gradienti.
+
