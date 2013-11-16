@@ -63,7 +63,7 @@ La seconda è un risultato dei difetti di assemblaggio che portano la lente a no
 
 Ora che è stato descritto come identificare a livello matematico le proprietà \textit{intrinsics} e \textit{distortion} possiamo vedere le tecniche con le quali si prendono in considerazione tali parametri per correggere i frame catturati dalla telecamera.\\
 Le tecniche di calibrazione si basano sul seguente criterio: viene esposto mostrato alla camera un oggetto di cui si conosce la struttura, e si valutano le differenze tra le caratteristiche dell'oggetto catturato dalla camera (quindi proiettato sull'\textit{image plane}) con le sue note caratteristiche fisiche. \\Per ogni immagine che una telecamera cattura di un oggetto, è possibile descrivere la sua posizione rispetto al sistema di coordinate della telecamera in termini di rotazione e traslazione. Possiamo quindi definire una relazione tra la posizione nello spazio di un oggetto e le sue coordinate nel frame catturato dalla telecamera. Combinando tale relazione con le correzioni derivanti dai parametri di \textit{intrinsics} si ottiene un sistema di equazioni che risolto rappresenta la soluzione al problema della calibrazione.\\
-In linea di principio qualsiasi oggetto può essere usato ai fini di tale operazione, ma è pratico utilizzare un oggetto che presenta caratteristiche regolari (pattern). All'interno del progetto verrà utilizzata una immagine di una scacchiera con dimensioni (numero di celle) predefinite.  \\
+In linea di principio qualsiasi oggetto può essere usato ai fini di tale operazione, ma è pratico utilizzare un oggetto che presenta caratteristiche regolari (pattern). All'interno del progetto è stata  utilizzata una immagine di una scacchiera con dimensioni (numero di celle) predefinite.  \\
 Si potrà vedere come OpenCV offre un API di alto livello per la soluzione del problema della calibrazione con l'utilizzo di una scacchiera.
 
 \subsection{Tracking data transformation}
@@ -87,8 +87,9 @@ Nella \textit{computer vision} viene definita come \textit{planar homography} un
 \label{fig:track2}
 \end{figure} 
 
-Una volta che si hanno a disposizione i punti sui due piani ci sono degli algoritmi noti per calcolare la soluzione del sistema (la matrice). Una volta ottenuta la \textit{homography matrix} è facile anche effettuare l'operazione inversa: la conversione di un punto sul piano di arrivo nel suo corrispettivo nel piano di partenza.  \\ \\
-All'interno del progetto verrà definito come piano di partenza il "pavimento" del locale dal punto di vista della telecamera, e come piano di arrivo la planimetria del locale. Una volta calcolata la relazione tra i due piani essa verrà utilizzata per trasformare i dati \textit{raw} che escono in output dal processo di tracking in dati puliti (relativi alla planimetria del locale).
+Una volta che si hanno a disposizione i punti sui due piani ci sono degli algoritmi noti per calcolare la soluzione del sistema (la matrice). Una volta ottenuta la \textit{homography matrix} è facile anche effettuare l'operazione inversa: la conversione di un punto sul piano di arrivo nel suo corrispettivo nel piano di partenza. L'applicazione della matrice ad un punto per ottenere il suo corrispettivo nell'altro piano si chiama \textit{perspective transformation}. \\
+Gli utilizzi delle \textit{homograpy matrices} non si limitano a quanto è stato qui esposto, ma non indagheremo sulle loro diverse applicazioni, basti sapere che quanto è stato utilizzato nel progetto è solo una minima parte dei possibili significati e usi di tali matrici. \\ \\
+Nell'implementazione del sistema è stato definito come piano di partenza il "pavimento" del locale dal punto di vista della telecamera, e come piano di arrivo la planimetria del locale. Una volta calcolata la relazione tra i due piani essa verrà utilizzata per trasformare i dati \textit{raw} che escono in output dal processo di tracking in dati puliti (relativi alla planimetria del locale).
 Vedremo che OpenCV offre delle funzioni di alto livello per effettuare tale operazione.
 
 \subsection{Qt drawings}
