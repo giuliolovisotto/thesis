@@ -14,6 +14,7 @@
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
+\catcode 95\active
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduzione}{1}{section.1}}
 \newlabel{sec:greetings}{{1}{1}{Introduzione\relax }{section.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Scopo del documento}{1}{subsection.1.1}}
@@ -125,38 +126,62 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Requisiti di qualita}{19}{subsubsection.4.2.3}}
 \newlabel{sec:reqqua}{{4.2.3}{19}{Requisiti di qualita\relax }{subsubsection.4.2.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{Tabella requisiti di qualita}}{19}{table.3}}
-\gdef \LT@iv {\LT@entry 
-    {6}{270.77832pt}\LT@entry 
-    {2}{54.67912pt}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Tracciamento requisiti}{20}{subsubsection.4.2.4}}
-\newlabel{sec:tracciamento}{{4.2.4}{20}{Tracciamento requisiti\relax }{subsubsection.4.2.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{Tabella tracciamento requisiti - casi d'uso}}{20}{table.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Problematiche}{21}{section.5}}
-\newlabel{sec:prob}{{5}{21}{Problematiche\relax }{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Camera Calibration}{21}{subsection.5.1}}
-\newlabel{sec:camcalib}{{5.1}{21}{Camera Calibration\relax }{subsection.5.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Intrinsics parameters}{21}{subsubsection.5.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Rappresenzazione di un pinhole camera model}}{21}{figure.8}}
-\newlabel{fig:calib1}{{8}{21}{Rappresenzazione di un pinhole camera model\relax }{figure.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Rappresenzazione di un pinhole camera model rovesciato}}{22}{figure.9}}
-\newlabel{fig:calib2}{{9}{22}{Rappresenzazione di un pinhole camera model rovesciato\relax }{figure.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Espressione matematica di una relazione projective transform}}{22}{figure.10}}
-\newlabel{fig:calib3}{{10}{22}{Espressione matematica di una relazione projective transform\relax }{figure.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Distortion parameters}{23}{subsubsection.5.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Radial distortion effect}}{23}{figure.11}}
-\newlabel{fig:calib4}{{11}{23}{Radial distortion effect\relax }{figure.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Tangential distortion effect}}{23}{figure.12}}
-\newlabel{fig:calib5}{{12}{23}{Tangential distortion effect\relax }{figure.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}Calibrazione}{23}{subsubsection.5.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Tracking data transformation}{24}{subsection.5.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{24}{figure.13}}
-\newlabel{fig:track1}{{13}{24}{Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati\relax }{figure.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Homography matrix}{25}{subsubsection.5.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{25}{figure.14}}
-\newlabel{fig:track2}{{14}{25}{I 4 punti necessari per il calcolo della homography matrix\relax }{figure.14}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Qt drawings}{26}{subsection.5.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{26}{figure.15}}
-\newlabel{fig:qtgrad1}{{15}{26}{Sistema di coordinate utilizzato per il disegno su Qt\relax }{figure.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Problematiche}{20}{section.5}}
+\newlabel{sec:prob}{{5}{20}{Problematiche\relax }{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Camera Calibration}{20}{subsection.5.1}}
+\newlabel{sec:camcalib}{{5.1}{20}{Camera Calibration\relax }{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Intrinsics parameters}{20}{subsubsection.5.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Rappresenzazione di un pinhole camera model}}{20}{figure.8}}
+\newlabel{fig:calib1}{{8}{20}{Rappresenzazione di un pinhole camera model\relax }{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Rappresenzazione di un pinhole camera model rovesciato}}{21}{figure.9}}
+\newlabel{fig:calib2}{{9}{21}{Rappresenzazione di un pinhole camera model rovesciato\relax }{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Espressione matematica di una relazione projective transform}}{21}{figure.10}}
+\newlabel{fig:calib3}{{10}{21}{Espressione matematica di una relazione projective transform\relax }{figure.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Distortion parameters}{22}{subsubsection.5.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Radial distortion effect}}{22}{figure.11}}
+\newlabel{fig:calib4}{{11}{22}{Radial distortion effect\relax }{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Tangential distortion effect}}{22}{figure.12}}
+\newlabel{fig:calib5}{{12}{22}{Tangential distortion effect\relax }{figure.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}Calibrazione}{22}{subsubsection.5.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Tracking data transformation}{23}{subsection.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{23}{figure.13}}
+\newlabel{fig:track1}{{13}{23}{Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati\relax }{figure.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Homography matrix}{24}{subsubsection.5.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{24}{figure.14}}
+\newlabel{fig:track2}{{14}{24}{I 4 punti necessari per il calcolo della homography matrix\relax }{figure.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Qt drawings}{25}{subsection.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{25}{figure.15}}
+\newlabel{fig:qtgrad1}{{15}{25}{Sistema di coordinate utilizzato per il disegno su Qt\relax }{figure.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Progettazione}{26}{section.6}}
+\newlabel{sec:progett}{{6}{26}{Progettazione\relax }{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Architettura Generale}{26}{subsection.6.1}}
+\newlabel{sec:archgen}{{6.1}{26}{Architettura Generale\relax }{subsection.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Database schema}{26}{subsection.6.2}}
+\newlabel{sec:dbschema}{{6.2}{26}{Database schema\relax }{subsection.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Specifica}{26}{subsection.6.3}}
+\newlabel{sec:specifica}{{6.3}{26}{Specifica\relax }{subsection.6.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}C1 - UserInterface}{26}{subsubsection.6.3.1}}
+\newlabel{sec:c1}{{6.3.1}{26}{C1 - UserInterface\relax }{subsubsection.6.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}C1.1 - UserInterface::ConfigurationWindow}{26}{subsubsection.6.3.2}}
+\newlabel{sec:c1.1}{{6.3.2}{26}{C1.1 - UserInterface::ConfigurationWindow\relax }{subsubsection.6.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}C1.2 - UserInterface::UiFacade}{27}{subsubsection.6.3.3}}
+\newlabel{sec:c1.2}{{6.3.3}{27}{C1.2 - UserInterface::UiFacade\relax }{subsubsection.6.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}C2 - BusinessLayer}{27}{subsubsection.6.3.4}}
+\newlabel{sec:c2}{{6.3.4}{27}{C2 - BusinessLayer\relax }{subsubsection.6.3.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.5}C2.1 - BusinessLayer::Configurer}{28}{subsubsection.6.3.5}}
+\newlabel{sec:c2.1}{{6.3.5}{28}{C2.1 - BusinessLayer::Configurer\relax }{subsubsection.6.3.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.6}C2.2 - BusinessLayer::Importer}{28}{subsubsection.6.3.6}}
+\newlabel{sec:c2.2}{{6.3.6}{28}{C2.2 - BusinessLayer::Importer\relax }{subsubsection.6.3.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.7}C2.3 - BusinessLayer::StatGenerator}{29}{subsubsection.6.3.7}}
+\newlabel{sec:c2.3}{{6.3.7}{29}{C2.3 - BusinessLayer::StatGenerator\relax }{subsubsection.6.3.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.8}C2.4 - BusinessLayer::Utility}{29}{subsubsection.6.3.8}}
+\newlabel{sec:c2.4}{{6.3.8}{29}{C2.4 - BusinessLayer::Utility\relax }{subsubsection.6.3.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.9}C3 - DataAccessLayer}{30}{subsubsection.6.3.9}}
+\newlabel{sec:c3}{{6.3.9}{30}{C3 - DataAccessLayer\relax }{subsubsection.6.3.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.10}C3.1 - DataAccessLayer::DataAccessFacade}{30}{subsubsection.6.3.10}}
+\newlabel{sec:c3.1}{{6.3.10}{30}{C3.1 - DataAccessLayer::DataAccessFacade\relax }{subsubsection.6.3.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.11}C3.2 - DataAccessLayer::LocalDb}{30}{subsubsection.6.3.11}}
+\newlabel{sec:c3.2}{{6.3.11}{30}{C3.2 - DataAccessLayer::LocalDb\relax }{subsubsection.6.3.11}{}}
 \bibcite{pathflow.co}{1}
 \bibcite{opencv.org}{2}
 \bibcite{opencv.doc}{3}

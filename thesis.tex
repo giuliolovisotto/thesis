@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{fixltx2e}
+\usepackage{underscore}
 
 \include{thesis.preamble}
 
@@ -59,12 +60,23 @@ Ogni caso d'uso è posizionato all'interno della gerarchia che parte dal caso d'
 \subsection{Requisiti} \label{sec:req}
 In questa sezione verranno elencati i requisiti software che sono emersi dai casi d'uso individuati e dalle riunioni informative con i leader dello sviluppo. Per chiarezza si è cercato di tenere un rapporto 1:1 tra casi d'uso e requisiti.
  \\ \\Nell'esposizione si userà la seguente convenzione: se un requisito padre ha figli con tipologia diversa tra di loro, il requisito padre assumerà la tipologia più vincolante tra quelle dei figli (esempio: se ci sono 2 figli, uno obbligatorio ed uno desiderabile il padre sarà qualificato come obbligatorio).
-\input{sections/requisiti}
-\input{sections/tr_req_uc}
+\input{sections/requisiti} 
+\input{sections/trReqUc}
 \newpage
 \input{sections/problematiche}
-\input{sections/progettazione}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%PROGETTAZIONE DEL SISTEMA%%%%%%%%%%
+\section{Progettazione} \label{sec:progett}
+\subsection{Architettura Generale} \label{sec:archgen}
+
+\subsection{Database schema} \label{sec:dbschema}
+
+\subsection{Specifica} \label{sec:specifica}
 \input{sections/specifica}
+%%%%%%%%%%%%%%%%%%%%%END PROGETTAZIONE%%%%%%%%%%%%%%%%%%%
+
+
 \input{sections/verifica}
 \input{sections/conclusioni}
 \newpage

@@ -1,0 +1,215 @@
+\subsubsection{C1 - UserInterface} \label{sec:c1}
+Componente che rappresenta il livello \textit{user interface} nell'architettura three tier dell'applicazione. Esso contiene l'interfaccia grafica visibile all'utente, ed è responsabile della presentazione dei dati e della corretta interpretazione degli eventi utente e del loro inoltro nei livelli inferiori. Contiene le finestre del programma, cioè finestra principale, finestra di configurazione, finestra di calibrazione. \\
+Relazioni con altri componenti: 
+\begin{itemize} 
+\item [\textbf{C2}]
+Il livello di presentazione (UI) utilizza il livello logico per inoltrare e quindi rispondere agli eventi utente. Ogni richiesta infatti viene delegata al livello sottostante il quale è responsabile per la risoluzione e la risposta ad essa 
+\end{itemize} 
+
+\subsubsection{C1.1 - UserInterface::ConfigurationWindow} \label{sec:c1.1}
+Tale componente si occupa della presentazione delle finestre di configurazione del sistema. \\
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{ClickArea}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Rappresenta un'area dove le coordinate dei click dell'utente vengono trattate in una particolare maniera e memorizzate in dei campi per una successiva elaborazione. Viene utilizzata per il calcolo della matrice omografica che permette la mappatura dei dati di tracking
+\item [\textit{classi ereditate:}] QLabel
+\end{description}
+\item \textbf{CamCaptureWindow}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Rappresenta la finestra che aiuta l'utente a salvare (direttamente dallo stream della telecamera) o inserire (dal file system) un frame della telecamera
+\item [\textit{classi ereditate:}] QWidget
+\end{description}
+\item \textbf{CamCreateWindow}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Rappresenta la finestra per l'inserimento di una nuova telecamera. Mette a disposizione i campi per specificarne il nome e l'id
+\item [\textit{classi ereditate:}] QWidget
+\end{description}
+\item \textbf{CamConfigWindow}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Rappresenta la finestra che permette all'utente di gestire la configurazione delle telecamere. Viene utilizzata per tutte le modifiche di tali informazioni (insert, update, delete)
+\item [\textit{classi ereditate:}] QWidget
+\end{description}
+\end{itemize}
+
+\subsubsection{C1.2 - UserInterface::UiFacade} \label{sec:c1.2}
+Componente che si occupa della visualizzazione della finestra principale del programma e del corretto inoltro delle richieste e degli eventi provenienti dal livello di \textit{user interface} ai livelli inferiori.\\
+Relazioni con altri componenti: 
+\begin{itemize} 
+\item [\textbf{C1.1}]
+Il componente tiene il controllo di tutte le finestre del sistema, quindi utilizza ConfigurationWindow ~\ref{sec:c1.1} per accedere alle finestre di configurazione. E' responsabile per la loro corretta visualizzazione e l'interpretazione dei loro segnali 
+\item [\textbf{C2.1}]
+Il componente utilizza le funzionalità messe a disposizione da Configurer ~\ref{sec:c2.1} per rispondere alle richieste di configurazione dell'utente 
+\item [\textbf{C2.2}]
+Il componente utilizza le funzionalità messe a disposizione da Importer ~\ref{sec:c2.2} per rispondere alle richieste riguardanti l'importazione dei file .DXF e la loro conversione e visualizzazione. 
+\item [\textbf{C2.3}]
+Il componente utilizza le funzionalità messe a disposizione da StatGenerator ~\ref{sec:c2.3} per rispondere alle richieste di visualizzazione statistiche o generazione delle stesse 
+\item [\textbf{C2.4}]
+Il componente utilizza le funzionalità messe a disposizione da Utility ~\ref{sec:c2.4} per svolgere le funzioni di utilità 
+\end{itemize} 
+
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{UiFacade}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Rappresenta il facade utilizzato per convogliare in un unico punto tutte le richieste uscenti dal livello di presentazione verso i livelli sottostanti. Essa è inoltre responsabile del controllo di tutte le finestre dell'interfaccia e si occupa di risponder ai segnali da queste provenienti
+\item [\textit{classi ereditate:}] QWidget
+\end{description}
+\item \textbf{Window}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Finestra principale del programma. Contiene i bottoni per l'accesso alle varie funzionalità.
+\item [\textit{classi ereditate:}] QWidget
+\end{description}
+\end{itemize}
+
+\subsubsection{C2 - BusinessLayer} \label{sec:c2}
+Componente che rappresenta il livello \textit{business layer} nell'architettura three tier dell'applicazione. Esso contiene le classi che contengono la logica dell'applicazione, ed è responsabile della corretta risoluzione delle chiamate provenienti dall'\textit{user interface}. Esso è inoltre incaricato di gestire gli errori e di segnalarli.
+\\
+Relazioni con altri componenti: 
+\begin{itemize} 
+\item [\textbf{C3}]
+Il livello logico (BL) utilizza il livello di \textit{data access} ogni volta che ha necessità di reperire informazioni memorizzate in un database o di modificarle (select, insert, update, delete). Una volta che ha ottenuto il dato o eseguito l'operazione la interpreta e agisce di conseguenza (stato di errore, corretta terminazione) 
+\end{itemize} 
+
+\subsubsection{C2.1 - BusinessLayer::Configurer} \label{sec:c2.1}
+Componente che è responsabile per le funzionalità di configurazione del sistema.\\
+Relazioni con altri componenti: 
+\begin{itemize} 
+\item [\textbf{C3.1}]
+Utilizza DataAccessFacade ~\ref{sec:c3.1} per accedere ai dati dell'applicazione. Vi delega le operazioni sul database 
+\end{itemize} 
+
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{ConfigurationInterface}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe astratta che definisce l'interfaccia per la configurazione delle telecamere del sistema. Viene implementata e i suoi metodi vengono ridefiniti per fornire le funzionalità di configurazione richieste
+\end{description}
+\item \textbf{ConfigurationCore}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Ridefinisce e implementa metodi necessari per la configurazione delle telecamere nel sistema. Fornisce l'interfaccia per eseguire insert, update, delete nel livello sottostante
+\item [\textit{classi ereditate:}] ConfigurationInterface
+\end{description}
+\item \textbf{BlDataProxy}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Fornisce un accesso unificato per il solo recupero dei dati dal database. Raggruppa tutti i metodi di selezione necessari al livello di interfaccia per presentare i dati
+\end{description}
+\end{itemize}
+
+\subsubsection{C2.2 - BusinessLayer::Importer} \label{sec:c2.2}
+Componente responsabile per le funzionalità di importazione dei file .DXF e la loro conversione e rendering in immagine. \\
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{MappingInterface}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe astratta che definisce l'interfaccia per le funzionalità di \textit{mapping}. Viene implementata e i suoi metodi vengono ridefiniti per fornire le funzionalità di importazione e generazione della \textit{homography matrix}
+\end{description}
+\item \textbf{MappingCore}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Ridefinisce e implementa metodi necessari per l'importazione e il \textit{mapping} dei dati per renderli utilizzabili dal livello superiore
+\item [\textit{classi ereditate:}] MappingInterface
+\end{description}
+\item \textbf{DxfImage}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Descrive un immagine contenuta in un file di tipo .DXF. Contiene dei riferimenti a delle strutture che rappresentano alcuni elementi (quelli che vengono importati) contenuti nel file. Viene utilizzata per l'importazione dei file .DXF
+
+\end{description}
+\item \textbf{DxfImporter}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Eredita la classe astratta fornita dalla libreria dxflib definita per il \textit{parsing} e l'importazione dei file dxf. Converte le strutture fornite dalla classe nelle strutture proprie del sistema, poi le aggiunge ad un oggetto di tipo DxfImage per la memorizzazione. Viene utilizzata nell'importazione dei file .DXF
+\item [\textit{classi ereditate:}] DL_CreationAdapter
+\end{description}
+\item \textbf{QtRender}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che si occupa di fare il render di un'immagine contenuta in una classe di tipo DxfImage su una QPixmap. Viene utilizzata per la visualizzazione dei file .DXF importati e la loro conversione in formato .PNG
+\end{description}
+\item \textbf{Mapper}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che raggruppa le funzionalità di \textit{mapping}. Essa viene utilizzata dalle classi che forniscono i metodi di mappatura al livello di presentaizione
+\end{description}
+\end{itemize}
+
+\subsubsection{C2.3 - BusinessLayer::StatGenerator} \label{sec:c2.3}
+Componente responsabile per la generazione delle statistiche di tracking a partire dai dati del sistema. \\
+Relazioni con altri componenti: 
+\begin{itemize} 
+\item [\textbf{C3.1}]
+Utilizza DataAccessFacade ~\ref{sec:c3.1} per accedere ai dati dell'applicazione. Recupera le informazioni sui dati per la generazione delle statistiche richieste 
+\end{itemize} 
+
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{HeatMapInterface}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe astratta che definisce l'interfaccia per le funzionalità di generazione \textit{heatmap}. Viene implementata e i suoi metodi vengono ridefiniti per fornire il metodo di generazione heatmap
+\end{description}
+\item \textbf{HeatmapCore}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Ridefinisce e implementa i metodi necessari per la generazione dell'\textit{heatmap}. Utilizza un gradiente salvato nella directory locale per scegliere le gradazioni del colore nella mappa
+\item [\textit{classi ereditate:}] HeatMapInterface
+\end{description}
+\end{itemize}
+
+\subsubsection{C2.4 - BusinessLayer::Utility} \label{sec:c2.4}
+Componente che contiene alcune funzionalità di utility. Esse vengono messe a disposizione per i livelli superiori del sistema.\\
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{Util}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe contenitore per le funzioni di utilità del sistema. Fornisce un raggruppamento per i metodi che eseguono operazioni comuni a tutto il programma
+\end{description}
+\end{itemize}
+
+\subsubsection{C3 - DataAccessLayer} \label{sec:c3}
+Componente che rappresenta il livello di \textit{data access layer} nell'architettura three tier dell'applicazione. Esso fornisce le funzionalità per l'accesso ai dati del sistema, che sono salvati in maniera persistente in dei database. 
+\\
+\subsubsection{C3.1 - DataAccessLayer::DataAccessFacade} \label{sec:c3.1}
+Componente che rappresenta un \textit{facade} per l'effettivo accesso alle funzionalità del \textit{data access layer}. Esso si occupa di fornire una via unificata di accesso per i possibili database differenti con cui l'applicazione si deve interfacciare\\
+Relazioni con altri componenti: 
+\begin{itemize} 
+\item [\textbf{C3.2}]
+Utilizza LocalDb ~\ref{sec:c3.2} per accedere ai metodi specifici del database locale, vi inoltra quindi le richieste di insert, update, delete, select 
+\end{itemize} 
+
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{DataAccessFacade}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] La classe rappresenta un \textit{facade} per l'accesso alle funzionalità del \textit{data layer}. Essa unifica al suo interno tutte le richieste in arrivo dai livelli superiori e le indirizza alla classe appropriata
+\end{description}
+\end{itemize}
+
+\subsubsection{C3.2 - DataAccessLayer::LocalDb} \label{sec:c3.2}
+Componente che contiene le funzionalità per l'accesso al database locale. Esso fornisce l'interfaccia per la modifica dei dati e il loro recupero\\
+Classi contenute nel componente: 
+\begin{itemize} 
+\item \textbf{DbWrap}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe wrapper per il database locale contentente le informazioni di configurazione delle telecamere. Essa mette a disposizione i metodi per l'accesso ai dati e la loro modifica. E' implementata come singleton per evitare allocazioni multiple. Contiene una copia statica di tutti i dati presenti nel database, per prevenire accessi ripetuti in memoria che possono causare lentezza del sistema.
+\end{description}
+\item \textbf{TableCameraHomographicMat}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che contiene i metodi di basso livello per accedere alla tabella \textbf{tbl_camera_homographic_mat}. 
+\end{description}
+\item \textbf{TableHomographicMat}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che contiene i metodi di basso livello per accedere alla tabella \textbf{tbl_homographic_matrices}
+\end{description}
+\item \textbf{TableTrackingData}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che contiene i metodi di basso livello per accedere alla tabella \textbf{tbl_tracking_data}
+\end{description}
+\item \textbf{TableCameras}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che contiene i metodi di basso livello per accedere alla tabella \textbf{tbl_cam}
+\end{description}
+\item \textbf{TableCameraCalibration}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che contiene i metodi di basso livello per accedere alla tabella \textbf{tbl_cam_calibration}
+\end{description}
+\item \textbf{TableCleanData}
+\begin{description}
+\item [\textit{descrizione e utilizzo:}] Classe che contiene i metodi di basso livello per accedere alla tabella \textbf{tbl_clean_data}
+\end{description}
+\end{itemize}
+
