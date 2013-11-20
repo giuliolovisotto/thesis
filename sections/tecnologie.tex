@@ -1,23 +1,30 @@
 {\section{Tecnologie Utilizzate} \label{sec:tecnologie}
-In questa sezione vengono brevemente introdotte le tecnologie utilizzate nello sviluppo dell'applicazione, e vengono esposte le motivazioni che hanno portato alla scelta di tali tecnologie.
-\subsection{OpenCV}
+In questa sezione vengono brevemente introdotte le più interessanti tecnologie utilizzate nello sviluppo dell'applicazione, e vengono esposte le motivazioni che hanno portato alla scelta di tali tecnologie.
+\subsection{Librerie}
+\subsubsection{OpenCV}
 OpenCV è una libreria open source il cui obiettivo è quello di fornire un'API per il supporto al real-time computer vision. Essa è sviluppata da Intel ed attualmente manutenuta da \textit{itseez} (\url{http://itseez.com/}). OpenCV è rilasciata con licenza BSD open source, ed è libera per quanto riguarda l'utilizzo accademico e commercial. E' scritta in C/C++ e fornisce le interfacce per diversi linguaggi: C++, C, Python, MATLAB e Java. \\ \\
 E' cross platform e supporta i più comuni sistemi: Windows, Linux, Mac OS, iOS e Android. \\ 
 OpenCV viene ufficialmente rilasciata nel 1999, attualmente l'ultima versione stabile ufficiale è la 2.4.6. \\
 OpenCV è una libreria molto ampia e completa, è attualmente utilizzata in diverse applicazioni complesse (molte che riguardano la \textit{video surveillance}), inoltre ha alle spalle anni di sviluppo e una comunità di utenti molto vasta. \\
 L'intero sistema che l'azienda Pathflow vuole realizzare è basato su tale libreria, nelle specifiche del progetto di stage è stato specificato che essa verrà utilizzata per quanto riguarda le funzioni relative alla \textit{computer vision}. 
 
-\subsection{Qt}
+\subsubsection{Qt}
 Dato che il progetto prevede la realizzazione di una minimale interfaccia grafica si è scelto di utilizzare il framework Qt. \\
 Le valutazioni che hanno portato a tale scelta, sono le seguenti:
 \begin{itemize}
 \item \textbf{Portabilità:} Qt è una libreria cross platform. Nelle specifiche del progetto è emerso che sarebbe stato fondamentale che il software fosse portabile. Altra caratteristica che ha influito è che Qt offre un buon supporto per effettuare manipolazioni grafiche e disegno, e dopo una ricerca si è rivelata la migliore alternativa tra le librerie disponibili (sono state valutate altre librerie alternative per il solo disegno, ma esse si sono rivelate meno complete e spesso scarsamente documentate).
 \item \textbf{Licenza: } Qt è infatti disponibile con licenza  GNU LGPL v2.1 ed è quindi possibile utilizzarlo senza che sia necessario rilasciare il sorgente del prodotto.
 \end{itemize}
+\subsubsection{MySQL wrapped}
+Per facilitare il \textit{system management} è stato scelto di usare una semplice libreria che fornisce le funzionalità di \textit{Object Relational Mapping} per un database di tipo MySQL. Tra le varie opzioni si è scelto di usare MySQL Wrapped, molto semplice e leggera. Essa inoltre fornisce un tool di generazione codice C++ a partire dall'output del comando \textit{mysqldump}. In tale modo si è potuto progettare prima lo schema del database e in seguito creare le rispettive classi con lo script \textit{sql2class}. MySQL Wrapped crea un ulteriore livello di astrazione a partire dall'API di connessione in C fornita da MySQL.
 
+\subsubsection{dxflib}
+Il file .DXF è un file di output di programmi di grafica vettoriali quali AutoCAD. Esso contiene al suo interno delle entità che definiscono gli elementi che descrivono un immagine (generalmente 2D). \\
+Il formato dei file .DXF è noto e ben documentato nei manuali forniti da AutoCAD.
+Per le funzionalità di parsing del file .DXF si è scelto di utilizzare dxflib: una libreria in C++ open source. Essa si occupa della lettura del file e definisce delle interfacce che possono essere ridefinite per ottenere il comportamento desiderato. I dettagli verranno trattati meglio in seguito.
 
 \subsection{MySQL}
-Il database scelto per il salvataggio dei dati è MySQL. Le motivazioni di tale scelta sono nuovamente la necessità di avere un \textit{DBMS} cross platforme e open source. In fase di studio sono state valutate anche altre alternative, che vengono qui brevemente elencate con i relativi difetti che hanno comportato la preferenza per MySQL:
+Il database scelto per il salvataggio dei dati è MySQL. Le motivazioni di tale scelta sono nuovamente la necessità di avere un \textit{DBMS} cross platform e open source. In fase di studio sono state valutate anche altre alternative, che vengono qui brevemente elencate con i relativi difetti che hanno comportato la preferenza per MySQL:
 \begin{itemize}
 
 	\item \textbf{memsql} è un database che nasce per fornire supporto al real-time analytics. Viene preso in esame per le sue caratteristiche di velocità che renderebbero l'elaborazione del grande carico di dati molto veloce. Tali caratteristiche sono dovute al fatto che memsql è un database che risiede in memoria (RAM), e che non esegue direttamente le query, ma le converte in codice C++ (con GCC) e poi esegue il codice oggetto. Sebbene tali caratteristiche sono molto favorevoli si è preferito non utilizzare memsql in quanto essendo un progetto relativamente nuovo non ha ancora un supporto completo delle caratteristiche di un database relazionale e in quanto c'era la necessità di appoggiarsi su una soluzione solida che avrebbe dato certezze nel tempo.
@@ -25,22 +32,50 @@ Il database scelto per il salvataggio dei dati è MySQL. Le motivazioni di tale 
 	\item \textbf{mongoDB} è un database di tipo non relazionale (\textit{document-oriented}). Esso si basa su documenti stile JSON con schemi dinamici. Anche mongoDB è stato preso in considerazione per le sue caratteristiche di velocità che avrebbero fatto comodo per l'elaborazione dei moltissimi dati di tracciamento. Si è però preferito basarsi su un database di tipo relazionale in quanto la tipologia di dati che andava memorizzata era strettamente di tale tipo.
 \end{itemize}
 
-\subsection{MySQL wrapped}
-Per facilitare il \textit{system management} è stato scelto di usare una semplice libreria che fornisce le funzionalità di \textit{Object Relational Mapping} per un database di tipo MySQL. Tra le varie opzioni si è scelto di usare MySQL Wrapped, molto semplice e leggera. Essa inoltre fornisce un tool di generazione codice C++ a partire dall'output del comando \textit{mysqldump}. In tale modo si è potuto progettare prima lo schema del database e in seguito creare le rispettive classi con lo script \textit{sql2class}. MySQL Wrapped crea un ulteriore livello di astrazione a partire dall'API di connessione in C fornita da MySQL.
 
-\subsection{dxflib}
-Il file .DXF è un file di output di programmi di grafica vettoriali quali AutoCAD. Esso contiene al suo interno delle entità che definiscono gli elementi che descrivono un immagine (generalmente 2D). \\
-Il formato dei file .DXF è noto e ben documentato nei manuali forniti da AutoCAD.
-Per le funzionalità di parsing del file .DXF si è scelto di utilizzare dxflib: una libreria in C++ open source. Essa si occupa della lettura del file e definisce delle interfacce che possono essere ridefinite per ottenere il comportamento desiderato. I dettagli verranno trattati meglio in seguito.
 
 \subsection{CMake}
-CMake è un sistema di build cross platform e open source. Nasce per fornire un sistema di management del processo di build del software. Per ottenere ciò CMake utilizza dei metodi che non dipendono dal tipo di compilatore presente nel sistema operativo, ma da alcuni file di configurazione autonomi. CMake genera dei makefiles che possono in seguito essere eseguiti con il comando di make relativo all'ambiente utilizzato (\textit{make} per Linux, \textit{nmake} per Visual Studio etc). CMake supporta sia build di tipo \em{in-place} che \em{out-of-place}, supporta inoltre linking di tipo statico e dinamico. \\ \\
+CMake è un sistema di build cross platform e open source. Nasce per fornire un sistema di management del processo di build del software. Per ottenere ciò CMake utilizza dei metodi che non dipendono dal tipo di compilatore presente nel sistema operativo, ma da alcuni file di configurazione autonomi. CMake genera dei makefiles che possono in seguito essere eseguiti con il comando di make relativo all'ambiente utilizzato (\textit{make} per Linux, \textit{nmake} per Visual Studio etc). CMake supporta sia build di tipo \textit{in-place} che \textit{out-of-place}, supporta inoltre linking di tipo statico e dinamico. \\ \\
 Per il suo utilizzo è sufficiente creare dei file denominati CMakeLists.txt che contengono le direttive per la creazione del makefile. \\
 Cmake è stato rilasciato sotto licenza di tipo \textit{New BSD License}.\\
 L'utilizzo di CMake come sistema di build è stato imposto nelle prime fasi dello sviluppo, per mantenere la coerenza con quanto era già stato fatto e per rispettare le caratteristiche di cross platforming dell'applicativo da realizzare.
 
 
+\subsection{QtCreator}
+IDE che è parte dell'SDK offerta dal framework Qt. Esso è cross-platform (Linux/OS X, Windows), come il framework stesso. Fornisce funzionalità di alto livello:
+\begin{itemize}
+	\item un visual debugger, che mostra le informazioni \textit{raw} che escono in output dal debugger in maniera chiara e concisa, e permette di fare debug interrompendo l'esecuzione del programma e ispezionando le istruzione una alla volta. Permette inoltre di inserire dei \textit{break point}
+	\item un integrazione con un sistema di versionamento, che permette di interagire con esso direttamente dall'IDE
+	\end{itemize}
+E' stato scelto di utilizzare QtCreator sia per le buone funzionalità che offre, soprattutto per quanto riguarda l'integrazione con l'ambiente e le strutture Qt, e sia per la familiarità che lo stagista aveva con il suo utilizzo, il che ha consentito di risparmiare del tempo.
 
+\subsection{Valgrind}
+Valgrind è un framework per la creazione di strumenti di analisi dinamica per eseguire debugging e profiling dei programmi Linux. Permette di individuare diversi errori di scrittura del codice, in particolare riguardo alla memoria (\textit{memory leaks}) e al multithreading. All'interno del progetto è stato utilizzato il tool \textit{Memcheck} messo a disposizione dal framework. Esso serve a controllare gli errori della memoria, per ottenere tale obiettivo esso  aggiunge del codice "strumentale" attorno alla maggior parte delle istruzioni, in questa maniera tiene traccia della validità e dell'indirizzabilità delle posizioni in memoria.\\\\ Tale strumento si è rivelato molto utile dovendo utilizzare un linguaggio come il C++ che non dispone di un sistema di controllo della memoria, ma che delega la sua responsabilità al programmatore.
+
+\subsection{GDB}
+GDB è il debugger standard per i sistemi operativi GNU. Esso permette di eseguire debugging di programmi scritti in molteplici linguaggi, tra i quali il C++. Come prima indicato verrà utilizzato all'interno di QtCreator per sfruttarne la GUI.
+
+\subsection{CppDepend}
+CppDepend è un framework di analisi basato sul compilatore \textit{CLang} che permette la gestione di \textit{codebase} in C++ ampi e complessi. Esso offre un ampia gamma di funzionalità che aiutano i developer a mantenere una buona qualità e manutenibilità. Tra le sue caratteristiche più interessanti possiamo elencare:
+\begin{itemize}
+	\item \textbf{Trend Monitoring} permette di visualizzare l'andamento delle statistiche del codice durante il periodo di sviluppo. Mette a disposizione alcune statistiche di default ma permette inoltre di inserirne di nuove (con la definizione di \textit{rules}) e di tenere traccia anche di esse
+	\item \textbf{Metrics} mette a disposizione 82 metriche diverse sul codice sorgente, che variano dalle più semplici alle più sofisticate e toccano diversi aspetti del codice, quali: organizzazione, complessità, coesione, stabilità, struttura
+	\item \textbf{Architecture} permette infatti di avere una visualizzazione grafica delle dipendenza e dell'organizzazione delle classi all'interno del progetto. Genera oltre che \textit{dependency graph} anche \textit{dependency matrices} ed è in grado di segnalare l'impatto che un aggiunta nel codice può avere all'interno del complesso
+\end{itemize}
+CppDepend nasce per funzionare in parallelo a Visual Studio, ma viene poi ampliato e reso fruibile anche in altri ambienti. Attualmente supporta i seguenti project files:
+\begin{itemize}
+\item .vcproj, .vcxproj, .sln: Visual Studio projects
+\item .build
+\item .proj, .sl
+\end{itemize}
+E' stato utilizzato il tool \textit{BuildMonitor} fornito dal framework per la creazione di file di tipo .build che CppDepend è in grado di analizzare. Esso funziona nel seguente modo: si utilizza lo script passando come parametro un comando di \textit{make}, ed esso è in grado di intercettare le istruzioni di compilazione generate dal comando di build per generare un file .build che descrive l'insieme dei files coinvolti nella compilazione, quindi li scorre e li analizza.\\ \\
+CppDepend è un tool molto interessante e completo, sfortunatamente la versione professional non è gratuita, quindi all'interno del progetto è stato utilizzato nei limiti della versione free. In particolare con esso si sono controllati i risultati dell'analisi statica per mantenere delle metriche sul codice che rispettassero i vincoli imposti. E' servito anche per correggere alcune imperfezioni sul codice quali:
+\begin{itemize}
+\item \textit{dead code}
+\item \textit{visibility errors}
+\item \textit{const safe} e \textit{side effects}
+\item \textit{naming conventions}
+\end{itemize}
 
 
 

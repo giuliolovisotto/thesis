@@ -1,5 +1,5 @@
 \section{Problematiche} \label{sec:prob}
-In questa sezione verranno descritti brevemente per chiarezza i problemi che il sistema si propone di risolvere, i quali quindi sono stati oggetto di studio per lo stagista che ha dovuto analizzarli e ricercarne una soluzione.
+In questa sezione verranno descritti brevemente per chiarezza i problemi che il sistema si propone di risolvere, che sono stati oggetto di studio per lo stagista che ha dovuto analizzarli e cercarne una soluzione.
 \subsection{Camera Calibration} \label{sec:camcalib}
 Per \textit{camera calibration} si intende la procedura volta a calcolare la relazione matematica tra le coordinate di un punto posizionato nello spazio e la sua proiezione sull'\textit{image plane} di una telecamera. \\
 
@@ -62,13 +62,13 @@ La seconda è un risultato dei difetti di assemblaggio che portano la lente a no
 \subsubsection{Calibrazione}
 
 Ora che è stato descritto come identificare a livello matematico le proprietà \textit{intrinsics} e \textit{distortion} possiamo vedere le tecniche con le quali si prendono in considerazione tali parametri per correggere i frame catturati dalla telecamera.\\
-Le tecniche di calibrazione si basano sul seguente criterio: viene esposto mostrato alla camera un oggetto di cui si conosce la struttura, e si valutano le differenze tra le caratteristiche dell'oggetto catturato dalla camera (quindi proiettato sull'\textit{image plane}) con le sue note caratteristiche fisiche. \\Per ogni immagine che una telecamera cattura di un oggetto, è possibile descrivere la sua posizione rispetto al sistema di coordinate della telecamera in termini di rotazione e traslazione. Possiamo quindi definire una relazione tra la posizione nello spazio di un oggetto e le sue coordinate nel frame catturato dalla telecamera. Combinando tale relazione con le correzioni derivanti dai parametri di \textit{intrinsics} si ottiene un sistema di equazioni che risolto rappresenta la soluzione al problema della calibrazione.\\
+Le tecniche di calibrazione si basano sul seguente criterio: viene mostrato alla camera un oggetto di cui si conosce la struttura, e si valutano le differenze tra le caratteristiche dell'oggetto catturato dalla camera (quindi proiettato sull'\textit{image plane}) con le sue note caratteristiche fisiche. \\Per ogni immagine che una telecamera cattura di un oggetto, è possibile descrivere la sua posizione rispetto al sistema di coordinate della telecamera in termini di rotazione e traslazione. Possiamo quindi definire una relazione tra la posizione nello spazio di un oggetto e le sue coordinate nel frame catturato dalla telecamera. Combinando tale relazione con le correzioni derivanti dai parametri di \textit{intrinsics} si ottiene un sistema di equazioni che risolto rappresenta la soluzione al problema della calibrazione.\\
 In linea di principio qualsiasi oggetto può essere usato ai fini di tale operazione, ma è pratico utilizzare un oggetto che presenta caratteristiche regolari (pattern). All'interno del progetto è stata  utilizzata una immagine di una scacchiera con dimensioni (numero di celle) predefinite.  \\
 Si potrà vedere come OpenCV offre un API di alto livello per la soluzione del problema della calibrazione con l'utilizzo di una scacchiera.
 
 \subsection{Tracking data transformation}
 
-Il sistema di \textit{video analytics} utilizza le funzionalità offerte da OpenCV per tracciare i movimenti delle persone. Non scenderemo nei dettagli di come ciò viene effettivamente implementato, basti sapere che il sistema è in grado di tracciare diversi oggetti contemporaneamente. Si riporta uno screenshot che mostra il risultato di tale operazione in ~\ref{fig:track1}.
+Il sistema di \textit{video analytics} utilizza le funzionalità offerte da OpenCV per tracciare i movimenti delle persone. Non scenderemo nei dettagli di come ciò viene effettivamente implementato, basti sapere che il sistema è in grado di tracciare diversi oggetti contemporaneamente. Si riporta uno screenshot che mostra il risultato di tale operazione in figura ~\ref{fig:track1}.
 \begin{figure}[htpb] 
 \centering 
 \includegraphics[scale=0.4]{./images/track1.png} 

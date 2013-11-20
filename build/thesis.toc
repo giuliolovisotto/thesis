@@ -4,63 +4,73 @@
 \contentsline {subsection}{\numberline {1.3}Progetto}{1}{subsection.1.3}
 \contentsline {section}{\numberline {2}Pianificazione}{3}{section.2}
 \contentsline {section}{\numberline {3}Tecnologie Utilizzate}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}OpenCV}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Qt}{5}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}MySQL}{5}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}MySQL wrapped}{5}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}dxflib}{6}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}CMake}{6}{subsection.3.6}
-\contentsline {section}{\numberline {4}Analisi dei Requisiti}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Casi d'uso}{7}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}UC0: Scenario principale}{7}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}UC1: Calibrazione telecamere}{7}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}UC1.1: Calibra}{9}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}UC1.1.1: Seleziona il numero di immagini da utilizzare}{9}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}UC1.1.2: Seleziona il frame step}{10}{subsubsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.6}UC1.1.3: Inserisce l'indirizzo della telecamera da calibrare}{10}{subsubsection.4.1.6}
-\contentsline {subsubsection}{\numberline {4.1.7}UC1.1.4: Inizia calibrazione}{10}{subsubsection.4.1.7}
-\contentsline {subsubsection}{\numberline {4.1.8}UC1.2: Mostra video calibrato}{10}{subsubsection.4.1.8}
-\contentsline {subsubsection}{\numberline {4.1.9}UC2: Configurazione telecamere}{11}{subsubsection.4.1.9}
-\contentsline {subsubsection}{\numberline {4.1.10}UC2.1: Inserisci nuova}{11}{subsubsection.4.1.10}
-\contentsline {subsubsection}{\numberline {4.1.11}UC2.2: Rimuovi telecamera}{12}{subsubsection.4.1.11}
-\contentsline {subsubsection}{\numberline {4.1.12}UC2.3: Modifica configurazione}{12}{subsubsection.4.1.12}
-\contentsline {subsubsection}{\numberline {4.1.13}UC2.3.1: Modifica il percorso del file di distortion}{13}{subsubsection.4.1.13}
-\contentsline {subsubsection}{\numberline {4.1.14}UC2.3.2: Modifica il percorso del file di intrinsics}{13}{subsubsection.4.1.14}
-\contentsline {subsubsection}{\numberline {4.1.15}UC2.3.3: Modifica il valore dell'altezza del frame}{13}{subsubsection.4.1.15}
-\contentsline {subsubsection}{\numberline {4.1.16}UC2.3.4: Modifica il valore della larghezza del frame}{13}{subsubsection.4.1.16}
-\contentsline {subsubsection}{\numberline {4.1.17}UC2.3.5: Modifica il percorso del file di homography matrix}{13}{subsubsection.4.1.17}
-\contentsline {subsubsection}{\numberline {4.1.18}UC2.4: Cattura e salva un frame della telecamera}{14}{subsubsection.4.1.18}
-\contentsline {subsubsection}{\numberline {4.1.19}UC2.5: Converti .DXF file in .PNG}{14}{subsubsection.4.1.19}
-\contentsline {subsubsection}{\numberline {4.1.20}UC2.6: Calcola homography matrix}{14}{subsubsection.4.1.20}
-\contentsline {subsubsection}{\numberline {4.1.21}UC2.7: Seleziona telecamera}{14}{subsubsection.4.1.21}
-\contentsline {subsubsection}{\numberline {4.1.22}UC3: Generazione statistiche}{14}{subsubsection.4.1.22}
-\contentsline {subsubsection}{\numberline {4.1.23}UC3.1: Trasforma i dati di tracking}{15}{subsubsection.4.1.23}
-\contentsline {subsubsection}{\numberline {4.1.24}UC3.2: Genera heatmap}{15}{subsubsection.4.1.24}
-\contentsline {subsubsection}{\numberline {4.1.25}UC3.3: Genera statistiche}{15}{subsubsection.4.1.25}
-\contentsline {subsection}{\numberline {4.2}Requisiti}{16}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Requisiti funzionali}{16}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Requisiti di vincolo}{18}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Requisiti di qualita}{19}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Problematiche}{20}{section.5}
-\contentsline {subsection}{\numberline {5.1}Camera Calibration}{20}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Intrinsics parameters}{20}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Distortion parameters}{22}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Calibrazione}{22}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Tracking data transformation}{23}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Homography matrix}{24}{subsubsection.5.2.1}
-\contentsline {subsection}{\numberline {5.3}Qt drawings}{25}{subsection.5.3}
-\contentsline {section}{\numberline {6}Progettazione}{26}{section.6}
-\contentsline {subsection}{\numberline {6.1}Architettura Generale}{26}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Database schema}{26}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Specifica}{26}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}C1 - UserInterface}{26}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}C1.1 - UserInterface::ConfigurationWindow}{26}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}C1.2 - UserInterface::UiFacade}{27}{subsubsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.4}C2 - BusinessLayer}{27}{subsubsection.6.3.4}
-\contentsline {subsubsection}{\numberline {6.3.5}C2.1 - BusinessLayer::Configurer}{28}{subsubsection.6.3.5}
-\contentsline {subsubsection}{\numberline {6.3.6}C2.2 - BusinessLayer::Importer}{28}{subsubsection.6.3.6}
-\contentsline {subsubsection}{\numberline {6.3.7}C2.3 - BusinessLayer::StatGenerator}{29}{subsubsection.6.3.7}
-\contentsline {subsubsection}{\numberline {6.3.8}C2.4 - BusinessLayer::Utility}{29}{subsubsection.6.3.8}
-\contentsline {subsubsection}{\numberline {6.3.9}C3 - DataAccessLayer}{30}{subsubsection.6.3.9}
-\contentsline {subsubsection}{\numberline {6.3.10}C3.1 - DataAccessLayer::DataAccessFacade}{30}{subsubsection.6.3.10}
-\contentsline {subsubsection}{\numberline {6.3.11}C3.2 - DataAccessLayer::LocalDb}{30}{subsubsection.6.3.11}
+\contentsline {subsection}{\numberline {3.1}Librerie}{4}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}OpenCV}{4}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Qt}{5}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}MySQL wrapped}{5}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}dxflib}{5}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}MySQL}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}CMake}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}QtCreator}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Valgrind}{7}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}GDB}{7}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}CppDepend}{7}{subsection.3.7}
+\contentsline {section}{\numberline {4}Analisi dei Requisiti}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Casi d'uso}{9}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}UC0: Scenario principale}{9}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}UC1: Calibrazione telecamere}{9}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}UC1.1: Calibra}{11}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}UC1.1.1: Seleziona il numero di immagini da utilizzare}{11}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}UC1.1.2: Seleziona il frame step}{12}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}UC1.1.3: Inserisce l'indirizzo della telecamera da calibrare}{12}{subsubsection.4.1.6}
+\contentsline {subsubsection}{\numberline {4.1.7}UC1.1.4: Inizia calibrazione}{12}{subsubsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.8}UC1.2: Mostra video calibrato}{12}{subsubsection.4.1.8}
+\contentsline {subsubsection}{\numberline {4.1.9}UC2: Configurazione telecamere}{13}{subsubsection.4.1.9}
+\contentsline {subsubsection}{\numberline {4.1.10}UC2.1: Inserisci nuova}{13}{subsubsection.4.1.10}
+\contentsline {subsubsection}{\numberline {4.1.11}UC2.2: Rimuovi telecamera}{14}{subsubsection.4.1.11}
+\contentsline {subsubsection}{\numberline {4.1.12}UC2.3: Modifica configurazione}{14}{subsubsection.4.1.12}
+\contentsline {subsubsection}{\numberline {4.1.13}UC2.3.1: Modifica il percorso del file di distortion}{15}{subsubsection.4.1.13}
+\contentsline {subsubsection}{\numberline {4.1.14}UC2.3.2: Modifica il percorso del file di intrinsics}{15}{subsubsection.4.1.14}
+\contentsline {subsubsection}{\numberline {4.1.15}UC2.3.3: Modifica il valore dell'altezza del frame}{15}{subsubsection.4.1.15}
+\contentsline {subsubsection}{\numberline {4.1.16}UC2.3.4: Modifica il valore della larghezza del frame}{15}{subsubsection.4.1.16}
+\contentsline {subsubsection}{\numberline {4.1.17}UC2.3.5: Modifica il percorso del file di homography matrix}{15}{subsubsection.4.1.17}
+\contentsline {subsubsection}{\numberline {4.1.18}UC2.4: Cattura e salva un frame della telecamera}{16}{subsubsection.4.1.18}
+\contentsline {subsubsection}{\numberline {4.1.19}UC2.5: Converti .DXF file in .PNG}{16}{subsubsection.4.1.19}
+\contentsline {subsubsection}{\numberline {4.1.20}UC2.6: Calcola homography matrix}{16}{subsubsection.4.1.20}
+\contentsline {subsubsection}{\numberline {4.1.21}UC2.7: Seleziona telecamera}{16}{subsubsection.4.1.21}
+\contentsline {subsubsection}{\numberline {4.1.22}UC3: Generazione statistiche}{16}{subsubsection.4.1.22}
+\contentsline {subsubsection}{\numberline {4.1.23}UC3.1: Trasforma i dati di tracking}{17}{subsubsection.4.1.23}
+\contentsline {subsubsection}{\numberline {4.1.24}UC3.2: Genera heatmap}{17}{subsubsection.4.1.24}
+\contentsline {subsubsection}{\numberline {4.1.25}UC3.3: Genera statistiche}{17}{subsubsection.4.1.25}
+\contentsline {subsection}{\numberline {4.2}Requisiti}{18}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Requisiti funzionali}{18}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Requisiti di vincolo}{20}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Requisiti di qualita}{21}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Problematiche}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}Camera Calibration}{22}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Intrinsics parameters}{22}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Distortion parameters}{24}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Calibrazione}{24}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}Tracking data transformation}{25}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Homography matrix}{26}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}Qt drawings}{27}{subsection.5.3}
+\contentsline {section}{\numberline {6}Progettazione}{28}{section.6}
+\contentsline {subsection}{\numberline {6.1}Architettura Generale}{28}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Database schema}{30}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Specifica}{31}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}C1 - UserInterface}{31}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}C1.1 - UserInterface::ConfigurationWindow}{31}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}C1.2 - UserInterface::UiFacade}{33}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}C2 - BusinessLayer}{34}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}C2.1 - BusinessLayer::Configurer}{34}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}C2.2 - BusinessLayer::Importer}{35}{subsubsection.6.3.6}
+\contentsline {subsubsection}{\numberline {6.3.7}C2.3 - BusinessLayer::StatGenerator}{36}{subsubsection.6.3.7}
+\contentsline {subsubsection}{\numberline {6.3.8}C2.4 - BusinessLayer::Utility}{36}{subsubsection.6.3.8}
+\contentsline {subsubsection}{\numberline {6.3.9}C3 - DataAccessLayer}{37}{subsubsection.6.3.9}
+\contentsline {subsubsection}{\numberline {6.3.10}C3.1 - DataAccessLayer::DataAccessFacade}{37}{subsubsection.6.3.10}
+\contentsline {subsubsection}{\numberline {6.3.11}C3.2 - DataAccessLayer::LocalDb}{38}{subsubsection.6.3.11}
+\contentsline {section}{\numberline {7}Verifica e validazione}{39}{section.7}
+\contentsline {subsection}{\numberline {7.1}Analisi statica}{39}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Analisi dinamica}{39}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Tracciamento test}{39}{subsubsection.7.2.1}
+\contentsline {section}{\numberline {8}Conclusioni}{40}{section.8}
