@@ -4,7 +4,7 @@ In questa sezione verranno descritti brevemente per chiarezza i problemi che il 
 Per \textit{camera calibration} si intende la procedura volta a calcolare la relazione matematica tra le coordinate di un punto posizionato nello spazio e la sua proiezione sull'\textit{image plane} di una telecamera. \\
 
 \subsubsection{Intrinsics parameters}
-La visione origina dall'individuazione della luce nell'ambiente. La luce parte da una qualche sorgente per poi viaggiare nello spazio fino ad incontrare un oggetto, in quel momento buona parte della luce viene assorbita, la parte che non viene assorbita viene riflessa e determina il colore dell'oggetto. \\
+La visione ha origine dall'individuazione della luce nell'ambiente. La luce parte da una qualche sorgente per poi viaggiare nello spazio fino ad incontrare un oggetto, in quel momento buona parte della luce viene assorbita, la parte che non viene assorbita viene riflessa e determina il colore dell'oggetto. \\
 
 Il modello più semplice disponibile per la rappresentazione di una telecamera è il cosiddetto \textit{pinhole camera model}. In tale modello la luce arriva da un oggetto distante, ma solo un singolo raggio entra per ogni particolare punto. Tale punto viene proiettato su di una superficie. Ciò comporta che l'immagine presente sull'\textit{image plane} è sempre a fuoco, e la sua dimensione dipende dalla distanza della sorgente della luce (\textit{focal lenght}).
 
@@ -16,7 +16,7 @@ Si può vedere in figura ~\ref{fig:calib1}) una rappresentazione di tale modello
 \label{fig:calib1}
 \end{figure} 
 
-In tale figura \em{f} è la \em{focal lenght} della telecamera, \textit{Z} la distanza tra oggetto e telecamera, \em{X} la dimensione dell'oggetto e \em{x} l'immagine dell'oggetto proiettata sul piano. \\ Il modello appena descritto può essere reinterpretato come in figura ~\ref{fig:calib2} 
+In tale figura \textit{f} è la \textit{focal lenght} della telecamera, \textit{Z} la distanza tra oggetto e telecamera, \textit{X} la dimensione dell'oggetto e \textit{x} l'immagine dell'oggetto proiettata sul piano. \\ Il modello appena descritto può essere reinterpretato come in figura ~\ref{fig:calib2} 
 \begin{figure}[htpb] 
 \centering 
 \includegraphics[scale=0.4]{./images/calib2.png} 
@@ -24,8 +24,8 @@ In tale figura \em{f} è la \em{focal lenght} della telecamera, \textit{Z} la di
 \label{fig:calib2}
 \end{figure} 
 
-nella quale sono stati rovesciati il punto di \textit{pinhole} e l'\textit{image plane}. Ciò ci permette di semplificare le relazioni che valgono tra i punti dell'oggetto e le loro proiezioni. Infatti ora è più chiara la similarità dei triangoli, inoltre l'immagine non è più capovolta come era in figura ~\ref{fig:calib1}. In tale visione vanno aggiunti altri due nuovi parametri \em{c\textsubscript{x} }e \em{c\textsubscript{y}} per considerare un eventuale \textit{displacement} del centro delle coordinate sull'\textit{image plane}, dovuto alla possibilità che il centro del chip (della telecamera) non risieda esattamente sopra l'asse indicato in figura ~\ref{fig:calib2} come \textit{optical axis}. \\ \\
-In tale visualizzazione c'è una semplice relazione che mappa i punti \em{Q\textsubscript{i}} nello spazio (coordinate (\em{X\textsubscript{i}},\em{Y\textsubscript{i}},\em{Z\textsubscript{i}})) nei punti sul piano di proiezione (coordinate (\em{x\textsubscript{i}},\em{y\textsubscript{i}})), tale relazione è chiamata \textit{projective transform}. Viene riportata in figura ~\ref{fig:calib3}
+nella quale sono stati rovesciati il punto di \textit{pinhole} e l'\textit{image plane}. Ciò ci permette di semplificare le relazioni che valgono tra i punti dell'oggetto e le loro proiezioni. Infatti ora è più chiara la similarità dei 2 triangoli (il primo identificato da \textit{o}, \textit{q} e la proiezione di \textit{q} sull'optical axis e il secondo identificato da \textit{o}, \textit{Q} e la proiezione di \textit{Q} sull'optical axis), inoltre l'immagine non è più capovolta come era in figura ~\ref{fig:calib1}. In tale visione vanno aggiunti altri due nuovi parametri \textit{c\textsubscript{x} }e \textit{c\textsubscript{y}} per considerare un eventuale \textit{displacement} del centro delle coordinate sull'\textit{image plane}, dovuto alla possibilità che il centro del chip (della telecamera) non risieda esattamente sopra l'asse indicato in figura ~\ref{fig:calib2} come \textit{optical axis}. \\ \\
+In tale visualizzazione c'è una semplice relazione che mappa i punti \textit{Q\textsubscript{i}} nello spazio (coordinate (\textit{X\textsubscript{i}},\textit{Y\textsubscript{i}},\textit{Z\textsubscript{i}})) nei punti sul piano di proiezione (coordinate (\textit{x\textsubscript{i}},\textit{y\textsubscript{i}})), tale relazione è chiamata \textit{projective transform}. Viene riportata in figura ~\ref{fig:calib3}
 \begin{figure}[htpb] 
 \centering 
 \includegraphics[scale=0.4]{./images/calib3.png} 

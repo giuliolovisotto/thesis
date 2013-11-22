@@ -42,9 +42,8 @@ Anno Accademico 2012/2013 \\}
 \body
 \input{sections/introduzione}
 \newpage
-\input{sections/pianificazione}
 \newpage
-\input{sections/tecnologie}
+\input{sections/pianificazione}
 \newpage
 \section{Analisi dei Requisiti} \label{sec:analisi}
 
@@ -67,6 +66,8 @@ In questa sezione verranno elencati i requisiti software che sono emersi dai cas
 \input{sections/requisiti} 
 \input{sections/trReqUc}
 \newpage
+\input{sections/tecnologie}
+\newpage
 \input{sections/problematiche}
 \newpage
 
@@ -84,7 +85,7 @@ Si allega il diagramma dei package che descrive l'architettura generale dell'app
 \label{fig:archgen}
 \end{figure}
 La motivazione di tale scelta nasce dalla necessità di voler massimizzare l'indipendenza di ogni livello rispetto al resto del sistema. Sia per quanto riguarda il livello dei dati che quello di presentazione infatti era richiesto che fossero sostituibili in blocco senza andare a modificare le altre componenti dell'applicazione. Si è preferita tale decisione per far fronte (in particolare) ad eventuali necessità di sostituzione di librerie grafiche (Qt) oppure di tipo di database, infatti il team di sviluppo non è stato in grado di garantire che MySql sarebbe riuscito a tenere dei tempi di risposta soddisfacenti all'aumentare della complessità e della cardinalità dei dati.
-\newpage
+
 \subsection{Database schema} \label{sec:dbschema}
 Si riporta di seguito uno schema del database utilizzato all'interno dell'applicazione per il salvataggio dei dati. \\
 Sebbene alcuni dati fossero comunque legati ad una telecamera, si è scelto di separare le informazioni in tabelle diverse per coerenza e semplicità. Si sono quindi divise le informazioni riguardanti la calibrazione nella tabella \textbf{tbl_cam_calibration} e nella tabella \textbf{tbl_cam}.\\

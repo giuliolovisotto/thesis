@@ -1,5 +1,5 @@
 \subsubsection{C1 - UserInterface} \label{sec:c1}
-Componente che rappresenta il livello \textit{user interface} nell'architettura three tier dell'applicazione. Esso contiene l'interfaccia grafica visibile all'utente, ed è responsabile della presentazione dei dati e della corretta interpretazione degli eventi utente e del loro inoltro nei livelli inferiori. Contiene le finestre del programma, cioè finestra principale, finestra di configurazione, finestra di calibrazione. \\
+Componente che si occupa di rappresentare il livello \textit{user interface} nell'architettura three tier dell'applicazione. Esso contiene l'interfaccia grafica visibile all'utente, ed è responsabile della presentazione dei dati e della corretta interpretazione degli eventi utente e del loro inoltro nei livelli inferiori. Contiene le finestre del programma, cioè finestra principale, finestra di configurazione, finestra di calibrazione. \\
 \begin{figure}[!h] 
 
         \centering 
@@ -49,15 +49,15 @@ Componente che si occupa della visualizzazione della finestra principale del pro
 Relazioni con altri componenti: 
 \begin{itemize} 
 \item [\textbf{C1.1}]
-Il componente tiene il controllo di tutte le finestre del sistema, quindi utilizza ConfigurationWindow ~\ref{sec:c1.1} per accedere alle finestre di configurazione. E' responsabile per la loro corretta visualizzazione e l'interpretazione dei loro segnali 
+Il componente tiene il controllo di tutte le finestre del sistema, quindi utilizza ConfigurationWindow (~\ref{sec:c1.1}) per accedere alle finestre di configurazione. E' responsabile per la loro corretta visualizzazione e l'interpretazione dei loro segnali 
 \item [\textbf{C2.1}]
-Il componente utilizza le funzionalità messe a disposizione da Configurer ~\ref{sec:c2.1} per rispondere alle richieste di configurazione dell'utente 
+Il componente utilizza le funzionalità messe a disposizione da Configurer (~\ref{sec:c2.1}) per rispondere alle richieste di configurazione dell'utente 
 \item [\textbf{C2.2}]
-Il componente utilizza le funzionalità messe a disposizione da Importer ~\ref{sec:c2.2} per rispondere alle richieste riguardanti l'importazione dei file .DXF e la loro conversione e visualizzazione. 
+Il componente utilizza le funzionalità messe a disposizione da Importer (~\ref{sec:c2.2}) per rispondere alle richieste riguardanti l'importazione dei file .DXF e la loro conversione e visualizzazione. 
 \item [\textbf{C2.3}]
-Il componente utilizza le funzionalità messe a disposizione da StatGenerator ~\ref{sec:c2.3} per rispondere alle richieste di visualizzazione statistiche o generazione delle stesse 
+Il componente utilizza le funzionalità messe a disposizione da StatGenerator (~\ref{sec:c2.3}) per rispondere alle richieste di visualizzazione statistiche o generazione delle stesse 
 \item [\textbf{C2.4}]
-Il componente utilizza le funzionalità messe a disposizione da Utility ~\ref{sec:c2.4} per svolgere le funzioni di utilità 
+Il componente utilizza le funzionalità messe a disposizione da Utility (~\ref{sec:c2.4}) per svolgere le funzioni di utilità 
 \end{itemize} 
 
 Classi contenute nel componente: 
@@ -100,7 +100,7 @@ Componente che è responsabile per le funzionalità di configurazione del sistem
 Relazioni con altri componenti: 
 \begin{itemize} 
 \item [\textbf{C3.1}]
-Utilizza DataAccessFacade ~\ref{sec:c3.1} per accedere ai dati dell'applicazione. Vi delega le operazioni sul database 
+Utilizza DataAccessFacade (~\ref{sec:c3.1}) per accedere ai dati dell'applicazione. Vi delega le operazioni sul database 
 \end{itemize} 
 
 Classi contenute nel componente: 
@@ -111,7 +111,7 @@ Classi contenute nel componente:
 \end{description}
 \item \textbf{ConfigurationCore}
 \begin{description}
-\item [\textit{descrizione e utilizzo:}] Ridefinisce e ConfigurationInterface. Implementa metodi necessari per la configurazione delle telecamere nel sistema. Fornisce i metodi per eseguire inserimento, modifica e cancellazione delle informazioni presenti nelle tabelle del database locale
+\item [\textit{descrizione e utilizzo:}] Eredita ConfigurationInterface. Implementa metodi necessari per la configurazione delle telecamere nel sistema. Fornisce i metodi per eseguire inserimento, modifica e cancellazione delle informazioni presenti nelle tabelle del database locale
 \item [\textit{classi ereditate:}] ConfigurationInterface
 \end{description}
 \item \textbf{BlDataProxy}
@@ -126,7 +126,7 @@ Classi contenute nel componente:
 \begin{itemize} 
 \item \textbf{MappingInterface}
 \begin{description}
-\item [\textit{descrizione e utilizzo:}] Classe astratta che definisce l'interfaccia per le funzionalità di \textit{mapping}. Viene implementata e i suoi metodi vengono ridefiniti per fornire le funzionalità di importazione e generazione della \textit{homography matrix}
+\item [\textit{descrizione e utilizzo:}] Classe astratta che definisce l'interfaccia per i metodi di \textit{mapping}. Viene implementata e i suoi metodi vengono ridefiniti per fornire le funzionalità di importazione e generazione della \textit{homography matrix}
 \end{description}
 \item \textbf{MappingCore}
 \begin{description}
@@ -135,7 +135,7 @@ Classi contenute nel componente:
 \end{description}
 \item \textbf{DxfImage}
 \begin{description}
-\item [\textit{descrizione e utilizzo:}] Descrive un immagine contenuta in un file di tipo .DXF. Contiene dei riferimenti a delle strutture che rappresentano gli elementi (quelli che vengono importati) contenuti nel file. Viene utilizzata per l'importazione dei file .DXF oltre che per la loro successiva rappresentazione grafica
+\item [\textit{descrizione e utilizzo:}] Descrive un immagine contenuta in un file di tipo .DXF. Contiene dei riferimenti a delle strutture che rappresentano gli elementi (quelli che vengono importati) contenuti nel file. Viene utilizzata per l'importazione dei file .DXF e per la loro visualizzazione
 
 \end{description}
 \item \textbf{DxfImporter}
@@ -158,7 +158,7 @@ Componente responsabile per la generazione delle statistiche di tracking a parti
 Relazioni con altri componenti: 
 \begin{itemize} 
 \item [\textbf{C3.1}]
-Utilizza DataAccessFacade ~\ref{sec:c3.1} per accedere ai dati dell'applicazione. Recupera le informazioni sui dati per la generazione delle statistiche richieste 
+Utilizza DataAccessFacade (~\ref{sec:c3.1}) per accedere ai dati dell'applicazione. Recupera le informazioni sui dati per la generazione delle statistiche richieste 
 \end{itemize} 
 
 Classi contenute nel componente: 
@@ -204,7 +204,7 @@ Componente che rappresenta un \textit{facade} per l'effettivo accesso alle funzi
 Relazioni con altri componenti: 
 \begin{itemize} 
 \item [\textbf{C3.2}]
-Utilizza LocalDb ~\ref{sec:c3.2} per accedere ai metodi specifici del database locale, vi inoltra quindi le richieste di insert, update, delete, select 
+Utilizza LocalDb (~\ref{sec:c3.2}) per accedere ai metodi specifici del database locale, vi inoltra quindi le richieste di insert, update, delete, select 
 \end{itemize} 
 
 Classi contenute nel componente: 
