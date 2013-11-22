@@ -1,0 +1,80 @@
+Al fine di portare avanti il processo di verifica con metodo è stato necessario renderlo quantificabile. A tal fine si sono definite delle metriche sul codice sorgente. Esse sono di seguito definite e il loro significato viene descritto e spiegato. Per ogni metrica si sono definiti un range di accettazione e un range ottimale. \\
+
+{\large \textbf{Complessità ciclomatica}\par} 
+Tale metrica indica il numero di cammini linearmente indipendenti percorribili durante l'esecuzione di un singolo metodo. Tale metrica è molto importante in quanto ha implicazioni dirette sulle attività di testing: infatti essa rappresenta un \textit{upper bound} per il numero di routine di test necessarie per raggiungere un completo \textit{branch coverage}. \\ 
+\textbf{Range definiti:}
+\begin{itemize}
+	\item Accettazione \textless = 20
+	\item Ottimale \textless = 12
+\end{itemize}
+
+{\large \textbf{NbLinesOfCode}\par} 
+Tale metrica indica il numero di righe di codice. Essa può essere considerata per i tipi, i metodi, i namespace, i progetti. Tale conteggio esclude tutte le righe di codice sorgente che non vengono eseguite. Quindi sono escluse tutte le dichiarazioni di namespaces, tipi, campi, metodi oltre che i metodi astratti e i tipi enumeration. Solo il codice effettivamente eseguito è considerato nel conteggio delle righe.\\
+La metrica LOC non è sempre legata alla produttività del programmatore, ma torna utile sia nel calcolo della percentuale di statement coverage e nella valutazione del software. \\
+Essa è indice di manutenibilità (è più semplice manutenere metodi brevi) e quindi qualità del codice. Nel progetto sono stati messi dei vincoli sul numero di LOC per ogni metodo per evitare che questi diventassero troppo grandi e quindi poco gestibili.
+\textbf{Range definiti (per metodo):}
+\begin{itemize}
+	\item Accettazione \textless = 80
+	\item Ottimale \textless = 20
+\end{itemize}
+
+{\large \textbf{Numero di campi per classe}\par} 
+Indica il numero di membri di classe (campi dati) di una particolare classe. E' importante in quanto è indice delle responsabilità affidate ad una classe, se viene superato può indicare che la classe ne raggruppa troppe altre e andrebbe ulteriormente separata in classi distinte.
+\textbf{Range definiti:}
+\begin{itemize}
+	\item Accettazione \textless = 16
+	\item Ottimale \textless = 8
+\end{itemize}
+
+{\large \textbf{Numero di metodi per classe}\par} 
+Indica il numero di metodi di una particolare classe. Similmente al numero di campi per classe è importante in quanto è indice delle responsabilità affidate ad una classe, se viene superato può indicare che la classe ha troppe funzionalità e andrebbe separata.
+\textbf{Range definiti:}
+\begin{itemize}
+	\item Accettazione \textless = 16
+	\item Ottimale \textless = 8
+\end{itemize}
+
+{\large \textbf{Numero di argomenti per metodo}\par} 
+Indica il numero di argomenti passati come parametri nell'invocazione di un metodo. Metodi con troppi parametri diventano frustranti, poco manutenibili e inutilmente complessi.
+\textbf{Range definiti:}
+\begin{itemize}
+	\item Accettazione \textless = 8
+	\item Ottimale \textless = 4
+\end{itemize}
+
+{\large \textbf{Cohesion Of Methods (LCOM HS)}\par} 
+Nella programmazione ad oggetti il principio detto \textit{single responsibility principle} che afferma che una classe dovrebbe incapsulare una sola responsabilità (anche detta \textit{reason to change}). Se una classe ha una sola responsabilità (rispetta il principio) si dice che essa è coesa. In generale una classe risulterà coesa se i suoi metodi sono strettamente legati fra loro. Quando metodi distinti non usano attributi o metodi comuni significa che essi non condividono nulla e che quindi potrebbero venir separati. La metrica di LCOM misura quanto poco una classe è coesa.
+Alcune formule per il calcolo di LCOM sono le seguenti: \\
+\begin{equation}
+\begin{split}
+LCOM& = 1-(\sum(a)/m*f) \\
+LCOM HS& = m-(\sum(a)/f)(m-1) \\
+\end{split}
+\end{equation}
+dove:
+\begin{description}
+	\item \textbf{\textit{m}} è il numero di metodi nella classe (sia statici che d'istanza)
+	\item \textbf{\textit{f}} è il numero di campi dati di tipo classe all'interno della classe considerata
+	\item \textbf{\textit{a}} è il numero di metodi della classe che accedono un particolare campo dati di tipo classe
+\end{description}
+L'idea alla base di tali formule è che una classe perfettamente coesa utilizza tutti i suoi campi dati di tipo classe all'interno di ogni suo metodo il che comporta :
+\begin{equation}
+\begin{split}
+sum(a)& = m*f \\
+LCOM& = 0\\
+\end{split}
+\end{equation}
+La differenza tra LCOM e la sua versione HS (Hendersons-Sellers) è che la prima ritorna dei valori nel range [0-1] mentre la seconda nel range [1-2]. La versione HS è considerata più efficace per la rilevazione dei tipi scarsamente coesi. \\
+Tale metrica è interessante, ma va trattata con cautela (basti pensare una classe che ha n campi dati, n \textit{getters} e n \textit{setters}, essa risulterà scarsamente coesa, il che non rispecchia la realtà). Infatti essa non va valutata singolarmente, ma deve essere inserita in un contesto di valutazione che comprende altre variabili, soprattutto il numero di campi e il numero di metodi. In generale un valore di LCOM HS \textgreater 1.0 può indicare una classe poco coesa.
+\textbf{Range definiti:}
+\begin{itemize}
+	\item Accettazione \textless  1.0
+	\item Ottimale \textgreater = 1.0
+\end{itemize}
+
+{\large \textbf{Type rank}\par}
+La metrica di \textit{type rank} viene calcolata utilizzando l'algoritmo PageRank di Google sulla struttura definita dal grafo delle dipendenze tra tipi. Il \textit{type rank} medio è 1. Quello che la metrica fornisce è una valutazione di quanto una classe viene riferita dalle altre, è preferibile quindi impiegare più tempo per il testing di classi con alto rank in quanto è più facile che errori in tali classi si rivelino più pericolosi. \\
+Dato che la metrica non esprime una valutazione che indica un fattore positivo o negativo, essa verrà utilizzata come indicatore per il coverage necessario per quella classe. Il criterio è il seguente: \\ se la classe ha un valore di \textit{type rank} \textgreater = 1.0 per essa verranno progettati test sufficienti per garantire un coverage \textgreater = 95 \%
+
+
+

@@ -42,9 +42,10 @@ Anno Accademico 2012/2013 \\}
 \body
 \input{sections/introduzione}
 \newpage
-\newpage
+
 \input{sections/pianificazione}
-\newpage
+\clearpage
+
 \section{Analisi dei Requisiti} \label{sec:analisi}
 
 \subsection{Casi d'uso} \label{sec:casiduso}
@@ -107,12 +108,21 @@ Lo schema del database è allegato in figura ~\ref{fig:dbschema}.
 \newpage
 \subsection{Specifica} \label{sec:specifica}
 \input{sections/specifica}
+\subsection{Diagrammi di sequenza} \label{sec:sequenza}
+\input{sections/sequenza}
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%END PROGETTAZIONE%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{Verifica e validazione}
-\subsection{Analisi statica}
+
+\section{Verifica e validazione} \label{sec:vev}
+\subsection{Analisi statica} \label{sec:anstat}
+\input{sections/analisistatica}
 
 \subsection{Analisi dinamica}
+%qui ci va una sezione con test integraz/unita%
+%qui ci vanno i test di validazion%
+\subsection{Esiti attività di verifica} \label{sec:esiti}
+
+
 
 \subsubsection{Tracciamento test}
 \newpage

@@ -1,20 +1,22 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces diagramma di Gantt che descrive la pianificazione}}{4}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces UC0 - Scenario principale}}{5}{figure.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces UC0 - Scenario principale}}{6}{figure.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces UC1 - Calibrazione telecamere}}{6}{figure.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces UC1.1 - Calibra}}{7}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces UC2 - Configurazione telecamere}}{8}{figure.5}
+\contentsline {figure}{\numberline {5}{\ignorespaces UC2 - Configurazione telecamere}}{9}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces UC2.3 - Modifica configurazione}}{10}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces UC3 - Generazione statistiche}}{12}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Rappresenzazione di un pinhole camera model}}{22}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Rappresenzazione di un pinhole camera model rovesciato}}{23}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Espressione matematica di una relazione projective transform}}{23}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Radial distortion effect}}{24}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Tangential distortion effect}}{24}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{25}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{26}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{27}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Diagramma dei package del sistema}}{28}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Schema del database locale (MySql Workbench editor)}}{30}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces C1 - UserInterface}}{31}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces C2 - BusinessLayer}}{33}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces C3 - DataAccessLayer}}{36}{figure.20}
+\contentsline {figure}{\numberline {7}{\ignorespaces UC3 - Generazione statistiche}}{13}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Rappresenzazione di un pinhole camera model}}{23}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Rappresenzazione di un pinhole camera model rovesciato}}{24}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Espressione matematica di una relazione projective transform}}{24}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Radial distortion effect}}{25}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Tangential distortion effect}}{25}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{26}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{27}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{28}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagramma dei package del sistema}}{29}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Schema del database locale (MySql Workbench editor)}}{31}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces C1 - UserInterface}}{32}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces C2 - BusinessLayer}}{34}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces C3 - DataAccessLayer}}{37}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Diagramma di sequenza, generica richiesta dell'utente}}{39}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Diagramma di sequenza, generica richiesta utentei di modifica ai dati}}{39}{figure.22}

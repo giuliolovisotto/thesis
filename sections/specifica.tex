@@ -1,4 +1,4 @@
-\subsubsection{C1 - UserInterface} \label{sec:c1}
+\subsubsection{UserInterface} \label{sec:c1}
 Componente che si occupa di rappresentare il livello \textit{user interface} nell'architettura three tier dell'applicazione. Esso contiene l'interfaccia grafica visibile all'utente, ed è responsabile della presentazione dei dati e della corretta interpretazione degli eventi utente e del loro inoltro nei livelli inferiori. Contiene le finestre del programma, cioè finestra principale, finestra di configurazione, finestra di calibrazione. \\
 \begin{figure}[!h] 
 
@@ -18,7 +18,7 @@ Relazioni con altri componenti:
 Il livello di presentazione (UI) utilizza il livello logico per inoltrare e quindi rispondere agli eventi utente. Ogni richiesta infatti viene delegata al livello sottostante il quale è responsabile per la risoluzione e la risposta ad essa 
 \end{itemize} 
 
-\subsubsection{C1.1 - UserInterface::ConfigurationWindow} \label{sec:c1.1}
+\subsubsection{UserInterface::ConfigurationWindow} \label{sec:c1.1}
 Tale componente si occupa della presentazione delle finestre di configurazione del sistema. \\
 Classi contenute nel componente: 
 \begin{itemize} 
@@ -44,7 +44,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C1.2 - UserInterface::UiFacade} \label{sec:c1.2}
+\subsubsection{UserInterface::UiFacade} \label{sec:c1.2}
 Componente che si occupa della visualizzazione della finestra principale del programma e del corretto inoltro delle richieste e degli eventi provenienti dal livello di \textit{user interface} ai livelli inferiori.\\
 Relazioni con altri componenti: 
 \begin{itemize} 
@@ -74,7 +74,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C2 - BusinessLayer} \label{sec:c2}
+\subsubsection{BusinessLayer} \label{sec:c2}
 Componente che rappresenta il livello \textit{business layer} nell'architettura three tier dell'applicazione. Esso contiene le classi che contengono la logica dell'applicazione, ed è responsabile della corretta risoluzione delle chiamate provenienti dall'\textit{user interface}. Esso è inoltre incaricato di gestire gli errori e di segnalarli.
 \\
 \begin{figure}[!h] 
@@ -95,7 +95,7 @@ Relazioni con altri componenti:
 Il livello logico (BL) utilizza il livello di \textit{data access} ogni volta che ha necessità di reperire informazioni memorizzate in un database o di modificarle (select, insert, update, delete). Una volta che ha ottenuto il dato o eseguito l'operazione la interpreta e agisce di conseguenza (stato di errore, corretta terminazione) 
 \end{itemize} 
 
-\subsubsection{C2.1 - BusinessLayer::Configurer} \label{sec:c2.1}
+\subsubsection{BusinessLayer::Configurer} \label{sec:c2.1}
 Componente che è responsabile per le funzionalità di configurazione del sistema.\\
 Relazioni con altri componenti: 
 \begin{itemize} 
@@ -120,7 +120,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C2.2 - BusinessLayer::Importer} \label{sec:c2.2}
+\subsubsection{BusinessLayer::Importer} \label{sec:c2.2}
 Componente responsabile per le funzionalità di importazione dei file .DXF e la loro conversione e rendering in immagine. \\
 Classi contenute nel componente: 
 \begin{itemize} 
@@ -153,7 +153,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C2.3 - BusinessLayer::StatGenerator} \label{sec:c2.3}
+\subsubsection{BusinessLayer::StatGenerator} \label{sec:c2.3}
 Componente responsabile per la generazione delle statistiche di tracking a partire dai dati del sistema. \\
 Relazioni con altri componenti: 
 \begin{itemize} 
@@ -174,7 +174,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C2.4 - BusinessLayer::Utility} \label{sec:c2.4}
+\subsubsection{BusinessLayer::Utility} \label{sec:c2.4}
 Componente che contiene alcune funzionalità di utility. Esse vengono messe a disposizione per i livelli superiori del sistema.\\
 Classi contenute nel componente: 
 \begin{itemize} 
@@ -184,7 +184,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C3 - DataAccessLayer} \label{sec:c3}
+\subsubsection{DataAccessLayer} \label{sec:c3}
 Componente che rappresenta il livello di \textit{data access layer} nell'architettura three tier dell'applicazione. Esso fornisce le funzionalità per l'accesso ai dati del sistema, che sono salvati in maniera persistente in dei database. 
 \\
 \begin{figure}[!h] 
@@ -199,7 +199,7 @@ Componente che rappresenta il livello di \textit{data access layer} nell'archite
 
         \end{figure} 
 
-\subsubsection{C3.1 - DataAccessLayer::DataAccessFacade} \label{sec:c3.1}
+\subsubsection{DataAccessLayer::DataAccessFacade} \label{sec:c3.1}
 Componente che rappresenta un \textit{facade} per l'effettivo accesso alle funzionalità del \textit{data access layer}. Esso si occupa di fornire una via unificata di accesso per i possibili database differenti con cui l'applicazione si deve interfacciare\\
 Relazioni con altri componenti: 
 \begin{itemize} 
@@ -215,7 +215,7 @@ Classi contenute nel componente:
 \end{description}
 \end{itemize}
 
-\subsubsection{C3.2 - DataAccessLayer::LocalDb} \label{sec:c3.2}
+\subsubsection{DataAccessLayer::LocalDb} \label{sec:c3.2}
 Componente che contiene le funzionalità per l'accesso al database locale. Esso fornisce l'interfaccia per la modifica dei dati e il loro recupero\\
 Classi contenute nel componente: 
 \begin{itemize} 
