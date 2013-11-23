@@ -118,11 +118,23 @@ Lo schema del database è allegato in figura ~\ref{fig:dbschema}.
 \input{sections/analisistatica}
 
 \subsection{Analisi dinamica}
+Nello sviluppo del sistema si sono progettati dei test che precedessero l'implementazione di ogni componente e di ogni classe. I test di integrazione hanno definito come i vari componenti avrebbero dovuto relazionarsi tra di loro, e per ogni componente sono stati scritti adeguati test di unità che andassero a verificare il corretto funzionamento delle classi interne. Ogni unità è stata testata con un certo livello di profondità in relazione al ruolo che essa aveva all'interno del sistema, più essa era utilizzata da altre classi e più completa (in termini di coverage) era la \textit{suite} di test progettata per quell'unità. \\ \\
+I test di unità in buona parte verificano il buon funzionamento del recupero dei dati dal database, mentre per i livelli piu alti essi controllano il corretto inoltro delle richieste ai livelli inferiori e la correttezza dei risultati ritornati dal livello logico. \\
+Per il testing delle chiamate ai metodi forniti dalle librerie esterne si è cercato di verificare la correttezza nei limiti di risorse e tempo disponibili. Per funzionalità complesse (in particolare chiamate a metodi di OpenCV, quali calcolo matrice omografica e calibrazione telecamere, non si sono progettati test in quanto tali operazioni sono particolarmente complesse e avrebbero richiesto una profonda comprensione della teoria e quindi maggior tempo per la stesura di test efficaci. \\ \\
+Il tool utilizzato per eseguire i test è stato Google Test come esposto in sezione ~\ref{sec:tecnologie}, esso si è rivelato sufficiente e completo per il tipo di verifica effettuata.
 %qui ci va una sezione con test integraz/unita%
-%qui ci vanno i test di validazion%
+%qui ci van no i test di validazion%
 \subsection{Esiti attività di verifica} \label{sec:esiti}
-
-
+Di seguito vengono riportati i risultati dell'analisi statica sul codice sorgente effettuata con lo strumento CppDepend presentato in sezione ~\ref{sec:tecnologie}. Vengono riportati per ogni classe:
+\begin{itemize}
+	\item \textbf{Nome: } il nome della classe preceduto dall'indicazione del componente padre
+	\item \textbf{ccn: } per la metrica di complessità ciclomatica viene riportato il valore ottenuto dalla media aritmetica dei vari metodi di classe (per evitare di riportare i singoli metodi)
+	\item \textbf{nbloc: } per la metrica di linee di codice viene riportato il valore ottenuto dalla media aritmetica dei vari metodi di classe (per evitare di riportare i singoli metodi)
+	\item \textbf{lcomhs: } il valore ottenuto dal calcolo della metrica \textit{lcomhs} che indica la coesione dei metodi di una classe.
+	\item \textbf{typerank: } il valore ottenuto dal calcolo della metrica \textit{type rank}
+\end{itemize}
+In fase di sviluppo i limiti sull'analisi statica hanno influito in quanto alcuni metodi sono stati rivisitati per rientrare nei limiti previsti, soprattutto per aderire alla complessità ciclomatica e al numero di linee di codice accettabili. Tutti i limiti definiti in sezione ~\ref{sec:anstat} sono infine stati rispettati, quelli più immediati sono stati rispettati la scrittura del codice (numero di campi, numero di argomenti) mentre alcuni hanno comportato modifiche successive alla prima stesura per rientrare nei vincoli imposti (complessità ciclomatica, loc per metodo). Il valore di \textit{lcomhs} pari a 0 è possibile in quanto nella classe non sono presenti campi dati. Nell'ambito del progetto questo è spiegato dalla staticità dei metodi messi a disposizione da DataAccessFacade.\\ 
+\input{sections/esitistatica}
 
 \subsubsection{Tracciamento test}
 \newpage

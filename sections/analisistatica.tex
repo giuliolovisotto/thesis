@@ -69,12 +69,11 @@ Tale metrica è interessante, ma va trattata con cautela (basti pensare una clas
 \textbf{Range definiti:}
 \begin{itemize}
 	\item Accettazione \textless  1.0
-	\item Ottimale \textgreater = 1.0
 \end{itemize}
 
 {\large \textbf{Type rank}\par}
 La metrica di \textit{type rank} viene calcolata utilizzando l'algoritmo PageRank di Google sulla struttura definita dal grafo delle dipendenze tra tipi. Il \textit{type rank} medio è 1. Quello che la metrica fornisce è una valutazione di quanto una classe viene riferita dalle altre, è preferibile quindi impiegare più tempo per il testing di classi con alto rank in quanto è più facile che errori in tali classi si rivelino più pericolosi. \\
-Dato che la metrica non esprime una valutazione che indica un fattore positivo o negativo, essa verrà utilizzata come indicatore per il coverage necessario per quella classe. Il criterio è il seguente: \\ se la classe ha un valore di \textit{type rank} \textgreater = 1.0 per essa verranno progettati test sufficienti per garantire un coverage \textgreater = 95 \%
+Dato che la metrica non esprime una valutazione che indica un fattore positivo o negativo, essa verrà utilizzata come indicatore per il coverage necessario per quella classe. Il criterio è il seguente: \\ se la classe ha un valore di \textit{type rank} \textgreater = 1.0 per essa verranno progettati test sufficienti per garantire un coverage \textgreater = 90 \%
 
 
 
