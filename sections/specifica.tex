@@ -13,10 +13,10 @@ Componente che si occupa di rappresentare il livello \textit{user interface} nel
         \end{figure} 
 
 Relazioni con altri componenti: 
-\begin{itemize} 
-\item [\textbf{C2}]
+\begin{description} 
+\item [\textbf{BusinessLayer}]
 Il livello di presentazione (UI) utilizza il livello logico per inoltrare e quindi rispondere agli eventi utente. Ogni richiesta infatti viene delegata al livello sottostante il quale è responsabile per la risoluzione e la risposta ad essa 
-\end{itemize} 
+\end{description} 
 
 \subsubsection{UserInterface::ConfigurationWindow} \label{sec:c1.1}
 Tale componente si occupa della presentazione delle finestre di configurazione del sistema. \\
@@ -24,7 +24,7 @@ Classi contenute nel componente:
 \begin{itemize} 
 \item \textbf{ClickArea}
 \begin{description}
-\item [\textit{descrizione e utilizzo:}] Rappresenta un'area dove le coordinate dei click dell'utente vengono trattate in una particolare maniera e memorizzate in dei campi per una successiva elaborazione. Viene utilizzata per il calcolo della matrice omografica che permette la mappatura dei dati di tracking, memorizza i punti cliccati dall'utente affinché possano in seguito essere recuperati e passati alle classi che li elaborano
+\item [\textit{descrizione e utilizzo:}] Rappresenta una finestra dove le coordinate dei click dell'utente vengono memorizzate in dei campi per una successiva elaborazione. Viene utilizzata per il calcolo della matrice omografica che permette la mappatura dei dati di tracking, memorizza le coordinate (relative alla finestra) dei punti cliccati dall'utente affinché possano in seguito essere recuperati ed elaborati
 \item [\textit{classi ereditate:}] QLabel
 \end{description}
 \item \textbf{CamCaptureWindow}
@@ -47,18 +47,18 @@ Classi contenute nel componente:
 \subsubsection{UserInterface::UiFacade} \label{sec:c1.2}
 Componente che si occupa della visualizzazione della finestra principale del programma e del corretto inoltro delle richieste e degli eventi provenienti dal livello di \textit{user interface} ai livelli inferiori.\\
 Relazioni con altri componenti: 
-\begin{itemize} 
-\item [\textbf{C1.1}]
+\begin{description} 
+\item [\textbf{ConfigurationWindow}]
 Il componente tiene il controllo di tutte le finestre del sistema, quindi utilizza ConfigurationWindow (~\ref{sec:c1.1}) per accedere alle finestre di configurazione. E' responsabile per la loro corretta visualizzazione e l'interpretazione dei loro segnali 
-\item [\textbf{C2.1}]
+\item [\textbf{Configurer}]
 Il componente utilizza le funzionalità messe a disposizione da Configurer (~\ref{sec:c2.1}) per rispondere alle richieste di configurazione dell'utente 
-\item [\textbf{C2.2}]
+\item [\textbf{Importer}]
 Il componente utilizza le funzionalità messe a disposizione da Importer (~\ref{sec:c2.2}) per rispondere alle richieste riguardanti l'importazione dei file .DXF e la loro conversione e visualizzazione. 
-\item [\textbf{C2.3}]
+\item [\textbf{StatGenerator}]
 Il componente utilizza le funzionalità messe a disposizione da StatGenerator (~\ref{sec:c2.3}) per rispondere alle richieste di visualizzazione statistiche o generazione delle stesse 
-\item [\textbf{C2.4}]
+\item [\textbf{Utility}]
 Il componente utilizza le funzionalità messe a disposizione da Utility (~\ref{sec:c2.4}) per svolgere le funzioni di utilità 
-\end{itemize} 
+\end{description} 
 
 Classi contenute nel componente: 
 \begin{itemize} 
@@ -90,18 +90,18 @@ Componente che rappresenta il livello \textit{business layer} nell'architettura 
         \end{figure} 
 
 Relazioni con altri componenti: 
-\begin{itemize} 
-\item [\textbf{C3}]
+\begin{description} 
+\item [\textbf{DataAccessLayer}]
 Il livello logico (BL) utilizza il livello di \textit{data access} ogni volta che ha necessità di reperire informazioni memorizzate in un database o di modificarle (select, insert, update, delete). Una volta che ha ottenuto il dato o eseguito l'operazione la interpreta e agisce di conseguenza (stato di errore, corretta terminazione) 
-\end{itemize} 
+\end{description} 
 
 \subsubsection{BusinessLayer::Configurer} \label{sec:c2.1}
 Componente che è responsabile per le funzionalità di configurazione del sistema.\\
 Relazioni con altri componenti: 
-\begin{itemize} 
-\item [\textbf{C3.1}]
+\begin{description} 
+\item [\textbf{DataAccessFacade}]
 Utilizza DataAccessFacade (~\ref{sec:c3.1}) per accedere ai dati dell'applicazione. Vi delega le operazioni sul database 
-\end{itemize} 
+\end{description} 
 
 Classi contenute nel componente: 
 \begin{itemize} 
@@ -156,10 +156,10 @@ Classi contenute nel componente:
 \subsubsection{BusinessLayer::StatGenerator} \label{sec:c2.3}
 Componente responsabile per la generazione delle statistiche di tracking a partire dai dati del sistema. \\
 Relazioni con altri componenti: 
-\begin{itemize} 
-\item [\textbf{C3.1}]
+\begin{description} 
+\item [\textbf{DataAccessFacade}]
 Utilizza DataAccessFacade (~\ref{sec:c3.1}) per accedere ai dati dell'applicazione. Recupera le informazioni sui dati per la generazione delle statistiche richieste 
-\end{itemize} 
+\end{description} 
 
 Classi contenute nel componente: 
 \begin{itemize} 
@@ -202,10 +202,10 @@ Componente che rappresenta il livello di \textit{data access layer} nell'archite
 \subsubsection{DataAccessLayer::DataAccessFacade} \label{sec:c3.1}
 Componente che rappresenta un \textit{facade} per l'effettivo accesso alle funzionalità del \textit{data access layer}. Esso si occupa di fornire una via unificata di accesso per i possibili database differenti con cui l'applicazione si deve interfacciare\\
 Relazioni con altri componenti: 
-\begin{itemize} 
-\item [\textbf{C3.2}]
+\begin{description} 
+\item [\textbf{LocalDb}]
 Utilizza LocalDb (~\ref{sec:c3.2}) per accedere ai metodi specifici del database locale, vi inoltra quindi le richieste di insert, update, delete, select 
-\end{itemize} 
+\end{description} 
 
 Classi contenute nel componente: 
 \begin{itemize} 

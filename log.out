@@ -1,90 +1,90 @@
---2013-11-26 01:20:25--  http://localhost/comp_class.php
+--2013-11-26 15:15:07--  http://localhost/comp_class.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: ‘comp_class.php’
 
-     0K .......... .....                                        190M=0s
+     0K .......... .....                                        113M=0s
 
-2013-11-26 01:20:25 (190 MB/s) - ‘comp_class.php’ saved [16119]
+2013-11-26 15:15:07 (113 MB/s) - ‘comp_class.php’ saved [16237]
 
---2013-11-26 01:20:26--  http://localhost/usecase.php
+--2013-11-26 15:15:07--  http://localhost/usecase.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: ‘usecase.php’
 
-     0K .......... .....                                        170M=0s
+     0K .......... .....                                        106M=0s
 
-2013-11-26 01:20:26 (170 MB/s) - ‘usecase.php’ saved [15691]
+2013-11-26 15:15:07 (106 MB/s) - ‘usecase.php’ saved [15691]
 
---2013-11-26 01:20:26--  http://localhost/tr_req_uc.php
+--2013-11-26 15:15:07--  http://localhost/tr_req_uc.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2197 (2,1K) [text/html]
 Saving to: ‘tr_req_uc.php’
 
-     0K ..                                                    100%  318M=0s
+     0K ..                                                    100%  183M=0s
 
-2013-11-26 01:20:26 (318 MB/s) - ‘tr_req_uc.php’ saved [2197/2197]
+2013-11-26 15:15:08 (183 MB/s) - ‘tr_req_uc.php’ saved [2197/2197]
 
---2013-11-26 01:20:26--  http://localhost/req.php
+--2013-11-26 15:15:08--  http://localhost/req.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 6716 (6,6K) [text/html]
 Saving to: ‘req.php’
 
-     0K ......                                                100%  383M=0s
+     0K ......                                                100%  395M=0s
 
-2013-11-26 01:20:26 (383 MB/s) - ‘req.php’ saved [6716/6716]
+2013-11-26 15:15:08 (395 MB/s) - ‘req.php’ saved [6716/6716]
 
---2013-11-26 01:20:26--  http://localhost/esitistatica.php
+--2013-11-26 15:15:08--  http://localhost/esitistatica.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1925 (1,9K) [text/html]
 Saving to: ‘esitistatica.php’
 
-     0K .                                                     100%  162M=0s
+     0K .                                                     100%  167M=0s
 
-2013-11-26 01:20:26 (162 MB/s) - ‘esitistatica.php’ saved [1925/1925]
+2013-11-26 15:15:08 (167 MB/s) - ‘esitistatica.php’ saved [1925/1925]
 
---2013-11-26 01:20:26--  http://localhost/esitoreq.php
+--2013-11-26 15:15:08--  http://localhost/esitoreq.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 7757 (7,6K) [text/html]
 Saving to: ‘esitoreq.php’
 
-     0K .......                                               100%  344M=0s
+     0K .......                                               100%  455M=0s
 
-2013-11-26 01:20:26 (344 MB/s) - ‘esitoreq.php’ saved [7757/7757]
+2013-11-26 15:15:08 (455 MB/s) - ‘esitoreq.php’ saved [7757/7757]
 
---2013-11-26 01:20:26--  http://localhost/esitovalidazione.php
+--2013-11-26 15:15:08--  http://localhost/esitovalidazione.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 5877 (5,7K) [text/html]
 Saving to: ‘esitovalidazione.php’
 
-     0K .....                                                 100%  348M=0s
+     0K .....                                                 100%  356M=0s
 
-2013-11-26 01:20:26 (348 MB/s) - ‘esitovalidazione.php’ saved [5877/5877]
+2013-11-26 15:15:08 (356 MB/s) - ‘esitovalidazione.php’ saved [5877/5877]
 
---2013-11-26 01:20:26--  http://localhost/tests.php
+--2013-11-26 15:15:08--  http://localhost/tests.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 3632 (3,5K) [text/html]
 Saving to: ‘tests.php’
 
-     0K ...                                                   100%  219M=0s
+     0K ...                                                   100%  234M=0s
 
-2013-11-26 01:20:26 (219 MB/s) - ‘tests.php’ saved [3632/3632]
+2013-11-26 15:15:08 (234 MB/s) - ‘tests.php’ saved [3632/3632]
 
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian)
  restricted \write18 enabled.
@@ -863,17 +863,9 @@ ers, che potesse massimizzare
 Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
 [32]
-Overfull \hbox (2.85875pt too wide) in paragraph at lines 110--111
-\OT1/cmr/m/n/10 optato per tale decisione per permettere in futuro di associare
- diverse \OT1/cmr/m/it/10 homography
-
-Overfull \hbox (16.13339pt too wide) in paragraph at lines 112--113
-\OT1/cmr/m/n/10 per renderli direttamente disponibili. In tale modo anche con u
-n sistema funzionante
-
-Overfull \hbox (25.81485pt too wide) in paragraph at lines 112--113
-\OT1/cmr/m/n/10 generazione delle statistiche. Similmente a quanto detto sopra 
-il campo \OT1/cmr/bx/n/10 synchronized
+Overfull \hbox (4.11475pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 matrici diverse che esprimono relazioni diverse tra le coordina
+te dei punti tracciati
 <./images/dbschema.png, id=789, 718.685pt x 583.17876pt>
 <use ./images/dbschema.png>
 
@@ -885,8 +877,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.05243pt too wide) in paragraph at lines 27--28
-[]\OT1/cmr/m/n/10 Rappresenta un'area dove le coordinate dei click dell'utente
+Overfull \hbox (11.25366pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/10 dell'utente vengono memorizzate in dei campi per una successiva
+ elaborazione.
 [34 <./images/dbschema.png>]
 Overfull \hbox (13.27222pt too wide) in paragraph at lines 37--38
 \OT1/cmr/m/n/10 telecamera. Essa viene utilizzata per l'inserimento di una nuov
@@ -899,9 +892,13 @@ Overfull \hbox (1.7815pt too wide) in paragraph at lines 48--50
 \OT1/cmr/m/n/10 Componente che si occupa della visualizzazione della finestra p
 rincipale del programma
 
-Overfull \hbox (2.22588pt too wide) in paragraph at lines 52--53
-\OT1/cmr/m/n/10 responsabile per la loro corretta visualizzazione e l'interpret
-azione dei loro segnali 
+Overfull \hbox (28.04893pt too wide) in paragraph at lines 52--53
+\OT1/cmr/m/n/10 di configurazione. E' responsabile per la loro corretta visuali
+zzazione e l'interpretazione
+
+Overfull \hbox (31.25323pt too wide) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/10 Il componente utilizza le funzionalit^^Ra messe a disposizion
+e da StatGenerator
 
 Overfull \hbox (2.9877pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10 Finestra principale del programma. Contiene i bottoni
@@ -913,6 +910,10 @@ Overfull \hbox (43.88518pt too wide) in paragraph at lines 78--91
 \OT1/cmr/m/n/10 Componente che rappresenta il livello \OT1/cmr/m/it/10 business
  layer \OT1/cmr/m/n/10 nell'architettura three tier dell'applicazione.
 [36]
+Overfull \hbox (42.51964pt too wide) in paragraph at lines 103--104
+[]\OT1/cmr/m/n/10 Utilizza DataAccessFacade ( []6.4.10[]) per accedere ai dati 
+dell'applicazione.
+
 Overfull \hbox (33.10799pt too wide) in paragraph at lines 110--111
 []\OT1/cmr/m/n/10 Classe astratta che definisce l'interfaccia per la configuraz
 ione
@@ -924,9 +925,9 @@ Overfull \hbox (11.2814pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/10 viene utilizzata dalle classi che si occupano di della mappatur
 a per l'esecuzione
 
-Overfull \hbox (15.6333pt too wide) in paragraph at lines 161--162
+Overfull \hbox (42.51964pt too wide) in paragraph at lines 161--162
 []\OT1/cmr/m/n/10 Utilizza DataAccessFacade ( []6.4.10[]) per accedere ai dati 
-dell'applicazione. Recupera
+dell'applicazione.
 
 Overfull \hbox (21.69131pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/m/n/10 Classe astratta che definisce l'interfaccia per le funzionali
@@ -1222,10 +1223,6 @@ Underfull \hbox (badness 4518) in paragraph at lines 93--93
 Underfull \hbox (badness 4205) in paragraph at lines 93--93
 \OT1/cmr/m/n/10 massima indipendenza tra le
 ) (./sections/esitistatica.tex
-Overfull \hbox (15.72598pt too wide) in paragraph at lines 167--1
-\OT1/cmr/m/n/10 sono stati rivisitati per rientrare nei limiti previsti, soprat
-tutto per aderire alla complessit^^Ra
-
 Underfull \hbox (badness 10000) in paragraph at lines 167--1
 
 
@@ -1400,6 +1397,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--179
 Underfull \hbox (badness 10000) in paragraph at lines 174--179
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.07225pt.
  We now make it that large for the rest of the document.
@@ -1442,6 +1442,6 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on ./build/thesis.pdf (66 pages, 2218136 bytes).
+Output written on ./build/thesis.pdf (66 pages, 2218216 bytes).
 SyncTeX written on ./build/thesis.synctex.gz.
 Transcript written on ./build/thesis.log.

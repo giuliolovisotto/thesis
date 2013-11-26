@@ -87,3 +87,7 @@
 \contentsline {subsection}{\numberline {8.3}Esiti test di validazione}{52}{subsection.8.3}
 \contentsline {subsection}{\numberline {8.4}Considerazioni sugli esiti}{55}{subsection.8.4}
 \contentsline {section}{\numberline {9}Conclusioni}{57}{section.9}
+\contentsline {subsection}{\numberline {9.1}Prodotto finale}{57}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Conoscenze acquisite}{57}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Prospettive dell'applicazione}{58}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Relazione con la preparazione accademica}{58}{subsection.9.4}
