@@ -1,22 +1,23 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces diagramma di Gantt che descrive la pianificazione}}{4}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces UC0 - Scenario principale}}{6}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces UC1 - Calibrazione telecamere}}{6}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces UC1.1 - Calibra}}{7}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces UC2 - Configurazione telecamere}}{9}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces UC2.3 - Modifica configurazione}}{10}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces UC3 - Generazione statistiche}}{13}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Rappresenzazione di un pinhole camera model}}{25}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Rappresenzazione di un pinhole camera model rovesciato}}{26}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Espressione matematica di una relazione projective transform}}{26}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Radial distortion effect}}{27}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Tangential distortion effect}}{27}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{28}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{29}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{30}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Diagramma dei package del sistema}}{31}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Schema del database locale (MySql Workbench editor)}}{34}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces C1 - UserInterface}}{35}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces C2 - BusinessLayer}}{37}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces C3 - DataAccessLayer}}{40}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Diagramma di sequenza, generica richiesta dell'utente}}{42}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Diagramma di sequenza, generica richiesta utentei di modifica ai dati}}{42}{figure.22}
+\contentsline {figure}{\numberline {1}{\ignorespaces Road Map degli obiettivi raggiunti da Pathflow}}{1}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces diagramma di Gantt che descrive la pianificazione}}{4}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces UC0 - Scenario principale}}{6}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces UC1 - Calibrazione telecamere}}{6}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces UC1.1 - Calibra}}{7}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces UC2 - Configurazione telecamere}}{9}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces UC2.3 - Modifica configurazione}}{10}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces UC3 - Generazione statistiche}}{13}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Rappresenzazione di un pinhole camera model}}{25}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Rappresenzazione di un pinhole camera model rovesciato}}{26}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Espressione matematica di una relazione projective transform}}{26}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Radial distortion effect}}{27}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Tangential distortion effect}}{27}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Screenshot preso dallo stream video della camera che mostra come gli oggetti vengono tracciati}}{28}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces I 4 punti necessari per il calcolo della homography matrix}}{29}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Sistema di coordinate utilizzato per il disegno su Qt}}{30}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagramma dei package del sistema}}{31}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Schema del database locale (MySql Workbench editor)}}{34}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces C1 - UserInterface}}{35}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces C2 - BusinessLayer}}{37}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces C3 - DataAccessLayer}}{40}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Diagramma di sequenza, generica richiesta dell'utente}}{42}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Diagramma di sequenza, generica richiesta utentei di modifica ai dati}}{42}{figure.23}

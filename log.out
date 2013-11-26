@@ -1,90 +1,90 @@
---2013-11-26 15:15:07--  http://localhost/comp_class.php
+--2013-11-26 22:56:34--  http://localhost/comp_class.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: ‘comp_class.php’
 
-     0K .......... .....                                        113M=0s
+     0K .......... .....                                       54,9M=0s
 
-2013-11-26 15:15:07 (113 MB/s) - ‘comp_class.php’ saved [16237]
+2013-11-26 22:56:34 (54,9 MB/s) - ‘comp_class.php’ saved [16237]
 
---2013-11-26 15:15:07--  http://localhost/usecase.php
+--2013-11-26 22:56:34--  http://localhost/usecase.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: ‘usecase.php’
 
-     0K .......... .....                                        106M=0s
+     0K .......... .....                                       55,7M=0s
 
-2013-11-26 15:15:07 (106 MB/s) - ‘usecase.php’ saved [15691]
+2013-11-26 22:56:34 (55,7 MB/s) - ‘usecase.php’ saved [15691]
 
---2013-11-26 15:15:07--  http://localhost/tr_req_uc.php
+--2013-11-26 22:56:34--  http://localhost/tr_req_uc.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2197 (2,1K) [text/html]
 Saving to: ‘tr_req_uc.php’
 
-     0K ..                                                    100%  183M=0s
+     0K ..                                                    100%  172M=0s
 
-2013-11-26 15:15:08 (183 MB/s) - ‘tr_req_uc.php’ saved [2197/2197]
+2013-11-26 22:56:34 (172 MB/s) - ‘tr_req_uc.php’ saved [2197/2197]
 
---2013-11-26 15:15:08--  http://localhost/req.php
+--2013-11-26 22:56:34--  http://localhost/req.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 6716 (6,6K) [text/html]
 Saving to: ‘req.php’
 
-     0K ......                                                100%  395M=0s
+     0K ......                                                100%  398M=0s
 
-2013-11-26 15:15:08 (395 MB/s) - ‘req.php’ saved [6716/6716]
+2013-11-26 22:56:34 (398 MB/s) - ‘req.php’ saved [6716/6716]
 
---2013-11-26 15:15:08--  http://localhost/esitistatica.php
+--2013-11-26 22:56:34--  http://localhost/esitistatica.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1925 (1,9K) [text/html]
 Saving to: ‘esitistatica.php’
 
-     0K .                                                     100%  167M=0s
+     0K .                                                     100%  161M=0s
 
-2013-11-26 15:15:08 (167 MB/s) - ‘esitistatica.php’ saved [1925/1925]
+2013-11-26 22:56:34 (161 MB/s) - ‘esitistatica.php’ saved [1925/1925]
 
---2013-11-26 15:15:08--  http://localhost/esitoreq.php
+--2013-11-26 22:56:34--  http://localhost/esitoreq.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 7757 (7,6K) [text/html]
 Saving to: ‘esitoreq.php’
 
-     0K .......                                               100%  455M=0s
+     0K .......                                               100%  438M=0s
 
-2013-11-26 15:15:08 (455 MB/s) - ‘esitoreq.php’ saved [7757/7757]
+2013-11-26 22:56:34 (438 MB/s) - ‘esitoreq.php’ saved [7757/7757]
 
---2013-11-26 15:15:08--  http://localhost/esitovalidazione.php
+--2013-11-26 22:56:34--  http://localhost/esitovalidazione.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 5877 (5,7K) [text/html]
 Saving to: ‘esitovalidazione.php’
 
-     0K .....                                                 100%  356M=0s
+     0K .....                                                 100%  354M=0s
 
-2013-11-26 15:15:08 (356 MB/s) - ‘esitovalidazione.php’ saved [5877/5877]
+2013-11-26 22:56:34 (354 MB/s) - ‘esitovalidazione.php’ saved [5877/5877]
 
---2013-11-26 15:15:08--  http://localhost/tests.php
+--2013-11-26 22:56:34--  http://localhost/tests.php
 Resolving localhost (localhost)... 127.0.0.1
 Connecting to localhost (localhost)|127.0.0.1|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 3632 (3,5K) [text/html]
 Saving to: ‘tests.php’
 
-     0K ...                                                   100%  234M=0s
+     0K ...                                                   100%  220M=0s
 
-2013-11-26 15:15:08 (234 MB/s) - ‘tests.php’ saved [3632/3632]
+2013-11-26 22:56:34 (220 MB/s) - ‘tests.php’ saved [3632/3632]
 
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian)
  restricted \write18 enabled.
@@ -183,7 +183,7 @@ LaTeX Warning: Label `sec:esiti' multiply defined.
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
-<./images/logo_unipd.png, id=361, 943.525pt x 949.5475pt>
+<./images/logo_unipd.png, id=377, 943.525pt x 949.5475pt>
 <use ./images/logo_unipd.png>
 Overfull \vbox (175.48444pt too high) detected at line 35
 
@@ -197,32 +197,41 @@ LaTeX Warning: Float too large for page by 12.0pt on input line 35.
 Overfull \hbox (14.92505pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/10 del progetto di stage svolto da Giulio Lovisotto presso la ditt
 a Pathflow s.r.l. L'esposizione
+<./images/roadmap.png, id=578, 885.3075pt x 500.87125pt>
+<use ./images/roadmap.png>
+Overfull \hbox (4.67114pt too wide) in paragraph at lines 7--20
+\OT1/cmr/m/n/10 tecniche di \OT1/cmr/m/it/10 body tracking \OT1/cmr/m/n/10 con 
+un sistema basato su telecamere, di fornire delle dashboard
 
-Overfull \hbox (3.08705pt too wide) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 7--20
+
+
+Overfull \hbox (3.08705pt too wide) in paragraph at lines 22--25
 \OT1/cmr/m/n/10 fornire alle figure professionali che si occupano del marketing
  (quali visual merchandiser
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 
-      [1]
-Overfull \hbox (7.44809pt too wide) in paragraph at lines 29--31
+l.25 \begin{itemize}
+                     [1 <./images/roadmap.png>]
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+
+Overfull \hbox (7.44809pt too wide) in paragraph at lines 35--37
 []\OT1/cmr/m/n/10 Tale software ^^Re inteso per l'utilizzo solo da parte di un 
 utente amministratore (interfaccia
 )pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
@@ -237,7 +246,7 @@ tivo della pianificazione
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
-<./images/pianificazione.png, id=567, 853.1875pt x 547.04375pt>
+<./images/pianificazione.png, id=589, 853.1875pt x 547.04375pt>
 <use ./images/pianificazione.png>)pdfTeX warning (ext4): destination with the s
 ame identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -258,7 +267,7 @@ LaTeX Warning: Hyper reference `sec:uc2' on page 5 undefined on input line 7.
 
 LaTeX Warning: Hyper reference `sec:uc3' on page 5 undefined on input line 8.
 
-<./images/uc0.png, id=577, 809.0225pt x 519.9425pt> <use ./images/uc0.png>
+<./images/uc0.png, id=599, 809.0225pt x 519.9425pt> <use ./images/uc0.png>
 Overfull \hbox (24.89468pt too wide) in paragraph at lines 27--28
 []\OT1/cmr/m/n/10 L'utente pu^^Ro iniziare la calibrazione delle telecamere, op
 pure pu^^Ro visualizzare
@@ -270,7 +279,7 @@ LaTeX Warning: Hyper reference `sec:uc1.1' on page 5 undefined on input line 30
 LaTeX Warning: Hyper reference `sec:uc1.2' on page 5 undefined on input line 31
 .
 
-<./images/uc1.png, id=579, 666.49pt x 506.89375pt> <use ./images/uc1.png>
+<./images/uc1.png, id=601, 666.49pt x 506.89375pt> <use ./images/uc1.png>
 Overfull \hbox (0.22794pt too wide) in paragraph at lines 50--51
 []\OT1/cmr/m/n/10 L'utente sta selezionando le opzioni per la calibrazione dell
 e telecamere.
@@ -307,7 +316,7 @@ LaTeX Warning: Hyper reference `sec:uc1.1.4' on page 7 undefined on input line
 Overfull \hbox (2.9877pt too wide) in paragraph at lines 58--59
 []\OT1/cmr/m/n/10 I file che contengono i file di calibrazione della telecamera
  (distortion
-<./images/uc11.png, id=601, 574.145pt x 476.78125pt> <use ./images/uc11.png>
+<./images/uc11.png, id=623, 574.145pt x 476.78125pt> <use ./images/uc11.png>
 Overfull \hbox (3.81134pt too wide) in paragraph at lines 81--82
 []\OT1/cmr/m/n/10 L'utente seleziona il numero di immagini da utilizzare per la
  calibrazione 
@@ -356,7 +365,7 @@ LaTeX Warning: Hyper reference `sec:uc2.6' on page 9 undefined on input line 14
 LaTeX Warning: Hyper reference `sec:uc2.7' on page 9 undefined on input line 14
 3.
 
-<./images/uc2.png, id=620, 572.1375pt x 562.1pt> <use ./images/uc2.png>
+<./images/uc2.png, id=642, 572.1375pt x 562.1pt> <use ./images/uc2.png>
 [9 <./images/uc2.png>]
 
 LaTeX Warning: Hyper reference `sec:uc2.3.1' on page 10 undefined on input line
@@ -382,7 +391,7 @@ LaTeX Warning: Hyper reference `sec:uc2.3.5' on page 10 undefined on input line
 Overfull \hbox (16.9421pt too wide) in paragraph at lines 187--188
 []\OT1/cmr/m/n/10 L'utente modifica il percorso del file di configurazione cont
 enente la \OT1/cmr/m/it/10 homography
-<./images/uc23.png, id=636, 621.32124pt x 474.77374pt> <use ./images/uc23.png>
+<./images/uc23.png, id=658, 621.32124pt x 474.77374pt> <use ./images/uc23.png>
 [10 <./images/uc23.png>]
 Overfull \hbox (4.978pt too wide) in paragraph at lines 256--257
 []\OT1/cmr/m/n/10 L'utente indica al sistema di attivare la telecamera selezion
@@ -403,7 +412,7 @@ LaTeX Warning: Hyper reference `sec:uc3.2' on page 12 undefined on input line 2
 LaTeX Warning: Hyper reference `sec:uc3.3' on page 12 undefined on input line 2
 92.
 
-<./images/uc3.png, id=657, 593.21625pt x 411.5375pt> <use ./images/uc3.png>
+<./images/uc3.png, id=679, 593.21625pt x 411.5375pt> <use ./images/uc3.png>
 [12]
 Overfull \hbox (2.53354pt too wide) in paragraph at lines 322--323
 []\OT1/cmr/m/n/10 L'utente indica al sistema di generare l'heatmap con la rappr
@@ -768,11 +777,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
-<./images/calib1.png, id=724, 957.5775pt x 381.425pt>
+<./images/calib1.png, id=747, 957.5775pt x 381.425pt>
 <use ./images/calib1.png>
 Overfull \hbox (13.13838pt too wide) in paragraph at lines 14--15
  [][] 
-<./images/calib2.png, id=726, 945.5325pt x 550.055pt>
+<./images/calib2.png, id=749, 945.5325pt x 550.055pt>
 <use ./images/calib2.png>
 Overfull \hbox (8.32047pt too wide) in paragraph at lines 22--23
  [][] 
@@ -781,7 +790,7 @@ Overfull \hbox (0.62282pt too wide) in paragraph at lines 19--26
 []\OT1/cmr/m/n/10 In tale figura \OT1/cmr/m/it/10 f \OT1/cmr/m/n/10 ^^Re la \OT
 1/cmr/m/it/10 focal lenght \OT1/cmr/m/n/10 della telecamera, \OT1/cmr/m/it/10 Z
  \OT1/cmr/m/n/10 la distanza tra oggetto e telecamera,
-<./images/calib3.png, id=730, 701.62125pt x 162.6075pt>
+<./images/calib3.png, id=753, 701.62125pt x 162.6075pt>
 <use ./images/calib3.png>
 Underfull \hbox (badness 10000) in paragraph at lines 27--35
 
@@ -792,9 +801,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
 [26 <./images/calib2.png> <./images/calib3.png>]
-<./images/calib4.png, id=744, 950.55125pt x 390.45876pt>
+<./images/calib4.png, id=767, 950.55125pt x 390.45876pt>
 <use ./images/calib4.png>
-<./images/calib5.png, id=746, 940.51375pt x 459.7175pt>
+<./images/calib5.png, id=769, 940.51375pt x 459.7175pt>
 <use ./images/calib5.png>
 Underfull \hbox (badness 10000) in paragraph at lines 46--61
 
@@ -803,13 +812,13 @@ Overfull \hbox (7.86485pt too wide) in paragraph at lines 64--68
 \OT1/cmr/m/n/10 All'interno del progetto ^^Re stata utilizzata una immagine di 
 una scacchiera con dimensioni
 [27 <./images/calib4.png> <./images/calib5.png>]
-<./images/track1.png, id=756, 919.435pt x 688.5725pt>
+<./images/track1.png, id=779, 919.435pt x 688.5725pt>
 <use ./images/track1.png>
 Overfull \hbox (9.05003pt too wide) in paragraph at lines 71--80
 \OT1/cmr/m/n/10 contemporaneamente. Si riporta uno screenshot che mostra il ris
 ultato di tale operazione
 [28 <./images/track1.png>]
-<./images/track2.png, id=763, 400.49625pt x 115.43124pt>
+<./images/track2.png, id=786, 400.49625pt x 115.43124pt>
 <use ./images/track2.png>
 Overfull \hbox (30.60944pt too wide) in paragraph at lines 85--86
  [][] 
@@ -832,8 +841,8 @@ e. All'interno del progetto
 
 Overfull \hbox (9.48534pt too wide) in paragraph at lines 96--97
 \OT1/cmr/m/n/10 all'asse x. Ci^^Ro ha comportato un ulteriore passaggio. Si rip
-orta in figura  []15[] un'immagine
-[29 <./images/track2.png>] <./images/qtgrad1.png, id=771, 337.26pt x 321.2pt>
+orta in figura  []16[] un'immagine
+[29 <./images/track2.png>] <./images/qtgrad1.png, id=794, 337.26pt x 321.2pt>
 <use ./images/qtgrad1.png>
 Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
@@ -851,7 +860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
 Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
-<./images/archgen.png, id=778, 367.3725pt x 667.49374pt>
+<./images/archgen.png, id=801, 367.3725pt x 667.49374pt>
 <use ./images/archgen.png> [31 <./images/archgen.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
@@ -866,13 +875,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--103
 Overfull \hbox (4.11475pt too wide) in paragraph at lines 110--111
 \OT1/cmr/m/n/10 matrici diverse che esprimono relazioni diverse tra le coordina
 te dei punti tracciati
-<./images/dbschema.png, id=789, 718.685pt x 583.17876pt>
+
+Overfull \hbox (6.05927pt too wide) in paragraph at lines 112--113
+\OT1/cmr/m/n/10 all'intera area del locale e non pi^^Ru legati ad una telecamer
+a (infatti ogni telecamera
+<./images/dbschema.png, id=812, 718.685pt x 583.17876pt>
 <use ./images/dbschema.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33] (./sections/specifica.tex
-<./images/c1.png, id=797, 915.42pt x 623.32875pt> <use ./images/c1.png>
+<./images/c1.png, id=820, 915.42pt x 623.32875pt> <use ./images/c1.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -902,7 +915,7 @@ e da StatGenerator
 
 Overfull \hbox (2.9877pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10 Finestra principale del programma. Contiene i bottoni
-<./images/c2.png, id=813, 940.51375pt x 605.26125pt> <use ./images/c2.png>
+<./images/c2.png, id=836, 940.51375pt x 605.26125pt> <use ./images/c2.png>
 Overfull \hbox (6.313pt too wide) in paragraph at lines 84--85
  [][] 
 
@@ -940,7 +953,7 @@ Overfull \hbox (14.38335pt too wide) in paragraph at lines 178--180
 Overfull \hbox (2.77463pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/10 Classe contenitore per le funzioni di utilit^^Ra del sistema.
 
-<./images/c3.png, id=830, 903.375pt x 674.52pt> <use ./images/c3.png> [39]
+<./images/c3.png, id=853, 903.375pt x 674.52pt> <use ./images/c3.png> [39]
 Overfull \hbox (30.83691pt too wide) in paragraph at lines 214--215
 []\OT1/cmr/m/n/10 La classe rappresenta un \OT1/cmr/m/it/10 facade \OT1/cmr/m/n
 /10 per l'accesso alle funzionalit^^Ra
@@ -960,10 +973,10 @@ Overfull \hbox (8.60788pt too wide) in paragraph at lines 240--241
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 244--245
 []\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
 ) (./sections/sequenza.tex
-<./images/seq1.png, id=842, 1084.05pt x 474.77374pt> <use ./images/seq1.png>
+<./images/seq1.png, id=865, 1084.05pt x 474.77374pt> <use ./images/seq1.png>
 Overfull \hbox (63.72649pt too wide) in paragraph at lines 5--6
  [][] 
-<./images/seq2.png, id=844, 1057.9525pt x 644.4075pt> <use ./images/seq2.png>
+<./images/seq2.png, id=867, 1057.9525pt x 644.4075pt> <use ./images/seq2.png>
 Overfull \hbox (53.28767pt too wide) in paragraph at lines 12--13
  [][] 
 )
@@ -1397,8 +1410,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--179
 Underfull \hbox (badness 10000) in paragraph at lines 174--179
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
+
+Overfull \hbox (17.88348pt too wide) in paragraph at lines 184--186
+\OT1/cmr/m/n/10 database. Sebbene la libreria abbia permesso uno sviluppo rapid
+o (in quanto relativamente
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.07225pt.
@@ -1412,11 +1429,69 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56] [57] (./bibliography/bibliography.tex
+[56] (./sections/conclusioni.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+
+Overfull \hbox (13.71674pt too wide) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 dettagliati per la generazione delle statistiche individuate. C
+i^^Ro ^^Re stato causato soprattutto
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+
+Overfull \hbox (21.39249pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/bx/n/10 C++ \OT1/cmr/m/n/10 essendo un linguaggio anziano e di basso
+ livello ^^Re stato importante approfondire
+
+Overfull \hbox (1.1333pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 la conoscenza e l'esperienza nell'uso di C++. Infatti ritengo c
+he sia fondamentale
+
+Overfull \hbox (21.1982pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 la pratica per raggiungere un buon livello nella stesura di cod
+ice pulito e manutenibile.
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+
+Overfull \hbox (7.80574pt too wide) in paragraph at lines 25--28
+\OT1/cmr/m/n/10 durante il tracking degli oggetti. Infatti in un contesto reale
+ tale eventualit^^Ra (l'\OT1/cmr/m/it/10 occlusion\OT1/cmr/m/n/10 )
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+
+Overfull \hbox (10.74445pt too wide) in paragraph at lines 25--28
+\OT1/cmr/m/n/10 dei dati raccolti. In futuro sar^^Ra necessario ricavare non so
+lo le coordinate di tracciamento,
+
+Overfull \hbox (37.57794pt too wide) in paragraph at lines 25--28
+\OT1/cmr/m/n/10 ma anche informazioni pi^^Ru dettagliate. Particolare attenzion
+e verr^^Ra posta nell'implementazione
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+) [59] (./bibliography/bibliography.tex
 Underfull \hbox (badness 2359) in paragraph at lines 13--14
 []\OT1/cmr/m/n/10 Robert Lagani^^Rere, \OT1/cmr/m/it/10 OpenCV 2 Computer Visio
 n Application Programming
-) [58] (./build/thesis.aux)
+) [60] (./build/thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1442,6 +1517,6 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on ./build/thesis.pdf (66 pages, 2218216 bytes).
+Output written on ./build/thesis.pdf (68 pages, 2338881 bytes).
 SyncTeX written on ./build/thesis.synctex.gz.
 Transcript written on ./build/thesis.log.
