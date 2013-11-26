@@ -1,0 +1,47 @@
+\begin{center}
+\begin{longtable}{ | l | p{5cm} | c | c |}
+\caption{Tabella esito test di validazione} \\
+\hline 
+\textbf{Codice} & \textbf{Definizione del test} & \textbf{Requisito} & \textbf{Esito} \\ \hline
+\endfirsthead
+\multicolumn{4}{c}%
+
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{Codice} & \textbf{Definizione del test} & \textbf{Requisito} & \textbf{Esito} \\
+\hline
+\endhead
+\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot 
+\textbf{TV1} & Verificato dal buon esito dei test figli & \textbf{RF1} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV1.1} & Verificato dal buon esito dei test figli & \textbf{RF1.1} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV1.1.1} & Si verifica che nelle impostazioni di calibrazione si possa scegliere il numero di immagini da utilizzare & \textbf{RF1.1.1} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV1.1.2} & Si verifica che nelle impostazioni di calibrazione sia presente la scelta del frame step & \textbf{RF1.1.2} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV1.1.3} & Si verifica che nelle impostazioni di calibrazione si possa scegliere l'indirizzo della telecamera da calibrare & \textbf{RF1.1.3} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV1.1.4} & Si verifica che si possa eseguire la calibrazione delle telecamere  e che le impostazioni di calibrazione scelte vengano rispettate & \textbf{RF1.1.4} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV1.2} & Si verifica che si possa visualizzare lo stream video della telecamera calibrato con i file di calibrazione & \textbf{RF1.2} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2} & Verificato dal buon esito dei test figli & \textbf{RF2} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.1} & Si verifica che si possa inserire una nuova telecamera & \textbf{RF2.1} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.2} & Si verifica che si possa rimuovere la telecamera selezionata & \textbf{RF2.2} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.3} & Verificato dal buon esito dei test figli & \textbf{RF2.3} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.3.1} & Si verifica che sia possibile modificare il percorso del file di distortion e che il cambiamento venga salvato & \textbf{RF2.3.1} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.3.2} & Si verifica che sia possibile modificare il percorso del file di intrinsics e che il cambiamento venga salvato & \textbf{RF2.3.2} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.3.3.} & Si verifica che sia possibile modificare il valore dell'altezza del frame usato per la telecamera, e che il cambiamento venga salvato & \textbf{RF2.3.3} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.3.4} & Si verifica che sia possibile modificare il valore della larghezza del frame usato per la telecamera, e che il cambiamento venga salvato & \textbf{RF2.3.4} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.3.5} & Si verifica che sia possibile modificare il percorso del file homography matrix e che il cambiamento venga salvato & \textbf{RF2.3.5} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.4} & Si verifica che si possa catturare un frame preso dal video stream della telecamera selezionata, e che si possa salvare l'immagine nel file system & \textbf{RF2.4} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.5} & Si verifica che si possa selezionare un file .DXF dal file system, convertirlo e che venga riprodotta in un file .PNG l'immagine contenuta nel file di partenza & \textbf{RF2.5} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.6} & Si verifica che sia possibile, a partire da 2 immagini contenenti rispettivamente la planimetria del locale e il frame preso dallo stream della telecamera, generare una matrice omografica che traduca le coordinate tra i due piani definiti dai punti segnati nelle 2 immagini di partenza & \textbf{RF2.6} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV2.7} & Si verifica che sia possibile selezionare una telecamera tra quelle presenti nel sistema, e che una volta selezionata essa sia l'oggetto delle modifiche inserite & \textbf{RF2.7} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV3} & Verificato dal buon esito dei test figli & \textbf{RF3} &  \textcolor{red}{non implementato}  \\ \hline 
+\textbf{TV3.1} & Si verifica che sia possibile trasformare i dati di tracking presenti nel database nei loro corrispettivi (secondo la matrice di trasformazione scelta) su di un'immagine .PNG che descrive la planimetria del locale & \textbf{RF3.1} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV3.2} & Si verifica che sia possibile generare una heatmap grafica che visualizzi le zone di calore in base alle occorrenze delle coordinate di tracciamento presenti nel database & \textbf{RF3.2} &  \textcolor{green!80!blue}{superato}  \\ \hline 
+\textbf{TV3.3} & Verificato dal buon esito dei test figli & \textbf{RF3.3} &  \textcolor{red}{non implementato}  \\ \hline 
+\textbf{TV3.3.1} & Il test verifica che si possa generare la statistica di \textit{dwell time} a partire dai dati presenti nel database & \textbf{RF3.3.1} &  \textcolor{red}{non implementato}  \\ \hline 
+\textbf{TV3.3.2} & Il test verifica che si possa generare la statistica di \textit{counting} a partire dai dati presenti nel database & \textbf{RF3.3.2} &  \textcolor{red}{non implementato}  \\ \hline 
+\textbf{TV3.3.3} & Il test verifica che si possa generare la statistica di \textit{waiting line} a partire dai dati presenti nel database & \textbf{RF3.3.3} &  \textcolor{red}{non implementato}  \\ \hline 
+\end{longtable}
+\end{center}
+

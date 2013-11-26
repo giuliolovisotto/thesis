@@ -6,7 +6,11 @@
 \usepackage{longtable}
 \usepackage{fixltx2e}
 \usepackage{underscore}
+\usepackage{xcolor}
 %\usepackage[none]{hyphenat}
+
+\renewcommand{\labelitemii}{$\Box$}
+\renewcommand{\labelitemiii}{$\rhd$}
 
 \righthyphenmin 62
 \lefthyphenmin 62
@@ -79,6 +83,7 @@ In questa sezione verranno elencati i requisiti software che sono emersi dai cas
 Le specifiche del sistema concordate con l'azienda richiedevano esplicitamente che il sistema fosse realizzato seguendo lo stile architetturale \textit{three tier} (come esplicitato nei requisiti).  \\
 Dato tale vincolo si è progettato il sistema affinché esso fosse rispettato, per fare ciò si sono definiti i tre livelli del pattern (\textit{user interface, business layer, data access layer}) come i tre package di alto livello. Il package UserInterface si occuperà della presentazione dei dati e dell'interfaccia utente, il package BusinessLayer conterrà la logica dell'applicazione, il package DataAccessLayer si occuperà di fornire l'accesso ai dati dell'applicazione (contenuti in un database). Si sono ulteriormente separate le funzionalità di ciascun livello in sotto-componenti i quali raggruppano insiemi di funzionalità affini. \\
 Si allega il diagramma dei package che descrive l'architettura generale dell'applicazione in figura ~\ref{fig:archgen}.\\\\
+
 \begin{figure}[htpb]
 \centering
 \includegraphics[scale=0.5]{./images/archgen.png}
@@ -86,6 +91,16 @@ Si allega il diagramma dei package che descrive l'architettura generale dell'app
 \label{fig:archgen}
 \end{figure}
 La motivazione di tale scelta nasce dalla necessità di voler massimizzare l'indipendenza di ogni livello rispetto al resto del sistema. Sia per quanto riguarda il livello dei dati che quello di presentazione infatti era richiesto che fossero sostituibili in blocco senza andare a modificare le altre componenti dell'applicazione. Si è preferita tale decisione per far fronte (in particolare) ad eventuali necessità di sostituzione di librerie grafiche (Qt) oppure di tipo di database, infatti il team di sviluppo non è stato in grado di garantire che MySql sarebbe riuscito a tenere dei tempi di risposta soddisfacenti all'aumentare della complessità e della cardinalità dei dati.
+
+
+\subsection{Utilizzo MVC} \label{sec:mvc}
+Nelle prime fasi di analisi quando è stato esplicitato che il sistema avrebbe dovuto essere strutturato secondo un'architettura in stile \textit{three-tier}, si è svolta una riunione nella quale lo stagista ha proposto di utilizzare invece il pattern MVC. \\
+L'MVC infatti avrebbe garantito uno sviluppo leggermente più veloce, in quanto le componenti sono maggiormente legate (rispetto ad un architettura a layers) e quindi non c'è la necessità di separare completamente le strutture e i tipi utilizzati in ognuna di esse. Inoltre dal punto di vista dello stagista l'MVC si prestava meglio al tipo di programma che andava prodotto, infatti esso avrebbe dovuto funzionare  in ambito Desktop e avrebbe richiesto interazione diretta da parte di un'utente addetto alla configurazione. \\ \\
+Il team di sviluppo ha quindi esplicitato alcuni obiettivi che il software avrebbe in futuro dovuto raggiungere. E' stato chiarito che le componenti dovessero essere quanto più separate e indipendenti tra loro possibile perché l'obiettivo futuro era quello di rendere disponibile l'interazione con l'applicazione da remoto. L'idea di fondo infatti è che quando il sistema avrà raggiunto un sufficiente grado di stabilità tutta la parte di amministrazione (e configurazione) verrà portata fuori dallo store locale e messa online. \\
+Le motivazioni di questa scelta sono soprattutto legate alle difficoltà logistiche che la configurazione in locale avrebbe comportato qualora le installazioni avrebbero raggiunto una distribuzione molto ampia e sparsa (eventualmente anche a livello internazionale). \\ 
+Per questo motivo era preferibile mantenere una struttura a layers, che potesse massimizzare non solo l'indipendenza tra le diverse componenti, ma anche quella tra layer, in maniera che in futuro una chiamata ad un'unico metodo esegua in maniera del tutto autonoma l'operazione che si intende svolgere. \\ \\
+D'altro canto non si è puntato subito a tale obiettivo (accesso e configurazione da remoto) in quanto si è ritenuto preferibile partire con un primo prototipo (che sarebbe entrato in \textit{beta testing} su 2 negozi Telecom di Roma) che fornisse un'interfaccia semplice, ma che offrisse soprattutto la possibilità di eseguire \textit{debug}. Infatti essendo il sistema nel suo insieme molto complesso si è ritenuto necessario avere la possibilità di fare \textit{debug} sul sistema fino a che questo non avesse raggiunto una stabilità e affidabilità sufficiente per garantirne il funzionamento.
+
 
 \subsection{Database schema} \label{sec:dbschema}
 Si riporta di seguito uno schema del database utilizzato all'interno dell'applicazione per il salvataggio dei dati. \\
@@ -116,15 +131,31 @@ Lo schema del database è allegato in figura ~\ref{fig:dbschema}.
 \section{Verifica e validazione} \label{sec:vev}
 \subsection{Analisi statica} \label{sec:anstat}
 \input{sections/analisistatica}
-
 \subsection{Analisi dinamica}
 Nello sviluppo del sistema si sono progettati dei test che precedessero l'implementazione di ogni componente e di ogni classe. I test di integrazione hanno definito come i vari componenti avrebbero dovuto relazionarsi tra di loro, e per ogni componente sono stati scritti adeguati test di unità che andassero a verificare il corretto funzionamento delle classi interne. Ogni unità è stata testata con un certo livello di profondità in relazione al ruolo che essa aveva all'interno del sistema, più essa era utilizzata da altre classi e più completa (in termini di coverage) era la \textit{suite} di test progettata per quell'unità. \\ \\
 I test di unità in buona parte verificano il buon funzionamento del recupero dei dati dal database, mentre per i livelli piu alti essi controllano il corretto inoltro delle richieste ai livelli inferiori e la correttezza dei risultati ritornati dal livello logico. \\
 Per il testing delle chiamate ai metodi forniti dalle librerie esterne si è cercato di verificare la correttezza nei limiti di risorse e tempo disponibili. Per funzionalità complesse (in particolare chiamate a metodi di OpenCV, quali calcolo matrice omografica e calibrazione telecamere, non si sono progettati test in quanto tali operazioni sono particolarmente complesse e avrebbero richiesto una profonda comprensione della teoria e quindi maggior tempo per la stesura di test efficaci. \\ \\
 Il tool utilizzato per eseguire i test è stato Google Test come esposto in sezione ~\ref{sec:tecnologie}, esso si è rivelato sufficiente e completo per il tipo di verifica effettuata.
-%qui ci va una sezione con test integraz/unita%
+\subsection{Test di Validazione}
+Vengono riportati in questa sezione i test che descrivono strategia utilizzata per la validazione del prodotto. Per chiarezza si è cercato di tenere un rapporto di 1:1 tra i requisiti funzionali e i test di validazione che verificavano quella specifica funzionalità. Per ogni test viene riportato il suo codice gerarchico identificativo, oltre che i vari sotto-test in cui esso è stato diviso.
 %qui ci van no i test di validazion%
-\subsection{Esiti attività di verifica} \label{sec:esiti}
+
+\input{sections/testvalidaz}
+
+%\subsection{Tracciamento test di validazione}
+%\input{sections/trReqUc}
+
+\newpage
+\section{Esiti attività} \label{sec:esiti}
+\subsection{Esiti sviluppo} \label{sec:esitisviluppo}
+Vengono riportate le tabelle con gli esiti dell'attività di sviluppo. E' presente una tabella per ogni tipologia di requisito (di qualità, funzionale, di vincolo). Per ogni requisito viene riportato l'esito dello stesso dopo lo sviluppo e l'implementazione del software. L'esito è stato diviso nelle seguenti categorie:
+\begin{itemize}
+ 	\item \textbf{soddisfatto:} Indica che il requisito è stato implementato con successo e quindi soddisfatto. Colore associato \textcolor{green!80!blue}{verde}
+ 	\item \textbf{non soddisfatto:} Indica che il requisito \textbf{non }è stato implementato con successo. Colore associato \textcolor{red}{rosso}
+ 	\item \textbf{incompleto:} Indica che il requisito è stato implementato solo in alcune sue parti. Colore associato \textcolor{orange}{arancione}
+\end{itemize}
+\input{sections/esitoreq}
+\subsection{Esiti analisi statica} \label{sec:esiti}
 Di seguito vengono riportati i risultati dell'analisi statica sul codice sorgente effettuata con lo strumento CppDepend presentato in sezione ~\ref{sec:tecnologie}. Vengono riportati per ogni classe:
 \begin{itemize}
 	\item \textbf{Nome: } il nome della classe preceduto dall'indicazione del componente padre
@@ -136,7 +167,23 @@ Di seguito vengono riportati i risultati dell'analisi statica sul codice sorgent
 In fase di sviluppo i limiti sull'analisi statica hanno influito in quanto alcuni metodi sono stati rivisitati per rientrare nei limiti previsti, soprattutto per aderire alla complessità ciclomatica e al numero di linee di codice accettabili. Tutti i limiti definiti in sezione ~\ref{sec:anstat} sono infine stati rispettati, quelli più immediati sono stati rispettati la scrittura del codice (numero di campi, numero di argomenti) mentre alcuni hanno comportato modifiche successive alla prima stesura per rientrare nei vincoli imposti (complessità ciclomatica, loc per metodo). Il valore di \textit{lcomhs} pari a 0 è possibile in quanto nella classe non sono presenti campi dati. Nell'ambito del progetto questo è spiegato dalla staticità dei metodi messi a disposizione da DataAccessFacade.\\ 
 \input{sections/esitistatica}
 
-\subsubsection{Tracciamento test}
+\subsection{Esiti test di validazione}
+\input{sections/esitivalidazione}
+
+\subsection{Considerazioni sugli esiti}
+Gli esiti dello sviluppo hanno portato a dei buoni risultati, la maggior parte dei requisiti sono stati soddisfatti con successo. I requisiti sulla generazione delle statistiche non sono stati realizzabili a causa dello scarso livello di dettaglio che i dati raccolti dal sistema di \textit{video analytics} hanno raggiunto. Infatti tale sistema era (ed è) ancora in fase di sviluppo, e le informazioni raccolte al momento della fine del periodo di stage non hanno permesso una precisione sufficiente per permettere allo stagista di generare statistiche come richiesto. Infatti esse si basano sull'assegnazione di un'id unico che identifichi l'oggetto tra quelli presenti nella zona tracciata, obiettivo che ancora non è stato raggiunto. \\ 
+Le ore previste per l'implementazione di tale componente sono quindi state dedicate ad attività alternative, soprattutto verifica e validazione, ma anche istruzione sulle tecniche e gli algoritmi che sono alla base del \textit{camera based tracking}. \\ \\
+Il requisito di funzionamento in ambiente Windows non è stato realizzato in quanto non è stato giudicato necessario dalle specifiche fornite, si è preferito dedicarsi ad attività volte alla validazione. Inoltre il requisito \textbf{RQ2} è stato ritenuto soddisfatto dopo il giudizio del team di sviluppo che lo ha identificato come tale dopo una valutazione che ha indagato sull'architettura dell'applicazione e sulle relazioni che i vari componenti avevano tra di loro. \\ \\
+Lo sviluppo della componente di importazione ha richiesto più ore del previsto in quanto era fondamentale non solo che l'immagine .PNG riproducesse fedelmente il file vettoriale ma anche che il risultato grafico fosse gradevole e presentabile, e ciò era ottenibile solo aggiungendo elementi e dettaglio al disegno. Per questo motivo lo studio della struttura del file .DXF ha richiesto uno sforzo ulteriore a quanto si era preventivato. \\ \\ 
+Anche la generazione dell'\textit{heatmap} è stata più impegnativa di quanto previsto. Ciò è dovuto alla difficoltà che lo stagista ha affrontato per scegliere una libreria adatta per disegnare. Infatti prima di soffermarsi su Qt altre librerie grafiche sono state provate e valutate, tra le quali possiamo elencare:
+\begin{itemize}
+	\item Cairo \url{http://cairographics.org/}
+	\item OpenGL \url{http://www.opengl.org/}
+	\item AcidMaps \url{https://github.com/XoomCode/AcidMaps/}
+\end{itemize}
+La scelta è ricaduta su Qt sia perché si è preferito non aggiungere dipendenze esterne al software, ma soprattutto perché la documentazione disponibile era chiara e completa (a differenza delle alternative sopra elencate). Inoltre l'intuizione di un algoritmo comodo per il disegno dell'\textit{heatmap} ha reso più semplice la decisione. \\
+
+
 \newpage
 \section{Conclusioni}
 \newpage

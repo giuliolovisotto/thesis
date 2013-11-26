@@ -1,0 +1,44 @@
+\begin{itemize}
+\item {\large \textbf{TV1}} Il test verifica il buon funzionamento dell'operazione di calibrazione delle telecamere
+\begin{itemize}
+\item \textbf{TV1.1} Il test verifica la possibilità di impostare le opzioni di calibrazione per le telecamere
+\begin{itemize}
+\item \textbf{TV1.1.1} Il test verifica la possibilità di selezionare il numero di immagini da utilizzare nel processo di calibrazione
+\item \textbf{TV1.1.2} Il test verifica la possibilità di selezionare il frame step da utilizzare nel processo di calibrazione
+\item \textbf{TV1.1.3} Il test verifica la possibilità di selezionare l'indirizzo che identifica la telecamera nella rete
+\item \textbf{TV1.1.4} Il test verifica la possibilità di eseguire la calibrazione con le impostazioni selezionate
+\end{itemize}
+\item \textbf{TV1.2} Il test verifica la possibilità di visualizzare un video che utilizza i file di calibrazione per ottenere un video \textit{undistorted}
+\end{itemize}
+\item {\large \textbf{TV2}} Il test verifica la possibilità di configurare le telecamere
+\begin{itemize}
+\item \textbf{TV2.1} Il test verifica la possibilità di inserire una nuova telecamera nel sistema
+\item \textbf{TV2.2} Il test verifica la possibilità di rimuovere una telecamera preesistente
+\item \textbf{TV2.3} Il test verifica la possibilità di modificare e salvare la configurazione di una telecamera
+\begin{itemize}
+\item \textbf{TV2.3.1} Il test verifica la possibilità di modificare il file distortion di calibrazione di una telecamera
+\item \textbf{TV2.3.2} Il test verifica la possibilità di modificare il file intrinsics di calibrazione di una telecamera
+\item \textbf{TV2.3.3.} Il test verifica la possibilità di modificare il valore dell'altezza del frame utilizzato per una telecamera
+\item \textbf{TV2.3.4} Il test verifica la possibilità di modificare il valore della larghezza del frame utilizzato per una telecamera
+\item \textbf{TV2.3.5} Il test verifica la possibilità di modificare il percorso del file contenente la homography matrix utilizzata per la traduzione delle coordinate
+
+\end{itemize}
+\item \textbf{TV2.4} Il test verifica la possibilità di salvare un frame preso dal video stream della telecamera
+\item \textbf{TV2.5} Il test verifica la possibilità di convertire un file .DXF in un file .PNG che riproduce il contenuto dell'immagine vettoriale
+\item \textbf{TV2.6} Il test verifica la possibilità di generare la homography matrix da utilizzare per la traduzione delle coordinate di tracking relative ad una telecamera
+\item \textbf{TV2.7} Il test verifica la possibilità di selezionare una telecamera tra quelle presenti
+\end{itemize}
+\item {\large \textbf{TV3}} Il test verifica la possibilità di generare dati statistici a partire dalle informazioni presenti nel database
+\begin{itemize}
+\item \textbf{TV3.1} Il test verifica la possibilità di trasformare e salvare i dati \textit{raw} di tracking in coordinate di posizione all'interno di un immagine .PNG che descrive la planimetria del locale
+
+\item \textbf{TV3.2} Il sistema deve permettere di generare un heatmap grafica che fornisca una rappresentazione grafica dei dati di tracking
+\item \textbf{TV3.3} Si verifica la possibilità di generare delle statistiche a partire dai dati di tracciamento
+
+\begin{itemize}
+\item \textbf{TV3.3.1} Si verifica la possibilità di generare la statistica di \textit{dwell time}
+\item \textbf{TV3.3.2} Si verifica la possibilità di generare la statistica di \textit{counting}
+\item \textbf{TV3.3.3} Il sistema deve permettere di generare la statistica di \textit{waiting line}
+\end{itemize}
+\end{itemize}
+\end{itemize}

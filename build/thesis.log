@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.28)  23 NOV 2013 19:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.28)  26 NOV 2013 01:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**../thesis.tex
-(./build/../thesis.tex
+**thesis.tex
+(./thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
 hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
@@ -215,6 +215,28 @@ LaTeX Info: Redefining \em on input line 420.
 Package: underscore 2006/09/13
 LaTeX Info: Redefining \_ on input line 42.
 )
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count106
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 \@input{thesis.preamble.aux}
 \openout2 = `thesis.preamble.aux'.
 
@@ -232,11 +254,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count106
-))
+)
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
@@ -394,23 +412,36 @@ LaTeX Info: Redefining \] on input line 2667.
 LaTeX Warning: Unused global option(s):
     [13pt].
 
-(./build/thesis.aux)
+(build/thesis.aux
+
+LaTeX Warning: Label `sec:reqvin' multiply defined.
+
+
+LaTeX Warning: Label `sec:reqvin' multiply defined.
+
+
+LaTeX Warning: Label `sec:reqqua' multiply defined.
+
+
+LaTeX Warning: Label `sec:esiti' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -450,7 +481,7 @@ LaTeX Font Info:    ... okay on input line 16.
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -460,11 +491,11 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
-(./build/thesis.out) (./build/thesis.out)
+(build/thesis.out) (build/thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
@@ -500,18 +531,18 @@ e
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<./images/logo_unipd.png, id=329, 943.525pt x 949.5475pt>
+<./images/logo_unipd.png, id=361, 943.525pt x 949.5475pt>
 File: ./images/logo_unipd.png Graphic file (type png)
 
 <use ./images/logo_unipd.png>
-Package pdftex.def Info: ./images/logo_unipd.png used on input line 31.
+Package pdftex.def Info: ./images/logo_unipd.png used on input line 35.
 (pdftex.def)             Requested size: 188.70164pt x 189.90613pt.
 
-Overfull \vbox (175.48444pt too high) detected at line 31
+Overfull \vbox (175.48444pt too high) detected at line 35
  []
 
 
-LaTeX Warning: Float too large for page by 12.0pt on input line 31.
+LaTeX Warning: Float too large for page by 12.0pt on input line 35.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -520,17 +551,15 @@ LaTeX Warning: Float too large for page by 12.0pt on input line 31.
 
 
 
-] (./build/thesis.toc
+] (build/thesis.toc
 LaTeX Font Info:    Try loading font information for U+lasy on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [3])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4]
-(./build/thesis.lot)
+ [4] (build/thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
@@ -538,7 +567,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ] [6
 
-] (./build/thesis.lof)
+] (build/thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -603,7 +632,7 @@ utente amministratore (interfaccia
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \newpage
+l.48 \newpage
               [2] (./sections/pianificazione.tex
 Overfull \hbox (4.9621pt too wide) in paragraph at lines 2--4
 \OT1/cmr/m/n/10 In questa sezione viene riportato un diagramma di Gantt riassun
@@ -615,7 +644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-<./images/pianificazione.png, id=519, 853.1875pt x 547.04375pt>
+<./images/pianificazione.png, id=567, 853.1875pt x 547.04375pt>
 File: ./images/pianificazione.png Graphic file (type png)
 
 <use ./images/pianificazione.png>
@@ -625,12 +654,12 @@ Package pdftex.def Info: ./images/pianificazione.png used on input line 15.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \clearpage
+l.51 \clearpage
                 [3]pdfTeX warning (ext4): destination with the same identifier 
 (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \clearpage
+l.51 \clearpage
                 [4 <./images/pianificazione.png>] (./sections/casiduso.tex
 
 LaTeX Warning: Hyper reference `sec:uc1' on page 5 undefined on input line 6.
@@ -641,7 +670,7 @@ LaTeX Warning: Hyper reference `sec:uc2' on page 5 undefined on input line 7.
 
 LaTeX Warning: Hyper reference `sec:uc3' on page 5 undefined on input line 8.
 
-<./images/uc0.png, id=529, 809.0225pt x 519.9425pt>
+<./images/uc0.png, id=577, 809.0225pt x 519.9425pt>
 File: ./images/uc0.png Graphic file (type png)
  <use ./images/uc0.png>
 Package pdftex.def Info: ./images/uc0.png used on input line 17.
@@ -660,7 +689,7 @@ LaTeX Warning: Hyper reference `sec:uc1.1' on page 5 undefined on input line 30
 LaTeX Warning: Hyper reference `sec:uc1.2' on page 5 undefined on input line 31
 .
 
-<./images/uc1.png, id=531, 666.49pt x 506.89375pt>
+<./images/uc1.png, id=579, 666.49pt x 506.89375pt>
 File: ./images/uc1.png Graphic file (type png)
  <use ./images/uc1.png>
 Package pdftex.def Info: ./images/uc1.png used on input line 40.
@@ -707,7 +736,7 @@ Overfull \hbox (2.9877pt too wide) in paragraph at lines 58--59
  (distortion
  []
 
-<./images/uc11.png, id=553, 574.145pt x 476.78125pt>
+<./images/uc11.png, id=601, 574.145pt x 476.78125pt>
 File: ./images/uc11.png Graphic file (type png)
  <use ./images/uc11.png>
 Package pdftex.def Info: ./images/uc11.png used on input line 71.
@@ -765,7 +794,7 @@ LaTeX Warning: Hyper reference `sec:uc2.6' on page 9 undefined on input line 14
 LaTeX Warning: Hyper reference `sec:uc2.7' on page 9 undefined on input line 14
 3.
 
-<./images/uc2.png, id=572, 572.1375pt x 562.1pt>
+<./images/uc2.png, id=620, 572.1375pt x 562.1pt>
 File: ./images/uc2.png Graphic file (type png)
  <use ./images/uc2.png>
 Package pdftex.def Info: ./images/uc2.png used on input line 152.
@@ -798,7 +827,7 @@ Overfull \hbox (16.9421pt too wide) in paragraph at lines 187--188
 enente la \OT1/cmr/m/it/10 homography
  []
 
-<./images/uc23.png, id=587, 621.32124pt x 474.77374pt>
+<./images/uc23.png, id=636, 621.32124pt x 474.77374pt>
 File: ./images/uc23.png Graphic file (type png)
  <use ./images/uc23.png>
 Package pdftex.def Info: ./images/uc23.png used on input line 201.
@@ -828,7 +857,7 @@ LaTeX Warning: Hyper reference `sec:uc3.2' on page 12 undefined on input line 2
 LaTeX Warning: Hyper reference `sec:uc3.3' on page 12 undefined on input line 2
 92.
 
-<./images/uc3.png, id=608, 593.21625pt x 411.5375pt>
+<./images/uc3.png, id=657, 593.21625pt x 411.5375pt>
 File: ./images/uc3.png Graphic file (type png)
  <use ./images/uc3.png>
 Package pdftex.def Info: ./images/uc3.png used on input line 301.
@@ -841,7 +870,7 @@ esentazione
  []
 
 ) [13 <./images/uc3.png>] (./sections/requisiti.tex
-Underfull \hbox (badness 10000) in paragraph at lines 65--1
+Underfull \hbox (badness 10000) in paragraph at lines 69--1
 
  []
 
@@ -943,11 +972,6 @@ Underfull \hbox (badness 8075) in paragraph at lines 25--25
 
 Underfull \hbox (badness 1009) in paragraph at lines 25--25
 \OT1/cmr/m/n/10 video che utilizza i parametri
- []
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 25--25
-\OT1/cmr/m/n/10 di calibrazione per correggere
  []
 
 
@@ -1439,7 +1463,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<./images/calib1.png, id=675, 957.5775pt x 381.425pt>
+<./images/calib1.png, id=724, 957.5775pt x 381.425pt>
 File: ./images/calib1.png Graphic file (type png)
 
 <use ./images/calib1.png>
@@ -1450,7 +1474,7 @@ Overfull \hbox (13.13838pt too wide) in paragraph at lines 14--15
  [][] 
  []
 
-<./images/calib2.png, id=677, 945.5325pt x 550.055pt>
+<./images/calib2.png, id=726, 945.5325pt x 550.055pt>
 File: ./images/calib2.png Graphic file (type png)
 
 <use ./images/calib2.png>
@@ -1468,7 +1492,7 @@ Overfull \hbox (0.62282pt too wide) in paragraph at lines 19--26
  \OT1/cmr/m/n/10 la distanza tra oggetto e telecamera,
  []
 
-<./images/calib3.png, id=681, 701.62125pt x 162.6075pt>
+<./images/calib3.png, id=730, 701.62125pt x 162.6075pt>
 File: ./images/calib3.png Graphic file (type png)
 
 <use ./images/calib3.png>
@@ -1490,14 +1514,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
  []
 
 [26 <./images/calib2.png> <./images/calib3.png>]
-<./images/calib4.png, id=695, 950.55125pt x 390.45876pt>
+<./images/calib4.png, id=744, 950.55125pt x 390.45876pt>
 File: ./images/calib4.png Graphic file (type png)
 
 <use ./images/calib4.png>
 Package pdftex.def Info: ./images/calib4.png used on input line 49.
 (pdftex.def)             Requested size: 285.16757pt x 117.13852pt.
 
-<./images/calib5.png, id=697, 940.51375pt x 459.7175pt>
+<./images/calib5.png, id=746, 940.51375pt x 459.7175pt>
 File: ./images/calib5.png Graphic file (type png)
 
 <use ./images/calib5.png>
@@ -1515,7 +1539,7 @@ una scacchiera con dimensioni
  []
 
 [27 <./images/calib4.png> <./images/calib5.png>]
-<./images/track1.png, id=708, 919.435pt x 688.5725pt>
+<./images/track1.png, id=756, 919.435pt x 688.5725pt>
 File: ./images/track1.png Graphic file (type png)
 
 <use ./images/track1.png>
@@ -1528,7 +1552,7 @@ ultato di tale operazione
  []
 
 [28 <./images/track1.png>]
-<./images/track2.png, id=715, 400.49625pt x 115.43124pt>
+<./images/track2.png, id=763, 400.49625pt x 115.43124pt>
 File: ./images/track2.png Graphic file (type png)
 
 <use ./images/track2.png>
@@ -1569,7 +1593,7 @@ Overfull \hbox (9.48534pt too wide) in paragraph at lines 96--97
 orta in figura  []15[] un'immagine
  []
 
-[29 <./images/track2.png>] <./images/qtgrad1.png, id=723, 337.26pt x 321.2pt>
+[29 <./images/track2.png>] <./images/qtgrad1.png, id=771, 337.26pt x 321.2pt>
 File: ./images/qtgrad1.png Graphic file (type png)
 
 <use ./images/qtgrad1.png>
@@ -1587,59 +1611,73 @@ erivate) che implementano
  []
 
 ) [30 <./images/qtgrad1.png>]
-<./images/archgen.png, id=730, 367.3725pt x 667.49374pt>
-File: ./images/archgen.png Graphic file (type png)
-
-<use ./images/archgen.png>
-Package pdftex.def Info: ./images/archgen.png used on input line 84.
-(pdftex.def)             Requested size: 183.68579pt x 333.74606pt.
-
-Overfull \hbox (0.30925pt too wide) in paragraph at lines 79--89
+Overfull \hbox (0.30925pt too wide) in paragraph at lines 83--86
 \OT1/cmr/m/n/10 Si allega il diagramma dei package che descrive l'architettura 
 generale dell'applicazione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--89
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
  []
 
 
-Overfull \hbox (3.60553pt too wide) in paragraph at lines 79--89
- \OT1/cmr/m/n/10 La motivazione di tale scelta nasce dalla necessit^^Ra di vole
-r massimizzare l'indipendenza
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
  []
 
-[31 <./images/archgen.png>]
-Overfull \hbox (2.85875pt too wide) in paragraph at lines 95--96
+<./images/archgen.png, id=778, 367.3725pt x 667.49374pt>
+File: ./images/archgen.png Graphic file (type png)
+
+<use ./images/archgen.png>
+Package pdftex.def Info: ./images/archgen.png used on input line 89.
+(pdftex.def)             Requested size: 183.68579pt x 333.74606pt.
+ [31 <./images/archgen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
+
+ []
+
+
+Overfull \hbox (23.61475pt too wide) in paragraph at lines 97--103
+\OT1/cmr/m/n/10 Per questo motivo era preferibile mantenere una struttura a lay
+ers, che potesse massimizzare
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
+
+ []
+
+[32]
+Overfull \hbox (2.85875pt too wide) in paragraph at lines 110--111
 \OT1/cmr/m/n/10 optato per tale decisione per permettere in futuro di associare
  diverse \OT1/cmr/m/it/10 homography
  []
 
 
-Overfull \hbox (16.13339pt too wide) in paragraph at lines 97--98
+Overfull \hbox (16.13339pt too wide) in paragraph at lines 112--113
 \OT1/cmr/m/n/10 per renderli direttamente disponibili. In tale modo anche con u
 n sistema funzionante
  []
 
 
-Overfull \hbox (25.81485pt too wide) in paragraph at lines 97--98
+Overfull \hbox (25.81485pt too wide) in paragraph at lines 112--113
 \OT1/cmr/m/n/10 generazione delle statistiche. Similmente a quanto detto sopra 
 il campo \OT1/cmr/bx/n/10 synchronized
  []
 
-<./images/dbschema.png, id=737, 718.685pt x 583.17876pt>
+<./images/dbschema.png, id=789, 718.685pt x 583.17876pt>
 File: ./images/dbschema.png Graphic file (type png)
 
 <use ./images/dbschema.png>
-Package pdftex.def Info: ./images/dbschema.png used on input line 103.
+Package pdftex.def Info: ./images/dbschema.png used on input line 118.
 (pdftex.def)             Requested size: 359.34161pt x 291.58867pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32] (./sections/specifica.tex
-<./images/c1.png, id=745, 915.42pt x 623.32875pt>
+[33] (./sections/specifica.tex
+<./images/c1.png, id=797, 915.42pt x 623.32875pt>
 File: ./images/c1.png Graphic file (type png)
  <use ./images/c1.png>
 Package pdftex.def Info: ./images/c1.png used on input line 7.
@@ -1653,7 +1691,7 @@ Overfull \hbox (23.05243pt too wide) in paragraph at lines 27--28
 []\OT1/cmr/m/n/10 Rappresenta un'area dove le coordinate dei click dell'utente
  []
 
-[33 <./images/dbschema.png>]
+[34 <./images/dbschema.png>]
 Overfull \hbox (13.27222pt too wide) in paragraph at lines 37--38
 \OT1/cmr/m/n/10 telecamera. Essa viene utilizzata per l'inserimento di una nuov
 a configurazione
@@ -1664,7 +1702,7 @@ Overfull \hbox (10.96904pt too wide) in paragraph at lines 42--43
 []\OT1/cmr/m/n/10 Rappresenta la finestra che permette all'utente di gestire
  []
 
-[34 <./images/c1.png>]
+[35 <./images/c1.png>]
 Overfull \hbox (1.7815pt too wide) in paragraph at lines 48--50
 \OT1/cmr/m/n/10 Componente che si occupa della visualizzazione della finestra p
 rincipale del programma
@@ -1681,7 +1719,7 @@ Overfull \hbox (2.9877pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10 Finestra principale del programma. Contiene i bottoni
  []
 
-<./images/c2.png, id=760, 940.51375pt x 605.26125pt>
+<./images/c2.png, id=813, 940.51375pt x 605.26125pt>
 File: ./images/c2.png Graphic file (type png)
  <use ./images/c2.png>
 Package pdftex.def Info: ./images/c2.png used on input line 84.
@@ -1697,18 +1735,18 @@ Overfull \hbox (43.88518pt too wide) in paragraph at lines 78--91
  layer \OT1/cmr/m/n/10 nell'architettura three tier dell'applicazione.
  []
 
-[35]
+[36]
 Overfull \hbox (33.10799pt too wide) in paragraph at lines 110--111
 []\OT1/cmr/m/n/10 Classe astratta che definisce l'interfaccia per la configuraz
 ione
  []
 
-[36 <./images/c2.png>]
+[37 <./images/c2.png>]
 Overfull \hbox (9.41347pt too wide) in paragraph at lines 119--120
 []\OT1/cmr/m/n/10 Fornisce un accesso unificato per il solo recupero (select)
  []
 
-[37]
+[38]
 Overfull \hbox (11.2814pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/10 viene utilizzata dalle classi che si occupano di della mappatur
 a per l'esecuzione
@@ -1716,7 +1754,7 @@ a per l'esecuzione
 
 
 Overfull \hbox (15.6333pt too wide) in paragraph at lines 161--162
-[]\OT1/cmr/m/n/10 Utilizza DataAccessFacade ( []6.3.10[]) per accedere ai dati 
+[]\OT1/cmr/m/n/10 Utilizza DataAccessFacade ( []6.4.10[]) per accedere ai dati 
 dell'applicazione. Recupera
  []
 
@@ -1738,18 +1776,18 @@ Overfull \hbox (2.77463pt too wide) in paragraph at lines 183--184
 
  []
 
-<./images/c3.png, id=777, 903.375pt x 674.52pt>
+<./images/c3.png, id=830, 903.375pt x 674.52pt>
 File: ./images/c3.png Graphic file (type png)
  <use ./images/c3.png>
 Package pdftex.def Info: ./images/c3.png used on input line 194.
 (pdftex.def)             Requested size: 361.3436pt x 269.80322pt.
- [38]
+ [39]
 Overfull \hbox (30.83691pt too wide) in paragraph at lines 214--215
 []\OT1/cmr/m/n/10 La classe rappresenta un \OT1/cmr/m/it/10 facade \OT1/cmr/m/n
 /10 per l'accesso alle funzionalit^^Ra
  []
 
-[39 <./images/c3.png>]
+[40 <./images/c3.png>]
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 228--229
 []\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
  []
@@ -1775,7 +1813,7 @@ Overfull \hbox (8.60788pt too wide) in paragraph at lines 244--245
  []
 
 ) (./sections/sequenza.tex
-<./images/seq1.png, id=789, 1084.05pt x 474.77374pt>
+<./images/seq1.png, id=842, 1084.05pt x 474.77374pt>
 File: ./images/seq1.png Graphic file (type png)
  <use ./images/seq1.png>
 Package pdftex.def Info: ./images/seq1.png used on input line 5.
@@ -1785,7 +1823,7 @@ Overfull \hbox (63.72649pt too wide) in paragraph at lines 5--6
  [][] 
  []
 
-<./images/seq2.png, id=791, 1057.9525pt x 644.4075pt>
+<./images/seq2.png, id=844, 1057.9525pt x 644.4075pt>
 File: ./images/seq2.png Graphic file (type png)
  <use ./images/seq2.png>
 Package pdftex.def Info: ./images/seq2.png used on input line 12.
@@ -1796,7 +1834,7 @@ Overfull \hbox (53.28767pt too wide) in paragraph at lines 12--13
  []
 
 )
-Overfull \hbox (5.11478pt too wide) in paragraph at lines 1--113
+Overfull \hbox (5.11478pt too wide) in paragraph at lines 1--128
 \OT1/cmr/m/n/10 controlli che sono stati inseriti per verificare l'esito (succe
 sso/fallimento) dell'operazione
  []
@@ -1807,7 +1845,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40] [41 <./images/seq1.png> <./images/seq2.png>]
+[41] [42 <./images/seq1.png> <./images/seq2.png>]
 (./sections/analisistatica.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
@@ -1831,38 +1869,390 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 7.
- [42
+ [43
 
-] [43])
-Overfull \hbox (4.25363pt too wide) in paragraph at lines 121--127
+] [44])
+Overfull \hbox (4.25363pt too wide) in paragraph at lines 135--139
 \OT1/cmr/m/n/10 Nello sviluppo del sistema si sono progettati dei test che prec
 edessero l'implementazione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--127
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
 
  []
 
 
-Overfull \hbox (11.17043pt too wide) in paragraph at lines 121--127
+Overfull \hbox (11.17043pt too wide) in paragraph at lines 135--139
 \OT1/cmr/m/n/10 complesse (in particolare chiamate a metodi di OpenCV, quali ca
 lcolo matrice omografica
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--127
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
 
  []
 
-[44] (./sections/esitistatica.tex
-Overfull \hbox (15.72598pt too wide) in paragraph at lines 136--1
+[45] (./sections/testvalidaz.tex
+Overfull \hbox (8.39774pt too wide) in paragraph at lines 6--7
+[]\OT1/cmr/bx/n/10 TV1.1.1 \OT1/cmr/m/n/10 Il test verifica la possibilit^^Ra d
+i selezionare il numero di immagini
+ []
+
+
+Overfull \hbox (1.42pt too wide) in paragraph at lines 16--17
+[]\OT1/cmr/bx/n/10 TV2.2 \OT1/cmr/m/n/10 Il test verifica la possibilit^^Ra di 
+rimuovere una telecamera preesistente 
+ []
+
+
+Overfull \hbox (2.55513pt too wide) in paragraph at lines 21--22
+[]\OT1/cmr/bx/n/10 TV2.3.3. \OT1/cmr/m/n/10 Il test verifica la possibilit^^Ra 
+di modificare il valore dell'altezza
+ []
+
+[46]) [47]
+Overfull \hbox (0.69312pt too wide) in paragraph at lines 154--155
+[]\OT1/cmr/bx/n/10 non soddisfatto: \OT1/cmr/m/n/10 Indica che il requisito \OT
+1/cmr/bx/n/10 non \OT1/cmr/m/n/10 ^^Re stato implementato con successo.
+ []
+
+(./sections/esitoreq.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\OT1/cmr/m/n/10 all'utente di eseguire la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+\OT1/cmr/m/n/10 all'utente di selezionare il
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\OT1/cmr/m/n/10 all'utente di selezionare
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\OT1/cmr/m/n/10 l'indirizzo identificativo della
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 23--23
+[]|\OT1/cmr/m/n/10 Il sistema deve eseguire la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 all'utente di visualizzare un
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 video che utilizza i parametri
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/cmr/m/n/10 all'utente di configurare le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\OT1/cmr/m/n/10 all'utente di rimuovere una
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\OT1/cmr/m/n/10 all'utente di modificare e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/cmr/m/n/10 all'utente di modificare il
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 all'utente di modificare il file
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 contenente la homography
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 matrix utilizzata per la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 traduzione delle coordinate
+ []
+
+
+Underfull \hbox (badness 5985) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 di tracking relative ad una
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 34--34
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 4954) in paragraph at lines 35--35
+\OT1/cmr/m/n/10 un file .PNG che riproduce
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/10 graficamente l'immagine
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 36--36
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 37--37
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/10 all'utente di generare delle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/10 di trasformare i dati di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/10 tracking in coordinate di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/m/n/10 posizione all'interno di un
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 39--39
+\OT1/cmr/m/n/10 immagine .PNG che descrive
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 39--39
+\OT1/cmr/m/n/10 la planimetria del locale, e
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 40--40
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 40--40
+\OT1/cmr/m/n/10 fornisca una rappresentazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 di generare delle statistiche
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 42--42
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 43--43
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 44--44
+[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
+Underfull \hbox (badness 1688) in paragraph at lines 67--67
+[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 69--69
+[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\OT1/cmr/m/n/10 Il sistema utilizzer^^Ra come
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\OT1/cmr/m/n/10 strumento di build CMake,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\OT1/cmr/m/n/10 Deve essere prodotta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\OT1/cmr/m/n/10 documentazione del codice
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 93--93
+[]|\OT1/cmr/m/n/10 Il sistema deve garantire la
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 93--93
+\OT1/cmr/m/n/10 massima indipendenza tra le
+ []
+
+) (./sections/esitistatica.tex
+Overfull \hbox (15.72598pt too wide) in paragraph at lines 167--1
 \OT1/cmr/m/n/10 sono stati rivisitati per rientrare nei limiti previsti, soprat
 tutto per aderire alla complessit^^Ra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--1
+Underfull \hbox (badness 10000) in paragraph at lines 167--1
 
  []
 
@@ -1902,43 +2292,291 @@ Overfull \hbox (5.9129pt too wide) in alignment at lines 18--38
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
 Overfull \hbox (5.9129pt too wide) in alignment at lines 38--41
  [] [] [] [] [] 
  []
 
-[45]) [46] [47] (./bibliography/bibliography.tex
+) (./sections/esitivalidazione.tex
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+\OT1/cmr/m/n/10 il numero di immagini da
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 22--22
+\OT1/cmr/m/n/10 l'indirizzo della telecamera da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\OT1/cmr/m/n/10 e che le impostazioni di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\OT1/cmr/m/n/10 calibrazione scelte vengano
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\OT1/cmr/m/n/10 Si verifica che si possa
+ []
+
+
+Underfull \hbox (badness 7981) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 visualizzare lo stream video
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 31--31
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/cmr/m/n/10 del frame usato per la
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/cmr/m/n/10 modificare il valore della
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 33--33
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 modificare il percorso del file
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 33--33
+\OT1/cmr/m/n/10 homography matrix e che il
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/10 Si verifica che si possa
+ []
+
+
+Underfull \hbox (badness 3029) in paragraph at lines 35--35
+\OT1/cmr/m/n/10 selezionare un file .DXF dal
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 35--35
+\OT1/cmr/m/n/10 file system, convertirlo e che
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 36--36
+\OT1/cmr/m/n/10 rispettivamente la planimetria
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 36--36
+\OT1/cmr/m/n/10 del locale e il frame preso
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 36--36
+\OT1/cmr/m/n/10 dallo stream della telecamera,
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 36--36
+\OT1/cmr/m/n/10 che traduca le coordinate tra
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 36--36
+\OT1/cmr/m/n/10 i due piani definiti dai punti
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 36--36
+\OT1/cmr/m/n/10 segnati nelle 2 immagini di
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 37--37
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 37--37
+\OT1/cmr/m/n/10 una volta selezionata essa sia
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 39--39
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 39--39
+\OT1/cmr/m/n/10 trasformare i dati di tracking
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 40--40
+[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 40--40
+\OT1/cmr/m/n/10 generare una heatmap grafica
+ []
+
+
+Underfull \hbox (badness 3019) in paragraph at lines 40--40
+\OT1/cmr/m/n/10 in base alle occorrenze delle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\OT1/cmr/m/n/10 coordinate di tracciamento
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 42--42
+[]|\OT1/cmr/m/n/10 Il test verifica che si possa
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 42--42
+\OT1/cmr/m/n/10 generare la statistica di \OT1/cmr/m/it/10 dwell
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 43--43
+[]|\OT1/cmr/m/n/10 Il test verifica che si possa
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 44--44
+[]|\OT1/cmr/m/n/10 Il test verifica che si possa
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54])
+Overfull \hbox (3.8266pt too wide) in paragraph at lines 174--179
+\OT1/cmr/m/n/10 requisiti sono stati soddisfatti con successo. I requisiti sull
+a generazione delle statistiche
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56] [57] (./bibliography/bibliography.tex
 Underfull \hbox (badness 2359) in paragraph at lines 13--14
 []\OT1/cmr/m/n/10 Robert Lagani^^Rere, \OT1/cmr/m/it/10 OpenCV 2 Computer Visio
 n Application Programming
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
- [48]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
- (./build/thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
+ [58]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
+ (build/thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8550 strings out of 493485
- 123541 string characters out of 3143525
- 248868 words of memory out of 3000000
- 11451 multiletter control sequences out of 15000+200000
+ 9032 strings out of 493485
+ 129051 string characters out of 3143525
+ 278425 words of memory out of 3000000
+ 11898 multiletter control sequences out of 15000+200000
  8111 words of font info for 31 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,15n,45p,1158b,660s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,15n,45p,1155b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
@@ -1951,11 +2589,12 @@ ts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb>
-Output written on ./build/thesis.pdf (56 pages, 2184718 bytes).
+cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfo
+nt/lasy10.pfb>
+Output written on build/thesis.pdf (66 pages, 2217991 bytes).
 PDF statistics:
- 967 PDF objects out of 1000 (max. 8388607)
- 842 compressed objects within 9 object streams
- 225 named destinations out of 1000 (max. 500000)
- 764 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1068 PDF objects out of 1200 (max. 8388607)
+ 931 compressed objects within 10 object streams
+ 247 named destinations out of 1000 (max. 500000)
+ 828 words of extra memory for PDF output out of 10000 (max. 10000000)
 
