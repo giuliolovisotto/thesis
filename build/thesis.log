@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.28)  26 NOV 2013 22:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.28)  27 NOV 2013 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,10 +211,6 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/underscore/underscore.sty
-Package: underscore 2006/09/13
-LaTeX Info: Redefining \_ on input line 42.
-)
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
@@ -236,6 +232,11 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language76
+LaTeX Info: Redefining \_ on input line 43.
 )
 \@input{thesis.preamble.aux}
 \openout2 = `thesis.preamble.aux'.
@@ -576,8 +577,8 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ]
 (./sections/introduzione.tex
 Overfull \hbox (14.92505pt too wide) in paragraph at lines 4--5
-\OT1/cmr/m/n/10 del progetto di stage svolto da Giulio Lovisotto presso la ditt
-a Pathflow s.r.l. L'esposizione
+\OT1/cmr/m/n/10 del pro-getto di stage svolto da Giulio Lo-vi-sotto presso la d
+itta Path-flow s.r.l. L'esposizione
  []
 
 <./images/roadmap.png, id=578, 885.3075pt x 500.87125pt>
@@ -588,8 +589,8 @@ Package pdftex.def Info: ./images/roadmap.png used on input line 16.
 (pdftex.def)             Requested size: 354.11671pt x 200.34494pt.
 
 Overfull \hbox (4.67114pt too wide) in paragraph at lines 7--20
-\OT1/cmr/m/n/10 tecniche di \OT1/cmr/m/it/10 body tracking \OT1/cmr/m/n/10 con 
-un sistema basato su telecamere, di fornire delle dashboard
+\OT1/cmr/m/n/10 tec-niche di \OT1/cmr/m/it/10 body track-ing \OT1/cmr/m/n/10 co
+n un sis-tema basato su tele-camere, di fornire delle dash-board
  []
 
 
@@ -599,8 +600,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--20
 
 
 Overfull \hbox (3.08705pt too wide) in paragraph at lines 22--25
-\OT1/cmr/m/n/10 fornire alle figure professionali che si occupano del marketing
- (quali visual merchandiser
+\OT1/cmr/m/n/10 fornire alle fig-ure pro-fes-sion-ali che si oc-cu-pano del mar
+-ket-ing (quali vi-sual mer-chan-diser
  []
 
 
@@ -643,8 +644,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
 
 Overfull \hbox (7.44809pt too wide) in paragraph at lines 35--37
-[]\OT1/cmr/m/n/10 Tale software ^^Re inteso per l'utilizzo solo da parte di un 
-utente amministratore (interfaccia
+[]\OT1/cmr/m/n/10 Tale soft-ware ^^Re in-teso per l'utilizzo solo da parte di u
+n utente am-min-is-tra-tore (in-ter-fac-cia
  []
 
 )pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
@@ -654,8 +655,8 @@ utente amministratore (interfaccia
 l.48 \newpage
               [2] (./sections/pianificazione.tex
 Overfull \hbox (4.9621pt too wide) in paragraph at lines 2--4
-\OT1/cmr/m/n/10 In questa sezione viene riportato un diagramma di Gantt riassun
-tivo della pianificazione
+\OT1/cmr/m/n/10 In questa sezione viene ri-por-tato un di-a-gramma di Gantt ri-
+as-sun-tivo della pi-ani-fi-cazione
  []
 
 
@@ -696,8 +697,8 @@ Package pdftex.def Info: ./images/uc0.png used on input line 17.
 (pdftex.def)             Requested size: 323.60327pt x 207.97331pt.
 
 Overfull \hbox (24.89468pt too wide) in paragraph at lines 27--28
-[]\OT1/cmr/m/n/10 L'utente pu^^Ro iniziare la calibrazione delle telecamere, op
-pure pu^^Ro visualizzare
+[]\OT1/cmr/m/n/10 L'utente pu^^Ro in-iziare la cal-i-brazione delle tele-camere
+, op-pure pu^^Ro vi-su-al-iz-zare
  []
 
 
@@ -715,8 +716,8 @@ Package pdftex.def Info: ./images/uc1.png used on input line 40.
 (pdftex.def)             Requested size: 266.59128pt x 202.7539pt.
 
 Overfull \hbox (0.22794pt too wide) in paragraph at lines 50--51
-[]\OT1/cmr/m/n/10 L'utente sta selezionando le opzioni per la calibrazione dell
-e telecamere.
+[]\OT1/cmr/m/n/10 L'utente sta se-lezio-nando le opzioni per la cal-i-brazione 
+delle tele-camere.
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
@@ -751,8 +752,8 @@ LaTeX Warning: Hyper reference `sec:uc1.1.4' on page 7 undefined on input line
 
 
 Overfull \hbox (2.9877pt too wide) in paragraph at lines 58--59
-[]\OT1/cmr/m/n/10 I file che contengono i file di calibrazione della telecamera
- (distortion
+[]\OT1/cmr/m/n/10 I file che con-tengono i file di cal-i-brazione della tele-ca
+m-era (dis-tor-tion
  []
 
 <./images/uc11.png, id=623, 574.145pt x 476.78125pt>
@@ -762,8 +763,8 @@ Package pdftex.def Info: ./images/uc11.png used on input line 71.
 (pdftex.def)             Requested size: 229.65393pt x 190.7091pt.
 
 Overfull \hbox (3.81134pt too wide) in paragraph at lines 81--82
-[]\OT1/cmr/m/n/10 L'utente seleziona il numero di immagini da utilizzare per la
- calibrazione 
+[]\OT1/cmr/m/n/10 L'utente se-leziona il nu-mero di im-mag-ini da uti-liz-zare 
+per la cal-i-brazione 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
@@ -774,8 +775,8 @@ l.93 \item[\em{precondizione }]
                                 L'utente ha già selezionato il numero immag...
 [7 <./images/uc11.png>]
 Overfull \hbox (4.78143pt too wide) in paragraph at lines 122--123
-[]\OT1/cmr/m/n/10 La calibrazione non termina con successo quindi l'operazione 
-viene interrotta
+[]\OT1/cmr/m/n/10 La cal-i-brazione non ter-mina con suc-cesso quindi l'operazi
+one viene in-ter-rotta
  []
 
 
@@ -842,8 +843,8 @@ LaTeX Warning: Hyper reference `sec:uc2.3.5' on page 10 undefined on input line
 
 
 Overfull \hbox (16.9421pt too wide) in paragraph at lines 187--188
-[]\OT1/cmr/m/n/10 L'utente modifica il percorso del file di configurazione cont
-enente la \OT1/cmr/m/it/10 homography
+[]\OT1/cmr/m/n/10 L'utente mod-i-fica il per-corso del file di con-fig-u-razion
+e con-te-nente la \OT1/cmr/m/it/10 ho-mog-ra-phy
  []
 
 <./images/uc23.png, id=658, 621.32124pt x 474.77374pt>
@@ -854,14 +855,14 @@ Package pdftex.def Info: ./images/uc23.png used on input line 201.
 
 [10 <./images/uc23.png>]
 Overfull \hbox (4.978pt too wide) in paragraph at lines 256--257
-[]\OT1/cmr/m/n/10 L'utente indica al sistema di attivare la telecamera selezion
-ata, catturare
+[]\OT1/cmr/m/n/10 L'utente in-dica al sis-tema di at-ti-vare la tele-cam-era se
+-lezion-ata, cat-turare
  []
 
 [11]
 Overfull \hbox (4.17035pt too wide) in paragraph at lines 262--263
-[]\OT1/cmr/m/n/10 La telecamera non ^^Re raggiungibile, il sistema interrompe l
-'operazione segnala
+[]\OT1/cmr/m/n/10 La tele-cam-era non ^^Re rag-giun-gi-bile, il sis-tema in-ter
+-rompe l'operazione seg-nala
  []
 
 
@@ -884,8 +885,8 @@ Package pdftex.def Info: ./images/uc3.png used on input line 301.
 
 [12]
 Overfull \hbox (2.53354pt too wide) in paragraph at lines 322--323
-[]\OT1/cmr/m/n/10 L'utente indica al sistema di generare l'heatmap con la rappr
-esentazione
+[]\OT1/cmr/m/n/10 L'utente in-dica al sis-tema di gener-are l'heatmap con la ra
+p-p-re-sen-tazione
  []
 
 ) [13 <./images/uc3.png>] (./sections/requisiti.tex
@@ -895,17 +896,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--1
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
-\OT1/cmr/m/n/10 all'utente di eseguire la
+\OT1/cmr/m/n/10 all'utente di es-eguire la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -915,12 +916,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
-\OT1/cmr/m/n/10 all'utente di selezionare il
+\OT1/cmr/m/n/10 all'utente di se-lezionare il
  []
 
 
@@ -935,7 +936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--21
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -950,17 +951,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
-\OT1/cmr/m/n/10 all'utente di selezionare
+\OT1/cmr/m/n/10 all'utente di se-lezionare
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
-\OT1/cmr/m/n/10 l'indirizzo identificativo della
+\OT1/cmr/m/n/10 l'indirizzo iden-ti-fica-tivo della
  []
 
 
@@ -970,7 +971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 
 
 Underfull \hbox (badness 7759) in paragraph at lines 24--24
-[]|\OT1/cmr/m/n/10 Il sistema deve eseguire la
+[]|\OT1/cmr/m/n/10 Il sis-tema deve es-eguire la
  []
 
 
@@ -980,17 +981,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 8075) in paragraph at lines 25--25
-\OT1/cmr/m/n/10 all'utente di visualizzare un
+\OT1/cmr/m/n/10 all'utente di vi-su-al-iz-zare un
  []
 
 
 Underfull \hbox (badness 1009) in paragraph at lines 25--25
-\OT1/cmr/m/n/10 video che utilizza i parametri
+\OT1/cmr/m/n/10 video che uti-lizza i parametri
  []
 
 
@@ -1000,17 +1001,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--26
-\OT1/cmr/m/n/10 all'utente di configurare le
+\OT1/cmr/m/n/10 all'utente di con-fig-u-rare le
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -1020,12 +1021,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
-\OT1/cmr/m/n/10 all'utente di rimuovere una
+\OT1/cmr/m/n/10 all'utente di rimuo-vere una
  []
 
 
@@ -1035,12 +1036,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\OT1/cmr/m/n/10 all'utente di modificare e
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care e
  []
 
 
@@ -1050,7 +1051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--30
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -1065,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--30
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -1080,7 +1081,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
@@ -1095,12 +1096,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 all'utente di modificare il
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care il
  []
 
 
@@ -1115,32 +1116,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--33
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 1412) in paragraph at lines 34--34
-\OT1/cmr/m/n/10 all'utente di modificare il file
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care il file
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
-\OT1/cmr/m/n/10 contenente la homography
+\OT1/cmr/m/n/10 con-te-nente la ho-mog-ra-phy
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
-\OT1/cmr/m/n/10 matrix utilizzata per la
+\OT1/cmr/m/n/10 ma-trix uti-liz-zata per la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
-\OT1/cmr/m/n/10 traduzione delle coordinate
+\OT1/cmr/m/n/10 traduzione delle co-or-di-nate
  []
 
 
 Underfull \hbox (badness 5985) in paragraph at lines 34--34
-\OT1/cmr/m/n/10 di tracking relative ad una
+\OT1/cmr/m/n/10 di track-ing rel-a-tive ad una
  []
 
 
@@ -1155,7 +1156,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--34
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 35--35
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -1165,22 +1166,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--36
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 4954) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 un file .PNG che riproduce
+\OT1/cmr/m/n/10 un file .PNG che ripro-duce
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 graficamente l'immagine
+\OT1/cmr/m/n/10 grafi-ca-mente l'immagine
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 37--37
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -1190,7 +1191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 38--38
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -1200,52 +1201,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--38
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 all'utente di generare delle
+\OT1/cmr/m/n/10 all'utente di gener-are delle
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 di trasformare i dati di
+\OT1/cmr/m/n/10 di trasfor-mare i dati di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 tracking in coordinate di
+\OT1/cmr/m/n/10 track-ing in co-or-di-nate di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 posizione all'interno di un
+\OT1/cmr/m/n/10 po-sizione all'interno di un
  []
 
 
 Underfull \hbox (badness 3536) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 immagine .PNG che descrive
+\OT1/cmr/m/n/10 im-mag-ine .PNG che de-scrive
  []
 
 
 Underfull \hbox (badness 5175) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 la planimetria del locale, e
+\OT1/cmr/m/n/10 la planime-tria del lo-cale, e
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 41--41
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 5417) in paragraph at lines 41--41
-\OT1/cmr/m/n/10 fornisca una rappresentazione
+\OT1/cmr/m/n/10 for-nisca una rap-p-re-sen-tazione
  []
 
 
@@ -1255,12 +1256,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
-\OT1/cmr/m/n/10 di generare delle statistiche
+\OT1/cmr/m/n/10 di gener-are delle statis-tiche
  []
 
 
@@ -1270,7 +1271,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 43--43
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -1280,7 +1281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 44--44
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -1290,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--44
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 45--45
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -1305,7 +1306,7 @@ Overfull \hbox (3.43211pt too wide) in paragraph at lines 67--67
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 68--68
-[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+[]|\OT1/cmr/m/n/10 Il sis-tema deve fun-zionare in
  []
 
 
@@ -1315,7 +1316,7 @@ Overfull \hbox (3.43211pt too wide) in paragraph at lines 68--68
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 69--69
-[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+[]|\OT1/cmr/m/n/10 Il sis-tema deve fun-zionare in
  []
 
 
@@ -1325,7 +1326,7 @@ Overfull \hbox (3.43211pt too wide) in paragraph at lines 69--69
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 70--70
-[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+[]|\OT1/cmr/m/n/10 Il sis-tema deve fun-zionare in
  []
 
 
@@ -1335,12 +1336,12 @@ Overfull \hbox (3.43211pt too wide) in paragraph at lines 70--70
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 71--71
-[]|\OT1/cmr/m/n/10 Il sistema utilizzer^^Ra come
+[]|\OT1/cmr/m/n/10 Il sis-tema uti-lizzer^^Ra come
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 71--71
-\OT1/cmr/m/n/10 strumento di build CMake,
+\OT1/cmr/m/n/10 stru-mento di build CMake,
  []
 
 
@@ -1350,22 +1351,22 @@ Overfull \hbox (3.43211pt too wide) in paragraph at lines 71--71
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--93
-[]|\OT1/cmr/m/n/10 Deve essere prodotta
+[]|\OT1/cmr/m/n/10 Deve es-sere prodotta
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--93
-\OT1/cmr/m/n/10 documentazione del codice
+\OT1/cmr/m/n/10 doc-u-men-tazione del codice
  []
 
 
 Underfull \hbox (badness 4518) in paragraph at lines 94--94
-[]|\OT1/cmr/m/n/10 Il sistema deve garantire la
+[]|\OT1/cmr/m/n/10 Il sis-tema deve garan-tire la
  []
 
 
 Underfull \hbox (badness 4205) in paragraph at lines 94--94
-\OT1/cmr/m/n/10 massima indipendenza tra le
+\OT1/cmr/m/n/10 mas-sima in-dipen-denza tra le
  []
 
 
@@ -1389,8 +1390,8 @@ Overfull \hbox (2.26646pt too wide) in paragraph at lines 15--16
 
 [18]) [19] (./sections/tecnologie.tex
 Overfull \hbox (3.47586pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/10 In questa sezione vengono brevemente introdotte le pi^^Ru inter
-essanti tecnologie utilizzate
+\OT1/cmr/m/n/10 In questa sezione ven-gono breve-mente in-trodotte le pi^^Ru in
+-ter-es-santi tec-nolo-gie uti-liz-zate
  []
 
 
@@ -1405,14 +1406,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
 
 Overfull \hbox (2.36472pt too wide) in paragraph at lines 38--42
-\OT1/cmr/m/n/10 Per il suo utilizzo ^^Re sufficiente creare dei file denominati
- CMakeLists.txt che contengono
+\OT1/cmr/m/n/10 Per il suo uti-lizzo ^^Re suf-fi-ciente creare dei file de-nom-
+i-nati CMake-Lists.txt che con-tengono
  []
 
 [21]
 Overfull \hbox (4.75261pt too wide) in paragraph at lines 50--51
-\OT1/cmr/m/n/10 E' stato scelto di utilizzare QtCreator sia per le buone funzio
-nalit^^Ra che offre, soprattutto
+\OT1/cmr/m/n/10 E' stato scelto di uti-liz-zare QtCre-ator sia per le buone fun
+-zion-alit^^Ra che of-fre, so-prat-tutto
  []
 
 
@@ -1421,15 +1422,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 [22]
-Overfull \hbox (14.05887pt too wide) in paragraph at lines 63--64
-[]\OT1/cmr/bx/n/10 Architecture \OT1/cmr/m/n/10 permette infatti di avere una v
-isualizzazione grafica delle dipendenza
+Overfull \hbox (13.5033pt too wide) in paragraph at lines 63--64
+[]\OT1/cmr/bx/n/10 Architecture \OT1/cmr/m/n/10 per-me-tte in-fatti di avere un
+a vi-su-al-iz-zazione grafica delle dipen-denze
  []
 
 
 Overfull \hbox (1.15681pt too wide) in paragraph at lines 63--64
-\OT1/cmr/m/it/10 dependency graph \OT1/cmr/m/n/10 anche \OT1/cmr/m/it/10 depend
-ency matrices \OT1/cmr/m/n/10 ed ^^Re in grado di segnalare l'impatto
+\OT1/cmr/m/it/10 de-pen-dency graph \OT1/cmr/m/n/10 an-che \OT1/cmr/m/it/10 de-
+pen-dency ma-tri-ces \OT1/cmr/m/n/10 ed ^^Re in grado di seg-nalare l'impatto
  []
 
 
@@ -1439,8 +1440,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
 
 Overfull \hbox (3.39162pt too wide) in paragraph at lines 81--83
-\OT1/cmr/m/n/10 piattaforme, tra le quali: Linux, Mac OS X, Windows, Cygwin, Wi
-ndows CE, Symbian.
+\OT1/cmr/m/n/10 pi-attaforme, tra le quali: Linux, Mac OS X, Win-dows, Cyg-win,
+ Win-dows CE, Sym-bian.
  []
 
 
@@ -1450,26 +1451,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
 
 Overfull \hbox (6.33694pt too wide) in paragraph at lines 81--83
-\OT1/cmr/m/n/10 Si ^^Re scelto per l'utilizzo di tale framework in quanto esso 
-^^Re stato ritenuto sufficientemente
+\OT1/cmr/m/n/10 Si ^^Re scelto per l'utilizzo di tale frame-work in quanto esso
+ ^^Re stato ritenuto suf-fi-cien-te-mente
  []
 
 [23]
 Overfull \hbox (10.28146pt too wide) in paragraph at lines 85--88
-\OT1/cmr/m/n/10 Doxygen si basa su un file di configurazione che contiene le nu
-merose opzioni configurabili
+\OT1/cmr/m/n/10 Doxygen si basa su un file di con-fig-u-razione che con-tiene l
+e nu-merose opzioni con-fig-ura-bili
  []
 
 
 Overfull \hbox (20.43892pt too wide) in paragraph at lines 85--88
-\OT1/cmr/m/n/10 messe a disposizione per la generazione della documentazione. E
-sso supporta l'esportazione
+\OT1/cmr/m/n/10 messe a dis-po-sizione per la gen-er-azione della doc-u-men-taz
+ione. Esso sup-porta l'esportazione
  []
 
 ) [24] (./sections/problematiche.tex
 Overfull \hbox (0.75896pt too wide) in paragraph at lines 4--5
-\OT1/cmr/m/n/10 Per \OT1/cmr/m/it/10 camera calibration \OT1/cmr/m/n/10 si inte
-nde la procedura volta a calcolare la relazione matematica
+\OT1/cmr/m/n/10 Per \OT1/cmr/m/it/10 cam-era cal-i-bra-tion \OT1/cmr/m/n/10 si 
+in-tende la pro-ce-dura volta a cal-co-lare la re-lazione matem-at-ica
  []
 
 
@@ -1507,8 +1508,8 @@ Overfull \hbox (8.32047pt too wide) in paragraph at lines 22--23
 
 Overfull \hbox (0.62282pt too wide) in paragraph at lines 19--26
 []\OT1/cmr/m/n/10 In tale figura \OT1/cmr/m/it/10 f \OT1/cmr/m/n/10 ^^Re la \OT
-1/cmr/m/it/10 focal lenght \OT1/cmr/m/n/10 della telecamera, \OT1/cmr/m/it/10 Z
- \OT1/cmr/m/n/10 la distanza tra oggetto e telecamera,
+1/cmr/m/it/10 fo-cal lenght \OT1/cmr/m/n/10 della tele-cam-era, \OT1/cmr/m/it/1
+0 Z \OT1/cmr/m/n/10 la dis-tanza tra oggetto e tele-cam-era,
  []
 
 <./images/calib3.png, id=753, 701.62125pt x 162.6075pt>
@@ -1553,8 +1554,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--61
 
 
 Overfull \hbox (7.86485pt too wide) in paragraph at lines 64--68
-\OT1/cmr/m/n/10 All'interno del progetto ^^Re stata utilizzata una immagine di 
-una scacchiera con dimensioni
+\OT1/cmr/m/n/10 All'interno del pro-getto ^^Re stata uti-liz-zata una im-mag-in
+e di una scac-chiera con di-men-sioni
  []
 
 [27 <./images/calib4.png> <./images/calib5.png>]
@@ -1566,8 +1567,8 @@ Package pdftex.def Info: ./images/track1.png used on input line 74.
 (pdftex.def)             Requested size: 367.76749pt x 275.4241pt.
 
 Overfull \hbox (9.05003pt too wide) in paragraph at lines 71--80
-\OT1/cmr/m/n/10 contemporaneamente. Si riporta uno screenshot che mostra il ris
-ultato di tale operazione
+\OT1/cmr/m/n/10 con-tem-po-ranea-mente. Si ri-porta uno screen-shot che mostra 
+il risul-tato di tale op-er-azione
  []
 
 [28 <./images/track1.png>]
@@ -1584,9 +1585,9 @@ Overfull \hbox (30.60944pt too wide) in paragraph at lines 85--86
 
 
 Overfull \hbox (3.70424pt too wide) in paragraph at lines 82--89
-\OT1/cmr/m/n/10 Nella \OT1/cmr/m/it/10 computer vision \OT1/cmr/m/n/10 viene de
-finita come \OT1/cmr/m/it/10 planar homography \OT1/cmr/m/n/10 una relazione ch
-e esprime
+\OT1/cmr/m/n/10 Nella \OT1/cmr/m/it/10 com-puter vi-sion \OT1/cmr/m/n/10 viene 
+definita come \OT1/cmr/m/it/10 pla-nar ho-mog-ra-phy \OT1/cmr/m/n/10 una re-laz
+ione che es-prime
  []
 
 
@@ -1596,20 +1597,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
 
 Overfull \hbox (5.03152pt too wide) in paragraph at lines 90--94
-\OT1/cmr/m/n/10 Nell'implementazione del sistema ^^Re stato definito come piano
- di partenza il "pavimento"
+\OT1/cmr/m/n/10 Nell'implementazione del sis-tema ^^Re stato definito come pi-a
+no di partenza il "pavi-mento"
  []
 
 
 Overfull \hbox (1.9112pt too wide) in paragraph at lines 96--97
-\OT1/cmr/m/n/10 Qt offre molte facilitazioni per eseguire manipolazioni grafich
-e. All'interno del progetto
+\OT1/cmr/m/n/10 Qt of-fre molte fa-cil-i-tazioni per es-eguire ma-nipo-lazioni 
+grafiche. All'interno del pro-getto
  []
 
 
 Overfull \hbox (9.48534pt too wide) in paragraph at lines 96--97
-\OT1/cmr/m/n/10 all'asse x. Ci^^Ro ha comportato un ulteriore passaggio. Si rip
-orta in figura  []16[] un'immagine
+\OT1/cmr/m/n/10 all'asse x. Ci^^Ro ha com-por-tato un ul-te-ri-ore pas-sag-gio.
+ Si ri-porta in figura  []16[] un'immagine
  []
 
 [29 <./images/track2.png>] <./images/qtgrad1.png, id=794, 337.26pt x 321.2pt>
@@ -1625,14 +1626,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
 
 Overfull \hbox (19.51761pt too wide) in paragraph at lines 106--110
-\OT1/cmr/m/n/10 Fortunatamente Qt mette a disposizione la classe QGradient (e d
-erivate) che implementano
+\OT1/cmr/m/n/10 Fortunatamente Qt mette a dis-po-sizione la classe QGra-di-ent 
+(e derivate) che im-ple-men-tano
  []
 
 ) [30 <./images/qtgrad1.png>]
 Overfull \hbox (0.30925pt too wide) in paragraph at lines 83--86
-\OT1/cmr/m/n/10 Si allega il diagramma dei package che descrive l'architettura 
-generale dell'applicazione
+\OT1/cmr/m/n/10 Si al-lega il di-a-gramma dei pack-age che de-scrive l'architet
+tura gen-erale dell'applicazione
  []
 
 
@@ -1658,8 +1659,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
 
 Overfull \hbox (23.61475pt too wide) in paragraph at lines 97--103
-\OT1/cmr/m/n/10 Per questo motivo era preferibile mantenere una struttura a lay
-ers, che potesse massimizzare
+\OT1/cmr/m/n/10 Per questo mo-tivo era preferi-bile man-tenere una strut-tura a
+ lay-ers, che potesse mas-simiz-zare
  []
 
 
@@ -1669,14 +1670,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
 [32]
 Overfull \hbox (4.11475pt too wide) in paragraph at lines 110--111
-\OT1/cmr/m/n/10 matrici diverse che esprimono relazioni diverse tra le coordina
-te dei punti tracciati
+\OT1/cmr/m/n/10 ma-trici di-verse che es-p-ri-mono re-lazioni di-verse tra le c
+o-or-di-nate dei punti trac-ciati
  []
 
 
 Overfull \hbox (6.05927pt too wide) in paragraph at lines 112--113
-\OT1/cmr/m/n/10 all'intera area del locale e non pi^^Ru legati ad una telecamer
-a (infatti ogni telecamera
+\OT1/cmr/m/n/10 all'intera area del lo-cale e non pi^^Ru legati ad una tele-cam
+-era (in-fatti ogni tele-cam-era
  []
 
 <./images/dbschema.png, id=812, 718.685pt x 583.17876pt>
@@ -1701,42 +1702,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Overfull \hbox (11.25366pt too wide) in paragraph at lines 27--28
-\OT1/cmr/m/n/10 dell'utente vengono memorizzate in dei campi per una successiva
- elaborazione.
+\OT1/cmr/m/n/10 dell'utente ven-gono mem-o-riz-zate in dei campi per una suc-ce
+s-siva elab-o-razione.
  []
 
 [34 <./images/dbschema.png>]
 Overfull \hbox (13.27222pt too wide) in paragraph at lines 37--38
-\OT1/cmr/m/n/10 telecamera. Essa viene utilizzata per l'inserimento di una nuov
-a configurazione
+\OT1/cmr/m/n/10 tele-cam-era. Essa viene uti-liz-zata per l'inserimento di una 
+nuova con-fig-u-razione
  []
 
 
 Overfull \hbox (10.96904pt too wide) in paragraph at lines 42--43
-[]\OT1/cmr/m/n/10 Rappresenta la finestra che permette all'utente di gestire
+[]\OT1/cmr/m/n/10 Rappresenta la fines-tra che per-me-tte all'utente di ge-stir
+e
  []
 
 [35 <./images/c1.png>]
 Overfull \hbox (1.7815pt too wide) in paragraph at lines 48--50
-\OT1/cmr/m/n/10 Componente che si occupa della visualizzazione della finestra p
-rincipale del programma
+\OT1/cmr/m/n/10 Componente che si oc-cupa della vi-su-al-iz-zazione della fines
+-tra prin-ci-pale del pro-gramma
  []
 
 
 Overfull \hbox (28.04893pt too wide) in paragraph at lines 52--53
-\OT1/cmr/m/n/10 di configurazione. E' responsabile per la loro corretta visuali
-zzazione e l'interpretazione
+\OT1/cmr/m/n/10 di con-fig-u-razione. E' re-spon-s-abile per la loro cor-retta 
+vi-su-al-iz-zazione e l'interpretazione
  []
 
 
 Overfull \hbox (31.25323pt too wide) in paragraph at lines 58--59
-[]\OT1/cmr/m/n/10 Il componente utilizza le funzionalit^^Ra messe a disposizion
-e da StatGenerator
+[]\OT1/cmr/m/n/10 Il com-po-nente uti-lizza le fun-zion-alit^^Ra messe a dis-po
+-sizione da Stat-Gen-er-a-tor
  []
 
 
 Overfull \hbox (2.9877pt too wide) in paragraph at lines 72--73
-[]\OT1/cmr/m/n/10 Finestra principale del programma. Contiene i bottoni
+[]\OT1/cmr/m/n/10 Finestra prin-ci-pale del pro-gramma. Con-tiene i bot-toni
  []
 
 <./images/c2.png, id=836, 940.51375pt x 605.26125pt>
@@ -1751,55 +1753,56 @@ Overfull \hbox (6.313pt too wide) in paragraph at lines 84--85
 
 
 Overfull \hbox (43.88518pt too wide) in paragraph at lines 78--91
-\OT1/cmr/m/n/10 Componente che rappresenta il livello \OT1/cmr/m/it/10 business
- layer \OT1/cmr/m/n/10 nell'architettura three tier dell'applicazione.
+\OT1/cmr/m/n/10 Componente che rap-p-re-senta il liv-ello \OT1/cmr/m/it/10 busi
+-ness layer \OT1/cmr/m/n/10 nell'architettura three tier dell'applicazione.
  []
 
 [36]
 Overfull \hbox (42.51964pt too wide) in paragraph at lines 103--104
-[]\OT1/cmr/m/n/10 Utilizza DataAccessFacade ( []6.4.10[]) per accedere ai dati 
-dell'applicazione.
+[]\OT1/cmr/m/n/10 Utilizza DataAc-cess-Fa-cade ( []6.4.10[]) per ac-cedere ai d
+ati dell'applicazione.
  []
 
 
 Overfull \hbox (33.10799pt too wide) in paragraph at lines 110--111
-[]\OT1/cmr/m/n/10 Classe astratta che definisce l'interfaccia per la configuraz
-ione
+[]\OT1/cmr/m/n/10 Classe as-tratta che definisce l'interfaccia per la con-fig-u
+-razione
  []
 
 [37 <./images/c2.png>]
 Overfull \hbox (9.41347pt too wide) in paragraph at lines 119--120
-[]\OT1/cmr/m/n/10 Fornisce un accesso unificato per il solo recupero (select)
+[]\OT1/cmr/m/n/10 Fornisce un ac-cesso uni-fi-cato per il solo re-cu-pero (se-l
+ect)
  []
 
 [38]
 Overfull \hbox (11.2814pt too wide) in paragraph at lines 152--153
-\OT1/cmr/m/n/10 viene utilizzata dalle classi che si occupano di della mappatur
-a per l'esecuzione
+\OT1/cmr/m/n/10 viene uti-liz-zata dalle classi che si oc-cu-pano di della map-
+patura per l'esecuzione
  []
 
 
 Overfull \hbox (42.51964pt too wide) in paragraph at lines 161--162
-[]\OT1/cmr/m/n/10 Utilizza DataAccessFacade ( []6.4.10[]) per accedere ai dati 
-dell'applicazione.
+[]\OT1/cmr/m/n/10 Utilizza DataAc-cess-Fa-cade ( []6.4.10[]) per ac-cedere ai d
+ati dell'applicazione.
  []
 
 
 Overfull \hbox (21.69131pt too wide) in paragraph at lines 168--169
-[]\OT1/cmr/m/n/10 Classe astratta che definisce l'interfaccia per le funzionali
-t^^Ra
+[]\OT1/cmr/m/n/10 Classe as-tratta che definisce l'interfaccia per le fun-zion-
+alit^^Ra
  []
 
 
 Overfull \hbox (14.38335pt too wide) in paragraph at lines 178--180
-\OT1/cmr/m/n/10 Componente che contiene alcune funzionalit^^Ra di utility. Esse
- vengono messe a disposizione
+\OT1/cmr/m/n/10 Componente che con-tiene al-cune fun-zion-alit^^Ra di util-ity.
+ Esse ven-gono messe a dis-po-sizione
  []
 
 
 Overfull \hbox (2.77463pt too wide) in paragraph at lines 183--184
-[]\OT1/cmr/m/n/10 Classe contenitore per le funzioni di utilit^^Ra del sistema.
-
+[]\OT1/cmr/m/n/10 Classe con-teni-tore per le fun-zioni di utilit^^Ra del sis-t
+ema.
  []
 
 <./images/c3.png, id=853, 903.375pt x 674.52pt>
@@ -1809,33 +1812,38 @@ Package pdftex.def Info: ./images/c3.png used on input line 194.
 (pdftex.def)             Requested size: 361.3436pt x 269.80322pt.
  [39]
 Overfull \hbox (30.83691pt too wide) in paragraph at lines 214--215
-[]\OT1/cmr/m/n/10 La classe rappresenta un \OT1/cmr/m/it/10 facade \OT1/cmr/m/n
-/10 per l'accesso alle funzionalit^^Ra
+[]\OT1/cmr/m/n/10 La classe rap-p-re-senta un \OT1/cmr/m/it/10 fa-cade \OT1/cmr
+/m/n/10 per l'accesso alle fun-zion-alit^^Ra
  []
 
 [40 <./images/c3.png>]
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 228--229
-[]\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
+[]\OT1/cmr/m/n/10 Classe che con-tiene i metodi di basso liv-ello per ac-cedere
+
  []
 
 
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 232--233
-[]\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
+[]\OT1/cmr/m/n/10 Classe che con-tiene i metodi di basso liv-ello per ac-cedere
+
  []
 
 
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 236--237
-[]\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
+[]\OT1/cmr/m/n/10 Classe che con-tiene i metodi di basso liv-ello per ac-cedere
+
  []
 
 
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 240--241
-[]\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
+[]\OT1/cmr/m/n/10 Classe che con-tiene i metodi di basso liv-ello per ac-cedere
+
  []
 
 
 Overfull \hbox (8.60788pt too wide) in paragraph at lines 244--245
-[]\OT1/cmr/m/n/10 Classe che contiene i metodi di basso livello per accedere
+[]\OT1/cmr/m/n/10 Classe che con-tiene i metodi di basso liv-ello per ac-cedere
+
  []
 
 ) (./sections/sequenza.tex
@@ -1861,8 +1869,8 @@ Overfull \hbox (53.28767pt too wide) in paragraph at lines 12--13
 
 )
 Overfull \hbox (5.11478pt too wide) in paragraph at lines 1--128
-\OT1/cmr/m/n/10 controlli che sono stati inseriti per verificare l'esito (succe
-sso/fallimento) dell'operazione
+\OT1/cmr/m/n/10 con-trolli che sono stati in-ser-iti per ver-i-fi-care l'esito 
+(suc-cesso/fallimento) dell'operazione
  []
 
 
@@ -1879,14 +1887,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
 
 Overfull \hbox (0.58707pt too wide) in paragraph at lines 4--6
-[]\OT1/cmr/m/n/10 Tale metrica indica il numero di cammini linearmente indipend
-enti percorribili durante
+[]\OT1/cmr/m/n/10 Tale met-rica in-dica il nu-mero di cam-mini lin-ear-mente in
+-dipen-denti per-cor-ri-bili du-rante
  []
 
 
 Overfull \hbox (1.80853pt too wide) in paragraph at lines 4--6
-\OT1/cmr/m/n/10 per il numero di routine di test necessarie per raggiungere un 
-completo \OT1/cmr/m/it/10 branch coverage\OT1/cmr/m/n/10 . 
+\OT1/cmr/m/n/10 per il nu-mero di rou-tine di test nec-es-sarie per rag-giun-ge
+re un com-pleto \OT1/cmr/m/it/10 branch cov-er-age\OT1/cmr/m/n/10 . 
  []
 
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 7.
@@ -1899,8 +1907,8 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 
 ] [44])
 Overfull \hbox (4.25363pt too wide) in paragraph at lines 135--139
-\OT1/cmr/m/n/10 Nello sviluppo del sistema si sono progettati dei test che prec
-edessero l'implementazione
+\OT1/cmr/m/n/10 Nello sviluppo del sis-tema si sono pro-get-tati dei test che p
+re-cedessero l'implementazione
  []
 
 
@@ -1910,8 +1918,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--139
 
 
 Overfull \hbox (11.17043pt too wide) in paragraph at lines 135--139
-\OT1/cmr/m/n/10 complesse (in particolare chiamate a metodi di OpenCV, quali ca
-lcolo matrice omografica
+\OT1/cmr/m/n/10 com-p-lesse (in par-ti-co-lare chia-mate a metodi di OpenCV, qu
+ali cal-colo ma-trice omo-grafica
  []
 
 
@@ -1921,286 +1929,287 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--139
 
 [45] (./sections/testvalidaz.tex
 Overfull \hbox (8.39774pt too wide) in paragraph at lines 6--7
-[]\OT1/cmr/bx/n/10 TV1.1.1 \OT1/cmr/m/n/10 Il test verifica la possibilit^^Ra d
-i selezionare il numero di immagini
+[]\OT1/cmr/bx/n/10 TV1.1.1 \OT1/cmr/m/n/10 Il test ver-i-fica la pos-si-bilit^^
+Ra di se-lezionare il nu-mero di im-mag-ini
  []
 
 
 Overfull \hbox (1.42pt too wide) in paragraph at lines 16--17
-[]\OT1/cmr/bx/n/10 TV2.2 \OT1/cmr/m/n/10 Il test verifica la possibilit^^Ra di 
-rimuovere una telecamera preesistente 
+[]\OT1/cmr/bx/n/10 TV2.2 \OT1/cmr/m/n/10 Il test ver-i-fica la pos-si-bilit^^Ra
+ di rimuo-vere una tele-cam-era preesistente 
  []
 
 
 Overfull \hbox (2.55513pt too wide) in paragraph at lines 21--22
-[]\OT1/cmr/bx/n/10 TV2.3.3. \OT1/cmr/m/n/10 Il test verifica la possibilit^^Ra 
-di modificare il valore dell'altezza
+[]\OT1/cmr/bx/n/10 TV2.3.3. \OT1/cmr/m/n/10 Il test ver-i-fica la pos-si-bilit^
+^Ra di mod-i-fi-care il val-ore dell'altezza
  []
 
 [46]) [47]
 Overfull \hbox (0.69312pt too wide) in paragraph at lines 154--155
-[]\OT1/cmr/bx/n/10 non soddisfatto: \OT1/cmr/m/n/10 Indica che il requisito \OT
-1/cmr/bx/n/10 non \OT1/cmr/m/n/10 ^^Re stato implementato con successo.
+[]\OT1/cmr/bx/n/10 non sod-dis-fatto: \OT1/cmr/m/n/10 In-dica che il req-ui-sit
+o \OT1/cmr/bx/n/10 non \OT1/cmr/m/n/10 ^^Re stato im-ple-men-tato con suc-cesso
+.
  []
 
 (./sections/esitoreq.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--18
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--18
-\OT1/cmr/m/n/10 all'utente di eseguire la
+\OT1/cmr/m/n/10 all'utente di es-eguire la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\OT1/cmr/m/n/10 all'utente di selezionare il
+\OT1/cmr/m/n/10 all'utente di se-lezionare il
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
-\OT1/cmr/m/n/10 all'utente di selezionare
+\OT1/cmr/m/n/10 all'utente di se-lezionare
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
-\OT1/cmr/m/n/10 l'indirizzo identificativo della
+\OT1/cmr/m/n/10 l'indirizzo iden-ti-fica-tivo della
  []
 
 
 Underfull \hbox (badness 7759) in paragraph at lines 23--23
-[]|\OT1/cmr/m/n/10 Il sistema deve eseguire la
+[]|\OT1/cmr/m/n/10 Il sis-tema deve es-eguire la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 8075) in paragraph at lines 24--24
-\OT1/cmr/m/n/10 all'utente di visualizzare un
+\OT1/cmr/m/n/10 all'utente di vi-su-al-iz-zare un
  []
 
 
 Underfull \hbox (badness 1009) in paragraph at lines 24--24
-\OT1/cmr/m/n/10 video che utilizza i parametri
+\OT1/cmr/m/n/10 video che uti-lizza i parametri
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\OT1/cmr/m/n/10 all'utente di configurare le
+\OT1/cmr/m/n/10 all'utente di con-fig-u-rare le
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--27
-\OT1/cmr/m/n/10 all'utente di rimuovere una
+\OT1/cmr/m/n/10 all'utente di rimuo-vere una
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
-\OT1/cmr/m/n/10 all'utente di modificare e
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care e
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--30
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10 all'utente di modificare il
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care il
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 1412) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 all'utente di modificare il file
+\OT1/cmr/m/n/10 all'utente di mod-i-fi-care il file
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 contenente la homography
+\OT1/cmr/m/n/10 con-te-nente la ho-mog-ra-phy
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 matrix utilizzata per la
+\OT1/cmr/m/n/10 ma-trix uti-liz-zata per la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 traduzione delle coordinate
+\OT1/cmr/m/n/10 traduzione delle co-or-di-nate
  []
 
 
 Underfull \hbox (badness 5985) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 di tracking relative ad una
+\OT1/cmr/m/n/10 di track-ing rel-a-tive ad una
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 34--34
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 4954) in paragraph at lines 35--35
-\OT1/cmr/m/n/10 un file .PNG che riproduce
+\OT1/cmr/m/n/10 un file .PNG che ripro-duce
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
-\OT1/cmr/m/n/10 graficamente l'immagine
+\OT1/cmr/m/n/10 grafi-ca-mente l'immagine
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 36--36
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 37--37
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--38
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 all'utente di generare delle
+\OT1/cmr/m/n/10 all'utente di gener-are delle
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 di trasformare i dati di
+\OT1/cmr/m/n/10 di trasfor-mare i dati di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 tracking in coordinate di
+\OT1/cmr/m/n/10 track-ing in co-or-di-nate di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 posizione all'interno di un
+\OT1/cmr/m/n/10 po-sizione all'interno di un
  []
 
 
 Underfull \hbox (badness 3536) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 immagine .PNG che descrive
+\OT1/cmr/m/n/10 im-mag-ine .PNG che de-scrive
  []
 
 
 Underfull \hbox (badness 5175) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 la planimetria del locale, e
+\OT1/cmr/m/n/10 la planime-tria del lo-cale, e
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 40--40
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 5417) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 fornisca una rappresentazione
+\OT1/cmr/m/n/10 for-nisca una rap-p-re-sen-tazione
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--41
-\OT1/cmr/m/n/10 di generare delle statistiche
+\OT1/cmr/m/n/10 di gener-are delle statis-tiche
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 42--42
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 43--43
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
 Underfull \hbox (badness 1107) in paragraph at lines 44--44
-[]|\OT1/cmr/m/n/10 Il sistema deve permettere di
+[]|\OT1/cmr/m/n/10 Il sis-tema deve per-me-t-tere di
  []
 
 
@@ -2218,27 +2227,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [49]
 Underfull \hbox (badness 1688) in paragraph at lines 67--67
-[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+[]|\OT1/cmr/m/n/10 Il sis-tema deve fun-zionare in
  []
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 68--68
-[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+[]|\OT1/cmr/m/n/10 Il sis-tema deve fun-zionare in
  []
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 69--69
-[]|\OT1/cmr/m/n/10 Il sistema deve funzionare in
+[]|\OT1/cmr/m/n/10 Il sis-tema deve fun-zionare in
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]|\OT1/cmr/m/n/10 Il sistema utilizzer^^Ra come
+[]|\OT1/cmr/m/n/10 Il sis-tema uti-lizzer^^Ra come
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 70--70
-\OT1/cmr/m/n/10 strumento di build CMake,
+\OT1/cmr/m/n/10 stru-mento di build CMake,
  []
 
 
@@ -2253,22 +2262,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [50]
 Underfull \hbox (badness 10000) in paragraph at lines 92--92
-[]|\OT1/cmr/m/n/10 Deve essere prodotta
+[]|\OT1/cmr/m/n/10 Deve es-sere prodotta
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--92
-\OT1/cmr/m/n/10 documentazione del codice
+\OT1/cmr/m/n/10 doc-u-men-tazione del codice
  []
 
 
 Underfull \hbox (badness 4518) in paragraph at lines 93--93
-[]|\OT1/cmr/m/n/10 Il sistema deve garantire la
+[]|\OT1/cmr/m/n/10 Il sis-tema deve garan-tire la
  []
 
 
 Underfull \hbox (badness 4205) in paragraph at lines 93--93
-\OT1/cmr/m/n/10 massima indipendenza tra le
+\OT1/cmr/m/n/10 mas-sima in-dipen-denza tra le
  []
 
 ) (./sections/esitistatica.tex
@@ -2324,182 +2333,182 @@ Overfull \hbox (5.9129pt too wide) in alignment at lines 38--41
 
 ) (./sections/esitivalidazione.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\OT1/cmr/m/n/10 il numero di immagini da
+\OT1/cmr/m/n/10 il nu-mero di im-mag-ini da
  []
 
 
 Underfull \hbox (badness 1264) in paragraph at lines 22--22
-\OT1/cmr/m/n/10 l'indirizzo della telecamera da
+\OT1/cmr/m/n/10 l'indirizzo della tele-cam-era da
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
-\OT1/cmr/m/n/10 e che le impostazioni di
+\OT1/cmr/m/n/10 e che le im-postazioni di
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
-\OT1/cmr/m/n/10 calibrazione scelte vengano
+\OT1/cmr/m/n/10 cal-i-brazione scelte vengano
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]|\OT1/cmr/m/n/10 Si verifica che si possa
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che si possa
  []
 
 
 Underfull \hbox (badness 7981) in paragraph at lines 24--24
-\OT1/cmr/m/n/10 visualizzare lo stream video
+\OT1/cmr/m/n/10 vi-su-al-iz-zare lo stream video
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 29--29
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 30--30
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 31--31
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/cmr/m/n/10 del frame usato per la
+\OT1/cmr/m/n/10 del frame us-ato per la
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 32--32
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10 modificare il valore della
+\OT1/cmr/m/n/10 mod-i-fi-care il val-ore della
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 33--33
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 1383) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 modificare il percorso del file
+\OT1/cmr/m/n/10 mod-i-fi-care il per-corso del file
  []
 
 
 Underfull \hbox (badness 3417) in paragraph at lines 33--33
-\OT1/cmr/m/n/10 homography matrix e che il
+\OT1/cmr/m/n/10 ho-mog-ra-phy ma-trix e che il
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\OT1/cmr/m/n/10 Si verifica che si possa
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che si possa
  []
 
 
 Underfull \hbox (badness 3029) in paragraph at lines 35--35
-\OT1/cmr/m/n/10 selezionare un file .DXF dal
+\OT1/cmr/m/n/10 se-lezionare un file .DXF dal
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 35--35
-\OT1/cmr/m/n/10 file system, convertirlo e che
+\OT1/cmr/m/n/10 file sys-tem, con-ver-tirlo e che
  []
 
 
 Underfull \hbox (badness 2865) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 rispettivamente la planimetria
+\OT1/cmr/m/n/10 rispet-ti-va-mente la planime-tria
  []
 
 
 Underfull \hbox (badness 4886) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 del locale e il frame preso
+\OT1/cmr/m/n/10 del lo-cale e il frame preso
  []
 
 
 Underfull \hbox (badness 1242) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 dallo stream della telecamera,
+\OT1/cmr/m/n/10 dallo stream della tele-cam-era,
  []
 
 
 Underfull \hbox (badness 1259) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 che traduca le coordinate tra
+\OT1/cmr/m/n/10 che tra-d-uca le co-or-di-nate tra
  []
 
 
 Underfull \hbox (badness 1117) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 i due piani definiti dai punti
+\OT1/cmr/m/n/10 i due pi-ani definiti dai punti
  []
 
 
 Underfull \hbox (badness 4913) in paragraph at lines 36--36
-\OT1/cmr/m/n/10 segnati nelle 2 immagini di
+\OT1/cmr/m/n/10 seg-nati nelle 2 im-mag-ini di
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 37--37
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 1097) in paragraph at lines 37--37
-\OT1/cmr/m/n/10 una volta selezionata essa sia
+\OT1/cmr/m/n/10 una volta se-lezion-ata essa sia
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 39--39
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 1048) in paragraph at lines 39--39
-\OT1/cmr/m/n/10 trasformare i dati di tracking
+\OT1/cmr/m/n/10 trasfor-mare i dati di track-ing
  []
 
 
 Underfull \hbox (badness 6284) in paragraph at lines 40--40
-[]|\OT1/cmr/m/n/10 Si verifica che sia possibile
+[]|\OT1/cmr/m/n/10 Si ver-i-fica che sia pos-si-bile
  []
 
 
 Underfull \hbox (badness 1648) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 generare una heatmap grafica
+\OT1/cmr/m/n/10 gener-are una heatmap grafica
  []
 
 
 Underfull \hbox (badness 3019) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 in base alle occorrenze delle
+\OT1/cmr/m/n/10 in base alle oc-cor-renze delle
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
-\OT1/cmr/m/n/10 coordinate di tracciamento
+\OT1/cmr/m/n/10 co-or-di-nate di trac-cia-mento
  []
 
 
 Underfull \hbox (badness 3503) in paragraph at lines 42--42
-[]|\OT1/cmr/m/n/10 Il test verifica che si possa
+[]|\OT1/cmr/m/n/10 Il test ver-i-fica che si possa
  []
 
 
 Underfull \hbox (badness 1038) in paragraph at lines 42--42
-\OT1/cmr/m/n/10 generare la statistica di \OT1/cmr/m/it/10 dwell
+\OT1/cmr/m/n/10 gener-are la sta-tis-tica di \OT1/cmr/m/it/10 dwell
  []
 
 
 Underfull \hbox (badness 3503) in paragraph at lines 43--43
-[]|\OT1/cmr/m/n/10 Il test verifica che si possa
+[]|\OT1/cmr/m/n/10 Il test ver-i-fica che si possa
  []
 
 
 Underfull \hbox (badness 3503) in paragraph at lines 44--44
-[]|\OT1/cmr/m/n/10 Il test verifica che si possa
+[]|\OT1/cmr/m/n/10 Il test ver-i-fica che si possa
  []
 
 
@@ -2524,8 +2533,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [54])
 Overfull \hbox (3.8266pt too wide) in paragraph at lines 174--179
-\OT1/cmr/m/n/10 requisiti sono stati soddisfatti con successo. I requisiti sull
-a generazione delle statistiche
+\OT1/cmr/m/n/10 req-ui-siti sono stati sod-dis-fatti con suc-cesso. I req-ui-si
+ti sulla gen-er-azione delle statis-tiche
  []
 
 
@@ -2549,12 +2558,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--186
  []
 
 
-Overfull \hbox (17.88348pt too wide) in paragraph at lines 184--186
-\OT1/cmr/m/n/10 database. Sebbene la libreria abbia permesso uno sviluppo rapid
-o (in quanto relativamente
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.07225pt.
  We now make it that large for the rest of the document.
@@ -2573,32 +2576,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--5
  []
 
 
-Overfull \hbox (13.71674pt too wide) in paragraph at lines 2--5
-\OT1/cmr/m/n/10 dettagliati per la generazione delle statistiche individuate. C
-i^^Ro ^^Re stato causato soprattutto
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
 
-Overfull \hbox (21.39249pt too wide) in paragraph at lines 10--11
-[]\OT1/cmr/bx/n/10 C++ \OT1/cmr/m/n/10 essendo un linguaggio anziano e di basso
- livello ^^Re stato importante approfondire
- []
-
-
-Overfull \hbox (1.1333pt too wide) in paragraph at lines 10--11
-\OT1/cmr/m/n/10 la conoscenza e l'esperienza nell'uso di C++. Infatti ritengo c
-he sia fondamentale
- []
-
-
-Overfull \hbox (21.1982pt too wide) in paragraph at lines 10--11
-\OT1/cmr/m/n/10 la pratica per raggiungere un buon livello nella stesura di cod
-ice pulito e manutenibile.
+Overfull \hbox (19.17024pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/bx/n/10 C++ \OT1/cmr/m/n/10 es-sendo un lin-guag-gio dif-fi-cile e d
+i basso liv-ello ^^Re stato im-por-tante ap-pro-fondire
  []
 
 [57]
@@ -2608,8 +2593,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
 
 Overfull \hbox (7.80574pt too wide) in paragraph at lines 25--28
-\OT1/cmr/m/n/10 durante il tracking degli oggetti. Infatti in un contesto reale
- tale eventualit^^Ra (l'\OT1/cmr/m/it/10 occlusion\OT1/cmr/m/n/10 )
+\OT1/cmr/m/n/10 du-rante il track-ing degli oggetti. In-fatti in un con-testo r
+eale tale even-tu-alit^^Ra (l'\OT1/cmr/m/it/10 occlusion\OT1/cmr/m/n/10 )
  []
 
 
@@ -2619,14 +2604,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
 
 Overfull \hbox (10.74445pt too wide) in paragraph at lines 25--28
-\OT1/cmr/m/n/10 dei dati raccolti. In futuro sar^^Ra necessario ricavare non so
-lo le coordinate di tracciamento,
+\OT1/cmr/m/n/10 dei dati rac-colti. In fu-turo sar^^Ra nec-es-sario ri-cavare n
+on solo le co-or-di-nate di trac-cia-mento,
  []
 
 
 Overfull \hbox (37.57794pt too wide) in paragraph at lines 25--28
-\OT1/cmr/m/n/10 ma anche informazioni pi^^Ru dettagliate. Particolare attenzion
-e verr^^Ra posta nell'implementazione
+\OT1/cmr/m/n/10 ma an-che in-for-mazioni pi^^Ru det-tagli-ate. Par-ti-co-lare a
+t-ten-zione verr^^Ra posta nell'implementazione
  []
 
 
@@ -2661,8 +2646,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
 ) [59] (./bibliography/bibliography.tex
 Underfull \hbox (badness 2359) in paragraph at lines 13--14
-[]\OT1/cmr/m/n/10 Robert Lagani^^Rere, \OT1/cmr/m/it/10 OpenCV 2 Computer Visio
-n Application Programming
+[]\OT1/cmr/m/n/10 Robert La-gani^^Rere, \OT1/cmr/m/it/10 OpenCV 2 Com-puter Vi-
+sion Ap-pli-ca-tion Pro-gram-ming
  []
 
 )
@@ -2688,13 +2673,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9051 strings out of 493485
- 129380 string characters out of 3143525
- 278485 words of memory out of 3000000
- 11907 multiletter control sequences out of 15000+200000
+ 9071 strings out of 493485
+ 129526 string characters out of 3143525
+ 280105 words of memory out of 3000000
+ 11927 multiletter control sequences out of 15000+200000
  8111 words of font info for 31 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,15n,45p,1155b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,15n,45p,1155b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
@@ -2709,7 +2694,7 @@ lic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfo
 nt/lasy10.pfb>
-Output written on build/thesis.pdf (68 pages, 2339023 bytes).
+Output written on build/thesis.pdf (68 pages, 2339286 bytes).
 PDF statistics:
  1101 PDF objects out of 1200 (max. 8388607)
  961 compressed objects within 10 object streams

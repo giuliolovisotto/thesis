@@ -5,15 +5,15 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{fixltx2e}
-\usepackage{underscore}
+%\usepackage{underscore}
 \usepackage{xcolor}
-%\usepackage[none]{hyphenat}
+\usepackage[none]{hyphenat}
 
 \renewcommand{\labelitemii}{$\Box$}
 \renewcommand{\labelitemiii}{$\rhd$}
 
-\righthyphenmin 62
-\lefthyphenmin 62
+%\righthyphenmin 70
+%\lefthyphenmin 70
 
 \include{thesis.preamble}
 
@@ -104,12 +104,12 @@ D'altro canto non si è puntato subito a tale obiettivo (accesso e configurazion
 
 \subsection{Database schema} \label{sec:dbschema}
 Si riporta di seguito uno schema del database utilizzato all'interno dell'applicazione per il salvataggio dei dati. \\
-Sebbene alcuni dati fossero comunque legati ad una telecamera, si è scelto di separare le informazioni in tabelle diverse per coerenza e semplicità. Si sono quindi divise le informazioni riguardanti la calibrazione nella tabella \textbf{tbl_cam_calibration} e nella tabella \textbf{tbl_cam}.\\
+Sebbene alcuni dati fossero comunque legati ad una telecamera, si è scelto di separare le informazioni in tabelle diverse per coerenza e semplicità. Si sono quindi divise le informazioni riguardanti la calibrazione nella tabella \textbf{tbl\_cam\_calibration} e nella tabella \textbf{tbl\_cam}.\\
 Si riporta una breve spiegazione che motiva le scelte effettuate nella progettazione dello schema del database:
 \begin{enumerate}
-	\item Tra \textbf{tbl_cam} e \textbf{tbl_homographic_matrices} c'è una relazione di tipo 1:N. Si è optato per tale decisione per permettere in futuro di associare diverse \textit{homography matrix} alla stessa telecamera, ciò consente al sistema di salvare matrici diverse che esprimono relazioni diverse tra le coordinate dei punti tracciati e la loro reale rappresentazione sulla planimetria del locale. In tale modo senza perdere di consistenza si possono effettuare \textit{zoom} e rotazioni per ottenere maggiori dettagli dai dati
-	\item Il campo \textbf{transformed} nella tabella \textbf{tbl_tracking_data} serve per memorizzare la condizione del dato. Infatti dato che i processi di salvataggio e successiva trasformazione non sono collegati tra di loro ma comunicano con la stessa base dati, è importante sapere se un dato è già stato "trasformato" e quindi spostato nella tabella \textbf{tbl_clean_data} oppure se tale operazione ancora non è stata eseguita. Tale campo memorizza un booleano che indica lo stato del record
-	\item La tabella \textbf{tbl_clean_data} memorizza i dati di tracciamento relativi al locale nel suo complesso (la planimetria). Essa contiene i dati di tracciamento ottenuti dopo la loro trasformazione del loro valore \textit{raw} in dati \textit{clean}: essi sono relativi all'intera area del locale e non più legati ad una telecamera (infatti ogni telecamera ha delle regole di trasformazione del dato da essa catturato personalizzate, che dipendono dalla matrice omografica usata per la traduzione). In tale modo anche con un sistema funzionante con diverse telecamere si crea un dato unificato e pulito utilizzabile per la generazione delle statistiche. Similmente al campo transformed di cui sopra, il campo \textbf{synchronized} indica se il dato è già stato salvato in un sistema di backup (distribuito)
+	\item Tra \textbf{tbl\_cam} e \textbf{tbl\_homographic\_matrices} c'è una relazione di tipo 1:N. Si è optato per tale decisione per permettere in futuro di associare diverse \textit{homography matrix} alla stessa telecamera, ciò consente al sistema di salvare matrici diverse che esprimono relazioni diverse tra le coordinate dei punti tracciati e la loro reale rappresentazione sulla planimetria del locale. In tale modo senza perdere di consistenza si possono effettuare \textit{zoom} e rotazioni per ottenere maggiori dettagli dai dati
+	\item Il campo \textbf{transformed} nella tabella \textbf{tbl\_tracking\_data} serve per memorizzare la condizione del dato. Infatti dato che i processi di salvataggio e successiva trasformazione non sono collegati tra di loro ma comunicano con la stessa base dati, è importante sapere se un dato è già stato "trasformato" e quindi spostato nella tabella \textbf{tbl\_clean\_data} oppure se tale operazione ancora non è stata eseguita. Tale campo memorizza un booleano che indica lo stato del record
+	\item La tabella \textbf{tbl\_clean\_data} memorizza i dati di tracciamento relativi al locale nel suo complesso (la planimetria). Essa contiene i dati di tracciamento ottenuti dopo la loro trasformazione del loro valore \textit{raw} in dati \textit{clean}: essi sono relativi all'intera area del locale e non più legati ad una telecamera (infatti ogni telecamera ha delle regole di trasformazione del dato da essa catturato personalizzate, che dipendono dalla matrice omografica usata per la traduzione). In tale modo anche con un sistema funzionante con diverse telecamere si crea un dato unificato e pulito utilizzabile per la generazione delle statistiche. Similmente al campo transformed di cui sopra, il campo \textbf{synchronized} indica se il dato è già stato salvato in un sistema di backup (distribuito)
 \end{enumerate}
 Lo schema del database è allegato in figura ~\ref{fig:dbschema}.
 
@@ -182,7 +182,7 @@ Anche la generazione dell'\textit{heatmap} è stata più impegnativa di quanto p
 	\item AcidMaps \url{https://github.com/XoomCode/AcidMaps/}
 \end{itemize}
 La scelta è ricaduta su Qt sia perché si è preferito non aggiungere dipendenze esterne al software, ma soprattutto perché la documentazione disponibile era chiara e completa (a differenza delle alternative sopra elencate). Inoltre l'intuizione di un algoritmo comodo per il disegno  dell'\textit{heatmap} ha reso più semplice la decisione. \\ \\
-Infine guardando con occhio critico a quanto è stato realizzato l'unica scelta che a posteriori cambierei è quella dell'uso di MysqlWrapped per l'interazione con il database. Sebbene la libreria abbia permesso uno sviluppo rapido (in quanto relativamente semplice) e ha fornito un tool per la generazione del codice C++ dai file .SQL essa ha dei lati negativi. Infatti mi sono reso conto che sarebbe stato preferibile avere un'interfaccia di più alto livello per la comunicazione con il livello dei dati (soprattutto per la gestione degli errori e delle eccezioni), in quanto essa avrebbe permesso una maggiore manutenibilità e concisione del codice. Ciò nonostante la scelta effettuata ha soddisfatto appieno gli obiettivi prefissati e ha permesso una veloce prototipazione.
+Infine guardando con occhio critico a quanto è stato realizzato l'unica scelta che a posteriori cambierei è quella dell'uso di MysqlWrapped per l'interazione con il database. Sebbene la libreria abbia permesso uno sviluppo rapido grazie alla sua semplicità e alla possibilità di conversione automatica da codice SQL a codice C++ (le librerie che si occupano di \textit{orm} in genere trattano solo la conversione nel verso opposto), essa ha dei lati negativi. Infatti mi sono reso conto che sarebbe stato preferibile avere un'interfaccia di più alto livello per la comunicazione con il livello dei dati (soprattutto per la gestione degli errori e delle eccezioni), in quanto essa avrebbe permesso una maggiore manutenibilità e concisione del codice. Ciò nonostante la scelta effettuata ha soddisfatto appieno gli obiettivi prefissati e ha permesso una veloce prototipazione.
 
 \newpage
 \section{Conclusioni}
